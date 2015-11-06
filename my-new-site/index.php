@@ -110,8 +110,9 @@
             <p>Past projects, aside from website concept, design &amp; development include:</p>
             <div class="project-col">
               <ul class="past-projects">
-                <li>Editing video testimony for court trial</li>
-                <li>Editing audio testimony</li>
+                <li>WordPress recovery &amp migration</li>
+                <li>Automating data entry tasks</li>
+                <li>Technical support</li>
                 <li>Illustrations</li>
                 <li>Scanning and cataloging</li>
                 <li>Creating banner ads</li>
@@ -121,9 +122,10 @@
 
               <div class="project-col">
               <ul class="past-projects second-column">
-                <li>Automating data entry tasks</li>
+                <li>Updates/Modifications to existing websites</li>
+                <li>Editing video testimony for court trial</li>
+                <li>Editing audio testimony</li>
                 <li>Designing restaurant menus</li>
-                <li>Technical support</li>
                 <li>Developing online shopping cart</li>
                 <li>Preparing newsletters</li>
                 <li>Photographing &amp; cataloging inventory</li>
