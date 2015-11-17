@@ -151,21 +151,38 @@ img {
   line-height: 42px;
 }
 
+.caption-wrap {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  overflow: hidden;
+  top: 30px;
+  left: 30px;
+}
+
 #slidecaption {
-  /*overflow:visible; */
-  border-radius: 15px;
-  border: 2px solid #999;
+  position: absolute;
+  border: 1px solid #999;
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
   z-index: 1001;
   width: 60%;
   max-width: 400px;
-  float: left;
   color: #fff;
   font-size: 16px;
   font-family: Calibri, Helvetica, Arial, sans-serif;
-  margin: 30px 20px 0 30px;
   line-height: 20px;
+}
+
+.fade {
+  transition: left 0.55s, top 0.58s;
+  left: 0px;
+  top: 0px;
+}
+
+.hidden {
+  left: -999px;
+  top: -999px;
 }
 
 #hideo {
@@ -174,10 +191,7 @@ img {
   position: absolute;
   top: 10px;
   left: 10px;
-}
-
-.hidden {
-  display: none;
+  z-index: 9999;
 }
 
 a#hideo {

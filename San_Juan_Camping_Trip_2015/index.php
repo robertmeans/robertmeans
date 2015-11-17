@@ -37,7 +37,9 @@
 <body>
 	<!--Slide captions displayed here-->
 	<a href="#" id="hideo"><i class="fa fa-times"></i></a>
-	<div id="slidecaption"></div>
+	<div class="caption-wrap">
+		<div id="slidecaption" class="fade"></div>
+	</div>
 
 	<!--Thumbnail Navigation-->
 	<div id="prevthumb"></div>

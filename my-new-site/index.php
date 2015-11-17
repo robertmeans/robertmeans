@@ -192,7 +192,7 @@
         <p>Outdoor instruction with courses ranging from rock climbing to mountain biking to survival skills.</p>
       </li>
       <li>
-        <a href="http://www.colt-green.com" target="_blank"><img src="_images/colt-green-website.jpg" alt="Colt Green Construction"></a>
+        <a href="http://www.evergreenwebdesign.com/offline-sites/colt-green/" target="_blank"><img src="_images/colt-green-website.jpg" alt="Colt Green Construction"></a>
         <h3>Colt Green Construction</h3>
         <p>Construction and project management company, Jacksonville, Florida</p>
       </li> 
@@ -219,13 +219,13 @@
         <p>Bike race that I Directed in 2010 &amp; 2012</p>
       </li>
       <li>
-        <a href="http://www.robertmeans.com/acts" target="_blank"><img src="_images/acts-church-website.jpg" alt="Acts Church Website"></a>
+        <a href="http://www.evergreenwebdesign.com/offline-sites/acts/" target="_blank"><img src="_images/acts-church-website.jpg" alt="Acts Church Website"></a>
         <h3>Acts Church</h3>
         <p>Cover image was a composite of several images provided by customer.</p>
         
       </li>
       <li>
-        <a href="http://www.satillainc.com" target="_blank"><img src="_images/satilla-website.jpg" alt="Satilla, Inc"></a>
+        <a href="http://www.evergreenwebdesign.com/offline-sites/satillainc" target="_blank"><img src="_images/satilla-website.jpg" alt="Satilla, Inc"></a>
         <h3>Satilla, Inc.</h3>
         <p>Construction management company.</p>
       </li>
