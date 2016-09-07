@@ -58,7 +58,7 @@ module.exports = function(grunt) {
 				tasks: ['sass','autoprefixer']
 			}, // css
 			hypertext: {
-				files: ['*.php','*.htm']
+				files: ['*.php','*.htm','_includes/*.php']
 			} //hypertext
 		}, //watch
 
