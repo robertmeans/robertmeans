@@ -11,26 +11,27 @@
 -->
 <head>
   <meta charset="UTF-8">
-  <title>Robert Means - Website Development Evergreen, Colorado</title>
+  <title>Evergreen Web Design - Website Development Evergreen, Colorado</title>
   <link rel="icon" type="image/ico" href="_images/favicon.ico">
+  <link rel="image_src" href="http://www.evergreenwebdesign.com/_images/thumbnails/EWD-thumb-01.png" />
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta name="description" content="I provide website concept, design, development and SEO services featuring current specifications within a responsive framework.">
+  <meta name="description" content="Evergreen Web Design provides website concept, design, development and SEO services featuring current specifications within a responsive framework.">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="evergreenwebdesign.com/_scripts/coolclock-breakpoints.js?<?php echo time(); ?>"></script>
-  <script src="evergreenwebdesign.com/_scripts/modernizr.js?<?php echo time(); ?>"></script> 
-  <link rel="stylesheet" href="evergreenwebdesign.com/_css/style.css?<?php echo time(); ?>">
+  <script src="_scripts/coolclock-breakpoints.js?<?php echo time(); ?>"></script>
+  <script src="_scripts/modernizr.js?<?php echo time(); ?>"></script> 
+  <link rel="stylesheet" href="_css/style.css?<?php echo time(); ?>">
 
 <!-- Google Analytics code -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-38678515-1', 'auto');
-    ga('send', 'pageview');
+  ga('create', 'UA-80245426-1', 'auto');
+  ga('send', 'pageview');
 
-  </script>
+</script>
 <!-- end Google Analytics code -->
 </head>
 
@@ -77,7 +78,7 @@
 
   <article id="nameScene">
     <div id="EWD">
-      <span class="title-text">Robert Means</span>
+      <span class="title-text">Evergreen Web<br class="gone"> Design</span>
       <div id="website-solutions-badge" class="website-solutions-badge-default">
         <h2>Website Solutions</h2>
         <h4>Evergreen, Colorado</h4>
@@ -90,16 +91,18 @@
 </section><!-- #div-one -->
 </header>
 
-<?php require ("evergreenwebdesign.com/_includes/services.php"); ?>
-<?php require ("evergreenwebdesign.com/_includes/about.php"); ?>
-<?php require ("evergreenwebdesign.com/_includes/backstretch.php"); ?>
+<?php require ("_includes/services.php"); ?>
+<?php require ("_includes/about.php"); ?>
+<?php require ("_includes/backstretch.php"); ?>
+
+
 
 </div><!-- #wrapper -->
-<?php include "evergreenwebdesign.com/_includes/footer.php" ?>
+<?php include "_includes/footer.php" ?>
 <?php require_once('_includes/contactform-code.php'); ?>
 
-<script type="text/javascript" src="evergreenwebdesign.com/_scripts/jquery.backstretch.min.js"></script>
-<script type="text/javascript" src="evergreenwebdesign.com/_scripts/scripts.js?<?php echo time(); ?>"></script>
+<script type="text/javascript" src="_scripts/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="_scripts/scripts.js?<?php echo time(); ?>"></script>
 <script src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>
