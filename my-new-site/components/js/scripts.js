@@ -1672,39 +1672,92 @@ function fix()
 
 
 
-//display time and day as text
-// function display_c(){
-// var refresh=1000; // Refresh rate in milli seconds
-// mytime=setTimeout('display_ct()',refresh)
-// }
 
-// function display_ct() {
-// var strcount
-// var x = new Date()
-// document.getElementById('ct').innerHTML = x;
-// tt=display_c();
-// }
-
-var d = new Date();
-var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-document.getElementById("day").innerHTML = days[d.getDay()];
 
 var myVar=setInterval(function(){myTimer()},1000);
 function myTimer() {
 
 var dateWithouthSecond = new Date();
-document.getElementById("time").innerHTML = dateWithouthSecond.toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'});
+var nowTime = dateWithouthSecond.toLocaleTimeString(navigator.language, {hour: '2-digit', minute:'2-digit'});
+
+var d = new Date();
+var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var today = days[d.getDay()];
+
+document.getElementById("now").innerHTML = nowTime + " on a " + today;
 }
 
-// date with seconds...
-// var myVar=setInterval(function(){myTimer()},1000);
-// function myTimer() {
-//     var d = new Date();
-//     document.getElementById("time").innerHTML = d.toLocaleTimeString();
-// }
+// Greeting at top of page
+var greeting = new Date()
+var hours = greeting.getHours()
+
+if (hours >= 5 && hours <= 10) { //5a - 10a
+  document.getElementById("greeting").innerHTML = ('Good morning,');
+  document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/sunrise.jpg" alt="sunrise">');
+  document.getElementById("clockid").className = "CoolClock morning-clock";
+  document.getElementById("text-box").className = "morning-text-box cf";
+  document.getElementById("website-solutions-badge").className = "morning-website-solutions-badge";
+
+} else if (hours >= 11 && hours <= 16) { //11a - 4p
+  document.getElementById("greeting").innerHTML = ('Good afternoon,');
+  document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/day-sky-01.jpg" alt="blue sky">');
+  // this one has default styles
+
+} else if (hours >= 17 && hours <= 18) { //5p - 6p
+  document.getElementById("greeting").innerHTML = ('Good (late) afternoon,');
+  document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/mountain-sunset.jpg" alt="sunrise">');
+  document.getElementById("clockid").className = "CoolClock afternoon-clock";
+  document.getElementById("text-box").className = "afternoon-text-box cf";
+  document.getElementById("website-solutions-badge").className = "afternoon-website-solutions-badge";
+
+} else if (hours >= 19 && hours <= 23) { //7p - 11p
+  document.getElementById("greeting").innerHTML = ('Good evening,');
+  document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/night.jpg" alt="sunrise">');
+  document.getElementById("clockid").className = "CoolClock evening-clock";
+  document.getElementById("text-box").className = "evening-text-box cf";
+  document.getElementById("website-solutions-badge").className = "evening-website-solutions-badge";
 
 
+} else { //12a - 4a
+  document.getElementById("greeting").innerHTML = ('You sure are up late.');
+  document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/late-night.jpg" alt="sunrise">');
+  document.getElementById("clockid").className = "CoolClock late-night-clock";
+  document.getElementById("text-box").className = "late-night-text-box cf";
+  document.getElementById("website-solutions-badge").className = "late-night-website-solutions-badge";
+}
 
+
+// --------------------        Development override         ------------------------------------------------- //
+  // document.getElementById("greeting").innerHTML = ('Good morning,');
+  // document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/sunrise.jpg" alt="sunrise">');
+  // document.getElementById("clockid").className = "CoolClock morning-clock";
+  // document.getElementById("text-box").className = "morning-text-box cf";
+  // document.getElementById("website-solutions-badge").className = "morning-website-solutions-badge";
+
+  // document.getElementById("greeting").innerHTML = ('Good afternoon,');
+  // document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/day-sky-01.jpg" alt="blue sky">'); 
+  // /* Dont copy the 3 classes below to paste above. This is run by the defaults that are already in place */
+  // document.getElementById("clockid").className = "CoolClock clockid-default";
+  // document.getElementById("text-box").className = "text-box-default cf";
+  // document.getElementById("website-solutions-badge").className = "website-solutions-badge-default";
+  
+  // document.getElementById("greeting").innerHTML = ('Good (late) afternoon,');
+  // document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/mountain-sunset.jpg" alt="sunrise">');
+  // document.getElementById("clockid").className = "CoolClock afternoon-clock";
+  // document.getElementById("text-box").className = "afternoon-text-box cf";
+  // document.getElementById("website-solutions-badge").className = "afternoon-website-solutions-badge"; 
+
+  // document.getElementById("greeting").innerHTML = ('Good evening,');
+  // document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/night.jpg" alt="sunrise">');
+  // document.getElementById("clockid").className = "CoolClock evening-clock";
+  // document.getElementById("text-box").className = "evening-text-box cf";
+  // document.getElementById("website-solutions-badge").className = "evening-website-solutions-badge"; 
+  
+  // document.getElementById("greeting").innerHTML = ('You sure are up late.');
+  // document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/late-night.jpg" alt="sunrise">');
+  // document.getElementById("clockid").className = "CoolClock late-night-clock";
+  // document.getElementById("text-box").className = "late-night-text-box cf";
+  // document.getElementById("website-solutions-badge").className = "late-night-website-solutions-badge";    
 
 
 
@@ -2024,3 +2077,10 @@ $('.flexslider_process').flexslider({
   controlNav: "thumbnails"
 });
 });
+
+
+
+// --------- playing 11.01.16
+// var salutation = document.getElementsByTagName("h3");
+// salutation[0].innerHTML = "Whaddup?!";
+
