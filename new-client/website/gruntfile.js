@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 		/* Autoprefixer */
 		autoprefixer: {
 			options: {
-				browsers: ['last 2 versions']
+				browsers: ['last 6 versions']
 			},
 			// prefix all files
 			multiple_files: {

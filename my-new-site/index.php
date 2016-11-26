@@ -78,7 +78,7 @@
 
   <article id="nameScene">
     <div id="EWD">
-      <span class="title-text">Evergreen Web<br class="gone"> Design</span>
+      <span class="title-text">Robert Means</span>
       <div id="website-solutions-badge" class="website-solutions-badge-default">
         <h2>Website Solutions</h2>
         <h4>Evergreen, Colorado</h4>
