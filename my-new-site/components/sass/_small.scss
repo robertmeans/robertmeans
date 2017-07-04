@@ -1,7 +1,22 @@
-@media screen and (max-width: 600px){
+@media screen and (max-width: 720px){
+#EWD {
+	.title-text {
+		font-size: 2.5em;
 
+		-webkit-transition: font-size 1.75s ease;
+		-moz-transition: font-size 1.75s ease;
+		-o-transition: font-size 1.75s ease;
+		transition: font-size 1.75s ease;
+	}
+}
+}
+
+@media screen and (max-width: 600px){
+.mobile-nav-phone-gone {
+	display: none;
+}
 #div-one {
-	// background-image: url(../_images/sky-small.jpg);
+	// background-image: url(_images/sky-small.jpg);
 	height: 800px;
 }
 #div-two {
@@ -19,26 +34,17 @@
 }
 
 #bubbles1 {
-// background-image: url(../_images/bubbles1_small.png);
+// background-image: url(_images/bubbles1_small.png);
 }
  
 #bubbles2 {
-// background-image: url(../_images/bubbles3_small.png);
+// background-image: url(_images/bubbles3_small.png);
 }
  
 #fish {
-	background-image: url(../_images/fish_small.png);
+	background-image: url(_images/fish_small.png);
 }
 #clockid {	
-	background: rgba(208,228,247,.4);
-	background: -moz-radial-gradient(center, ellipse cover,  rgba(208,228,247,.4) 0%, rgba(115,177,231,.4) 24%, rgba(10,119,213,.4) 50%, rgba(83,159,225,.4) 79%, rgba(135,188,234,.4) 100%);
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(208,228,247,.4)), color-stop(24%,rgba(115,177,231,.4)), color-stop(50%,rgba(10,119,213,.4)), color-stop(79%,rgba(83,159,225,.4)), color-stop(100%,rgba(135,188,234,.4)));
-	background: -webkit-radial-gradient(center, ellipse cover,  rgba(208,228,247,.4) 0%,rgba(115,177,231,.4) 24%,rgba(10,119,213,.4) 50%,rgba(83,159,225,.4) 79%,rgba(135,188,234,.4) 100%);
-	background: -o-radial-gradient(center, ellipse cover,  rgba(208,228,247,.4) 0%,rgba(115,177,231,.4) 24%,rgba(10,119,213,.4) 50%,rgba(83,159,225,.4) 79%,rgba(135,188,234,.4) 100%);
-	background: -ms-radial-gradient(center, ellipse cover,  rgba(208,228,247,.4) 0%,rgba(115,177,231,.4) 24%,rgba(10,119,213,.4) 50%,rgba(83,159,225,.4) 79%,rgba(135,188,234,.4) 100%);
-	background: radial-gradient(ellipse at center,  rgba(208,228,247,.4) 0%,rgba(115,177,231,.4) 24%,rgba(10,119,213,.4) 50%,rgba(83,159,225,.4) 79%,rgba(135,188,234,.4) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=1 );
-
 	border-radius: 50%;
 	display: block;
 	float: left;
@@ -46,40 +52,19 @@
 	// position: fixed;
 	margin: -90px 0 0 -20px;
 }
-.text-box { // more styles as screen gets smaller at bottom of this media query
-	position: relative;
-	font-size: 1em;
-	box-sizing: border-box;
-	margin: 80px auto 0px auto;
-	border: 1px solid #000;
-	height: auto;
-	width: 96%;
-	background: rgba(12, 37, 145, .3);
-	padding: 15px;
 
-	// -webkit-box-shadow: -8px 10px 16px 0px rgba(86,93,173,1);
-	// -moz-box-shadow: -8px 10px 16px 0px rgba(86,93,173,1);
-	// box-shadow: -8px 10px 16px 0px rgba(86,93,173,1);
 
-	h3 {
-		font-size: 1.1em;
-		line-height: 1em;
-		margin: 0px 0px 0px 105px;
-	}
-	p {
-		display: inline-block;
-		line-height: 1.4em;
-		float: left;
-		margin: 0.8em 0em 0em 1em;
-	}
-}
+
+
+
+
 #EWD {
 	position: relative;
 	margin: -15px auto;
 	text-align: center;
 	.title-text {
 		font-family: 'Exo 2', Helvetica, Arial, sans-serif;
-		font-size: 3.5em;
+		font-size: 2.45em;
 
 		-webkit-transition: font-size 1.75s ease;
 		-moz-transition: font-size 1.75s ease;
@@ -208,7 +193,7 @@ a.mobile_menu {
 	// covering any of the dropdown nav that opens
 	// when you click this. - that's why you can't
 	// use a sprite here.
-	background: url(../_images/mobile_link_menu2.png) no-repeat 0px 0px;
+	background: url(_images/mobile_link_menu2.png) no-repeat 0px 0px;
 	-webkit-animation: menuToggle 600ms;
 	-moz-animation: menuToggle 600ms;
 	-ms-animation: menuToggle 600ms;
@@ -218,7 +203,7 @@ a.mobile_menu {
 
 	// --- working sprite! ---
 	// can't use though - see notes above...
-// 		background-image: url("../_images/scroll-down-sprite.png");
+// 		background-image: url("_images/scroll-down-sprite.png");
  //    -webkit-animation: play 2.5s steps(40) infinite;
  //    -moz-animation: play 2.5s steps(40) infinite;
  //    -ms-animation: play 2.5s steps(40) infinite;
@@ -266,7 +251,7 @@ a.mobile_menu.selected {
 	// covering any of the dropdown nav that opens
 	// when you click this. - that's why you can't
 	// use a sprite here.
-	background: url(../_images/mobile_link_menu2.png) no-repeat 0px 0px;
+	background: url(_images/mobile_link_menu2.png) no-repeat 0px 0px;
 	-webkit-animation: menuToggleUp 900ms;
 	-moz-animation: menuToggleUp 900ms;
 	-ms-animation: menuToggleUp 900ms;
@@ -276,7 +261,7 @@ a.mobile_menu.selected {
 
 	// --- working sprite! ---
 	// can't use though - see notes above...
-// 		background-image: url("../_images/scroll-down-sprite.png");
+// 		background-image: url("_images/scroll-down-sprite.png");
  //    -webkit-animation: play 2.5s steps(40) infinite;
  //    -moz-animation: play 2.5s steps(40) infinite;
  //    -ms-animation: play 2.5s steps(40) infinite;
@@ -312,46 +297,27 @@ a.mobile_menu.selected {
 	display: inline-block;
 }
 
-.first-nav-item {
-	// display: none;
-	margin-top: -1px;
-	margin-bottom: -1px;
-}
 nav {
-	margin-top: -10px;
-	// background: rgba(255,255,255,.3);
-
-	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0.22) 100%);
+	margin-top: -10px;	
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.22)));
-	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.22) 100%);
-	background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.22) 100%);
-	background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.22) 100%);
 	background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.22) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#38ffffff',GradientType=0 );
-
-	// border-bottom: 1px solid #d9d9d9;
 	border-bottom: 1px solid #999;
-	// border-bottom: none;
 }
 nav ul {
 	width: 100%;
-	margin: auto;
-	padding: 0px;
-	display: block;
-	text-align: center;		
+	text-align: center;	
+	height: 62px;
 }
 nav ul li a {		
-	color: #fff;
-	display: inline-block;
+	color: #fff;;
 	text-align: center;
-	margin: 0px;
+	margin: 0px 2px;
 	height: 3em;
 	line-height: 2.5em;
-	padding: 9px 12px 9px 12px;	
+	padding: 2em 12px;	
 	border-radius: 0px;
-	// border: 1px solid red;
 	background: rgba(0,0,0,.6);
-	// box-shadow: -2px 2px 5px #d9d9d9;
 	&:visited {
 		background-color: inherit;
 		}
@@ -496,20 +462,9 @@ h2.mobile {
 }
 } // end (max-width: 485px) closing tag
 
-@media screen and (max-width: 460px){
-#EWD {
-	.title-text {
-		font-size: 3em;
-	}
-}
-}
+
 
 @media screen and (max-width: 400px){
-#EWD {
-	.title-text {
-		font-size: 2.5em;
-	}
-}
 ul.staticsites li:last-child {
 	padding: 40px 80px -50px 80px;
 	border-radius: 50%;
@@ -551,7 +506,7 @@ ul.staticsites li:last-child {
 #div-one {
 // welcome screen
 	height: 650px;
-	// background: #fff url(../_images/sky-small2.jpg) no-repeat center center fixed;
+	// background: #fff url(_images/sky-small2.jpg) no-repeat center center fixed;
 	// background-size: cover;
 
 	// -webkit-background-size: cover;
@@ -559,13 +514,13 @@ ul.staticsites li:last-child {
     // -o-background-size: cover;
 
 }
-.text-box { 
+#text-box { 
 	margin: 80px auto 0px auto;
 }
 #my-name {
 	top: 50%;	
 	}
-.website-solutions-badge {
+#website-solutions-badge {
 	max-width: 150px;
 	color: #fff;
 	margin: 15px auto 0px auto;
