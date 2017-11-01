@@ -365,13 +365,13 @@ html.touch a.click {
     -ms-animation: scrollSprite 2.5s steps(40) infinite;
     -o-animation: scrollSprite 2.5s steps(40) infinite;
     animation: scrollSprite 2.5s steps(40) infinite;
-        a {
-        	display: block;
-        	height: 70px;
-        	width: 50px;
-        	border: none;
-        	text-decoration: none;
-        }
+    a {
+    	display: block;
+    	height: 70px;
+    	width: 50px;
+    	border: none;
+    	text-decoration: none;
+    }
 }
 @-webkit-keyframes scrollSprite {
    from { background-position:    0px; }
