@@ -8,7 +8,6 @@ function fadeMyDiv() {
    $('#success-fade').slideUp('slow');
 }
 
-
 $(document).ready(function(){  
 $("#email-bob").hide();
 $("button#toggle-contact-form").click(function(){

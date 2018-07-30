@@ -22,6 +22,7 @@ body {
     border-radius: 50%;
     border: 1px solid #f1f1f1;
     margin-bottom: 1em;
+    box-shadow: -2px 2px 3px 2px rgba(0,0,0,0.15);
   }
   p {
     letter-spacing: 1px;
@@ -197,7 +198,7 @@ div#success-wrap {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 8888;
+  z-index: 9999;
   width: 100%;
   height: 100%;
   height: 100vh;
@@ -215,6 +216,18 @@ div#success-wrap {
     width: 90%;
     max-width: 400px;
   }
+}
+// preloader
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.preload {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+  background: url(_images/preload.gif) center no-repeat #f1f1f1;
 }
 
 @media screen and (max-width: 680px) {
