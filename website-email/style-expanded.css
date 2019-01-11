@@ -99,6 +99,10 @@ body {
   border: 1px solid #f1f1f1;
   margin-bottom: 1em;
   box-shadow: -2px 2px 3px 2px rgba(0, 0, 0, 0.15);
+  animation: in .2s 2 linear;
+}
+#wrapper img:hover {
+  animation: out .2s 2 linear;
 }
 #wrapper p {
   letter-spacing: 1px;
@@ -285,6 +289,22 @@ div#success-wrap span.success-msg {
   max-width: 400px;
 }
 
+@keyframes in {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes out {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .no-js #loader {
   display: none;
 }
@@ -299,14 +319,18 @@ div#success-wrap span.success-msg {
 .preload {
   position: fixed;
   left: 0px;
-  top: 0px;
+  top: -33px;
   width: 100%;
   height: 100%;
   z-index: 9998;
-  background: url(_images/preload.gif) center no-repeat #f1f1f1;
+  background: url(_images/preload-02.gif) center no-repeat #202020;
 }
 
 @media screen and (max-width: 680px) {
+  .preload {
+    top: -10%;
+  }
+
   #wrapper #wrapper-position {
     margin-top: -30%;
   }

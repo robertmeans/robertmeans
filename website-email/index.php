@@ -14,7 +14,7 @@
 	<title>Robert Means - Evergreen, Colorado</title>
 	<link rel="icon" type="image/ico" href="_images/favicon.ico">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta name="description" content="Hello, I'm Robert. I enjoy saving lives and spreading enlightenment.">
+	<meta name="description" content="Hello, I'm Robert. I enjoy helping old ladies across the street, saving kittens from trees and pretzels.">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat|Lato' rel='stylesheet' type='text/css'>
