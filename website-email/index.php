@@ -28,7 +28,7 @@
 <div class="preload"></div>
 <div id="wrapper">
     <div id="wrapper-position">
-    <img src="_images/robert-means.jpg">
+    <img class="robert" src="_images/robert-means.jpg">
     <?php
         function post_captcha($user_response) {
         $fields_string = '';
@@ -198,7 +198,7 @@
     ?>
 <div id="contact-wrapper" class="cf">
 
-    <button id="toggle-contact-form"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp; email</button>
+    <button id="toggle-contact-form" class="robert"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp; email</button>
 
     <div id="email-bob">
     	<form action="" method="post" id="contactForm" onSubmit="return validateEmail(document.forms[0].email.value);">	 

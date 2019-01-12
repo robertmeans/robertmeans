@@ -103,6 +103,7 @@ body {
 }
 #wrapper img:hover {
   animation: out .2s 2 linear;
+  cursor: pointer;
 }
 #wrapper p {
   letter-spacing: 1px;

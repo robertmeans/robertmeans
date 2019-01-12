@@ -10,13 +10,13 @@ function fadeMyDiv() {
 
 $(document).ready(function(){  
 $("#email-bob").hide();
-$("button#toggle-contact-form").click(function(){
-    $(this).toggleClass("active").next().slideToggle(600);
+$(".robert").click(function(){
+    $("button#toggle-contact-form").toggleClass("active").next().slideToggle(600);
 
-    if ($.trim($(this).text()) === 'close') {
-        $(this).html('<i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp; email');
+    if ($.trim($("button#toggle-contact-form").text()) === 'close') {
+        $("button#toggle-contact-form").html('<i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp; email');
     } else {
-        $(this).html('<i class="fa fa-times-circle" aria-hidden="true"></i> &nbsp;&nbsp; close &nbsp;&nbsp; <i class="fa fa-times-circle" aria-hidden="true"></i>');
+        $("button#toggle-contact-form").html('<i class="fa fa-times-circle" aria-hidden="true"></i> &nbsp;&nbsp; close &nbsp;&nbsp; <i class="fa fa-times-circle" aria-hidden="true"></i>');
     }
     return false;
   })

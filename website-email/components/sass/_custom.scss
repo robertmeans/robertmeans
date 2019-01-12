@@ -26,6 +26,7 @@ body {
     animation: in .2s 2 linear; 
     &:hover {
       animation: out .2s 2 linear;
+      cursor: pointer;
     }
   }
   p {
