@@ -1,3 +1,30 @@
+body {
+	background-color: #333;
+	color: #fff;
+	font-size: 18px;
+	font-family: Arial, sans-serif;
+}
+div#wrap {
+	display: flex;
+	/*flex-direction: column;*/
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	height: 96vh;
+}
+a {
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	padding: 0px 12px;
+}
+a:hover {
+	display: inline-block;
+	color: #fff;
+	text-decoration: underline;
+	padding: 0px 12px;
+}
+
 div.wrap {
 	width: 100%;
 	max-width: 1920px;

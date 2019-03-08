@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /
+
+User-agent: GoogleBot
+Allow: /
+Disallow: /health/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /health/
+
+User-agent: yahoo-mmcrawler
+Allow: /
+Disallow: /health/
