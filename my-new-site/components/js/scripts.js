@@ -1690,7 +1690,8 @@ document.getElementById("now").innerHTML = nowTime + " on a " + today;
 // Greeting at top of page
 var greeting = new Date()
 var hours = greeting.getHours()
-
+// if you want it to work on based on a particular day instead of a time range
+// if (today = "Friday") {
 if (hours >= 5 && hours <= 10) { //5a - 10a
   document.getElementById("greeting").innerHTML = ('Good morning,');
   document.getElementById("greeting_bkg").innerHTML = ('<img src="_images/sunrise.jpg" alt="sunrise">');
