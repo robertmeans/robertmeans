@@ -23,6 +23,17 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="js/preload.js?<?php echo time(); ?>"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140046709-4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-140046709-4');
+    </script>
+
 </head>
 <body>
 <div class="preload"></div>
