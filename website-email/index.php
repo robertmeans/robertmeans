@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--
-  Author:       Robert Means
+  Author:       Evergreen Bob
   Contact:      robert@robertmeans.com
   Comments:     You look very nice today! :)
 -->
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="expires" content="0">
-	
-	<title>Robert Means - Evergreen, Colorado</title>
-	<link rel="icon" type="image/ico" href="_images/favicon.ico">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta name="description" content="Hello, I'm Robert. I enjoy helping old ladies across the street, saving kittens from trees and pretzels.">
-	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link href='https://fonts.googleapis.com/css?family=Montserrat|Lato' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="style.css?<?php echo time(); ?>" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    
+    <title>Robert Means | Evergreen, Colorado</title>
+    <link rel="icon" type="image/ico" href="_images/favicon.ico">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Robert, Bob, Bobby, Rob... I'm him!">
+    <meta name="format-detection" content="telephone=no">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src='https://www.google.com/recaptcha/api.js'></script>
+    <meta property="og:url" content="http://www.robertmeans.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Robert Means | Evergreen, Colorado" />
+    <meta property="og:image" content="http://www.robertmeans.com/_images/robert-means.jpg?<?php echo time(); ?>" />
+    <meta property="og:image:alt" content="Robert Means" />
+    <meta property="og:description" content="Robert, Bob, Bobby, Rob... I'm him!" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css?<?php echo time(); ?>" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="js/preload.js?<?php echo time(); ?>"></script>
 
     <!-- Google Analytics -->
@@ -39,7 +48,6 @@
 <div class="preload"></div>
 <div id="wrapper">
     <div id="wrapper-position">
-    <img class="robert" src="_images/robert-means.jpg">
     <?php
         function post_captcha($user_response) {
         $fields_string = '';
@@ -208,39 +216,58 @@
         }
     ?>
 <div id="contact-wrapper" class="cf">
+        <img class="click-box-01 bob-twirl" src="_images/robert-means.jpg">
 
-    <button id="toggle-contact-form" class="robert"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp; email</button>
+        <div id="button-wrap">
+            <button id="button-box-01" class="click-box-01"><i class="far fa-comments" aria-hidden="true"></i>&nbsp;&nbsp; chit chat</button>
 
-    <div id="email-bob">
-    	<form action="" method="post" id="contactForm" onSubmit="return validateEmail(document.forms[0].email.value);">	 
-    		<ul>
-    		  <li>
-    		    <label class="text" for="name">Name</label>
-    		    <input required name="name" type="text" id="name" tabindex="10" />
-    		  </li>
-    		  <li>
-    		    <label class="text" for="email">Email</label>
-    		    <input name="email" type="email" id="email" tabindex="20" />
-    		  </li>
-    		  <li>
-    		    <label class="text" for="comments">Message</label>
-    		    <textarea required name="comments" id="comments" tabindex="30"></textarea>
-    		  </li>
-    		  <li>
-    		    <div class="g-recaptcha" data-theme="dark" data-callback="recaptchaCallback" data-sitekey="6LeoYmYUAAAAAMcfufo3DEXkw3mXZYlu9hgVB-kJ"></div>
-    		  </li>
-    		  <li>
-    		    <button id="confirm" disabled>Check Captcha above to enable Send</button>
-    		    <button id="send" class="display" disabled>Send</button>
-    		  </li>
-    		</ul> 
-    	</form>
-    </div><!-- #email-bob -->
+            <button id="button-box-02" class="click-box-02"><i class="fas fa-feather-alt" aria-hidden="true"></i>&nbsp;&nbsp; manifesto</button>
+        </div><!-- #button-wrap -->
+
+        <div id="box-01" class="foo">
+            <form action="" method="post" id="contactForm" onSubmit="return validateEmail(document.forms[0].email.value);">  
+                <p>Lay it on me.</p>
+                <ul>
+                  <li>
+                    <label class="text" for="name">What's your name?</label>
+                    <input required name="name" type="text" id="name" tabindex="10" />
+                  </li>
+                  <li>
+                    <label class="text" for="email">Email</label>
+                    <input name="email" type="email" id="email" tabindex="20" />
+                  </li>
+                  <li>
+                    <label class="text" for="comments">Message</label>
+                    <textarea required name="comments" id="comments" tabindex="30"></textarea>
+                  </li>
+                  <li>
+                    <div class="g-recaptcha" data-theme="dark" data-callback="recaptchaCallback" data-sitekey="6LeoYmYUAAAAAMcfufo3DEXkw3mXZYlu9hgVB-kJ"></div>
+                  </li>
+                  <li>
+                    <button id="confirm" disabled>Check Captcha above to enable Send</button>
+                    <button id="send" class="display" disabled>Send</button>
+                  </li>
+                </ul> 
+            </form>
+        </div><!-- #box-01 -->
+
+        <div id="box-02" class="text-left">
+            <div class="fb-align">
+                <a class="fb-follow" href="https://www.facebook.com/evergreenbob" target="_blank"><img class="fb-logo" src="_images/facebook.png" alt="Facebook"></a><p>DBA <a class="linko" href="http://www.evergreenwebdesign.com" target="_blank" style="color:#55e239;">Evergreen Web Design</a></p>
+            </div><!-- .fb-align -->
+            <p>Mission Statement &amp; Focus Areas of Guiding Mantra Principles for Service Manifest and Trancendent Value Priorities:</p>
+            <ol>
+                <li>Building Websites That Work</li>
+                <li>Fixing Ones That Don't</li>
+            </ol>
+            <p class="phone-ewd">Call: <a href="tel:(303)%20932-7483">(303) WEBSITE</a></p>
+        </div><!-- #box-02 -->
+
     </div><!-- #contact-wrapper -->
     </div><!-- #wrapper-position -->
 </div><!-- #wrapper -->
 
 <script src="js/scripts.js?<?php echo time(); ?>"></script>
-<script src="http://localhost:35729/livereload.js"></script>	
+<script src="http://localhost:35729/livereload.js"></script>    
 </body>
 </html>

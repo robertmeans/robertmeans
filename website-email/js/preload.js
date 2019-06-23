@@ -3,6 +3,7 @@ function recaptchaCallback() {
     $('#send').removeAttr('disabled');
     $('#send').removeClass('display');
 	};
-$(window).load(function() {
-    $(".preload").fadeOut("slow");
+
+$(window).on('load', function() {
+    $(".preload").delay(1000).fadeOut(1750);
     });
