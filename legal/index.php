@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	
+	<title>Robert Means</title>
+	<link rel="icon" type="image/ico" href="_images/favicon.ico">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="legal junk">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css">
+	<!-- <link href='https://fonts.googleapis.com/css?family=Courgette|Lato' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" href="style.css?<?php echo time(); ?>" type="text/css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="content">
+		<!-- <p>Hello Whomever</p> -->
+		<p class="u">PDF Documents</p>
+		<a href="Parenting-Plan.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="Parenting-Plan.pdf" target="_blank">Parenting Plan</a> [7.67 MB] <br />
+		<p>Original, February 5, 2010</p>
+		<hr>
+
+		<a href="060318_Motion-to-Modify-Child-Support.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="060318_Motion-to-Modify-Child-Support.pdf" target="_blank">Motion to Modify Child Support</a> [11.46 MB] 
+		<p>Ms. Fox filed to end her support obligations that had been abandoned (CYA measure). I did not contest, presuming it would run a default course and grant her request. (See page 2, Item #7, paragraph 2)</p>
+		<hr>
+
+		<a href="071718_Order-Modification-of-Child-Support.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="071718_Order-Modification-of-Child-Support.pdf" target="_blank">Courts Reply</a> [7.28 MB]
+		<p>Courts answer was to impose $437/month support obligation on R. Means.</p>
+		<hr>
+
+		<a href="082418_Stipulation.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="082418_Stipulation.pdf" target="_blank">Stipulation</a> [243 KB]
+		<p>Sent this Stipulation to Ms. Fox to remedy situation. She told me to fornicate solo in a different direction.</p>
+		<hr>
+
+		
+		<a href="101019_Motion-to-Reconsider.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="101019_Motion-to-Reconsider.pdf" target="_blank">Motion to Reconsider</a> [19.35 MB]
+		<hr>
+
+		<a href="110619_Motion-to-Reconsider_Denied.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="110619_Motion-to-Reconsider_Denied.pdf" target="_blank">Motion Denied</a> [422 KB]
+		<p>Court said, "Wrong try." (paraphrasing)</p>
+		<hr>
+		<div id="latest">
+			<p>Currently both children have dropped out of school (Meredith, 15-years-old &amp; Stanton, 17-years-old). Meredith was picked up, drunk, on a Tuesday and had to appear in court. I am alienated from both children with zero communication as to anything regarding their lives. This is despite an extradordinary effort on my behalf to the contrary.</p>
+			<a href="Truancy_Meredith-012920.pdf" class="latest-anchor" target="_blank">Meredith Truancy Petition</a> [2.8 MB]
+		</div>
+
+
+	</div>
+</div>
+
+
+<script src="js/scripts.js?<?php echo time(); ?>"></script>
+<script src="http://localhost:35729/livereload.js"></script>	
+</body>
+</html>
