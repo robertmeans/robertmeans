@@ -1,0 +1,59 @@
+#cv {
+  #cover-body {
+    width: 90%;
+    margin: 0 auto 80px auto;
+    p.date {
+      margin-left: 60%;
+      margin-top: 5em;
+    }
+    p.open {
+      margin-top: 5em;
+      margin-bottom: 2em;
+    }
+    p.body-copy {
+      line-height: 1.5em;
+      margin-top: 1em;
+    }
+    #signature {
+      margin: 2em 0 4em 60%;
+      position: relative;
+      & > img {
+        position: absolute;
+        bottom: 0.5em;
+        width: 100%;
+        max-width: 280px;
+      }
+      p.name {
+        margin-top: 3em;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  #cv {
+    #cover-body {
+      p.date,
+      #signature {
+        margin-left: 0;
+        line-height: 1.2em;
+      }
+      p.date {
+        margin-top: 3.5em;
+      }
+      p.open {
+        margin-top: 2em;
+      }
+    }
+  }
+}
+@media screen and (max-width: 390px) {
+  #cv {
+    #cover-body {
+      #signature {
+        p.name {
+          margin-top: 2em;
+        }
+      }
+    }
+  }
+}

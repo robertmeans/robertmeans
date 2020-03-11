@@ -1,0 +1,1 @@
+$(window).scroll(function(a){var b=$("#navigation-wrapper");$(this).scrollTop()>160&&(b.removeClass("nav-absolute"),b.addClass("nav-fixed")),$(this).scrollTop()<160&&(b.removeClass("nav-fixed"),b.addClass("nav-absolute"))}),$(document).ready(function(){$("[href]").each(function(){this.href==window.location.href&&$(this).addClass("current-page")})});

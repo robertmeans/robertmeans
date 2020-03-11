@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<?php require('_includes/head.php'); ?>
+<body>
+	<div id="cv">
+		<?php require('_includes/nav.php'); ?>
+		<?php require('_includes/cv-header.php'); ?>
+		<div id="contact-body">
+			<p class="intro">I am quick to reply unless I am out of pocket (*mountaineering enthusiast*) in which case it is safe to presume your message will inspire immediate apologies upon return.</p>
+
+			<div class="form-container">
+				<div class="left-side">
+					<img src="_images/robert-means.png"><span class="bob">*Hair may vary</span>
+				</div>
+				<div class="right-side">
+					<?php require('_includes/contact-form-processing.php'); ?>
+				</div>
+			</div>
+		</div><!-- #contact-body -->
+		<div id="ornate-footer">
+			<img src="_images/ornate-footer.png">
+		</div>	
+	</div><!-- #cv -->
+	<div class="cf">&nbsp;</div>
+
+<script src="js/scripts.js?<?php echo time(); ?>"></script>
+<script src="http://localhost:35729/livereload.js"></script>	
+</body>
+</html>
