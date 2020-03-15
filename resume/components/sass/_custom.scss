@@ -1,3 +1,10 @@
+/*
+z-index map
+
+
+
+*/
+
 * {
   box-sizing: border-box;
 }
@@ -46,7 +53,7 @@ sup {
   // display: flex;
   // flex-direction: column;
   // justify-content: center;
-  background: url('_images/parchment-paper.jpg');
+  background: url('_images/parchment.jpg');
   background-position: fixed;
   background-repeat: repeat;
   box-shadow: 0px 0px 3px 5px rgba(0,0,0,0.15);
@@ -170,12 +177,13 @@ sup {
         line-height: 1.5em;
         margin-bottom: 1em;
       }
-      & > p.notable-projects {
+      & > .notable-projects {
         background-color: #515251;
         color: #fff;
         padding: 6px 0px;
         text-align: center;
         align-self: bottom;
+        line-height: 1.5em;
         & > a {
           color: #fff;
           text-decoration: underline;
@@ -184,8 +192,15 @@ sup {
             text-decoration: none;
           }
         }
+        #box-04 {
+          text-align: left;
+          line-height: 1.5em;
+          margin-top: 1em;
+          padding: 0.5em;
+        }
       }
-      .fa-dot-circle {
+      .fa-dot-circle,
+      .fa-star {
         padding-right: 0.5em;
       }
     } // .right-balance

@@ -1,7 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php $layout_context = "contact"; ?>
 <?php require('_includes/head.php'); ?>
 <body>
+<?php require('_includes/first-visit-message.php'); ?>
 	<div id="cv">
 		<?php require('_includes/nav.php'); ?>
 		<?php require('_includes/cv-header.php'); ?>
@@ -23,7 +23,6 @@
 	</div><!-- #cv -->
 	<div class="cf">&nbsp;</div>
 
-<script src="js/scripts.js?<?php echo time(); ?>"></script>
-<script src="http://localhost:35729/livereload.js"></script>	
+<?php require('_includes/footer.php'); ?>	
 </body>
 </html>

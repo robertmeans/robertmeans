@@ -1,13 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php $layout_context = "content"; ?>
 <?php require('_includes/head.php'); ?>
 <body>
+<?php require('_includes/first-visit-message.php'); ?>
 	<div id="cv">
 		<?php require('_includes/nav.php'); ?>
 		<?php require('_includes/cv-header.php'); ?>
 		<div id="cv-abstract">
 			<p class="abstract-title">Professional Abstract</p>
-			<p class="abstract-objective"><b>Objective</b>: <i>Career driven and results oriented professional seeking a new challenge where a practical variety of business skills and an outgoing personality will serve a greater purpose.</i></p>
+			<p class="abstract-objective"><b>Objective</b>: <i>Career driven and results oriented professional seeking a new challenge where a practical variety of business skills and an outgoing personality will serve a greater purpose.</i> &nbsp;<button id="button-box-02" class="click-box-02"><i class="far fa-eye"></i></button></p>
+
+			<div id="box-02">
+				<p>A perfect fit would utilize 
+				be one where I would interact with clients while capitalizing to design and develop efficient systems to my advantage.</p>
+			</div><!-- #box-02 -->
+
 		</div>
 		<div class="left-third">
 			<div class="glance">
@@ -22,12 +28,30 @@
 					<li>Organized</li>
 					<li>Accountable</li>
 					<li>Willing to travel</li>
+					<!-- <li><button id="button-box-03" class="click-box-03"><i class="far fa-eye"></i></button></li> -->
 				</ul>
-			</div><!-- #glance -->
+			<!-- <div id="box-03">
+				<ul>
+					<li>Organized</li>
+					<li>Accountable</li>
+				</ul>
+			</div> -->
+
+			</div><!-- .glance -->
 			<div class="right-balance">
 				<p>As a Web Developer with over 18 years of experience in project management, computer proficiency, Web languages and design and over 20 years of experience in sales &amp; marketing, I offer a broad range of practical knowledge useful throughout the field of business.</p>
+
 				<p>While website concept, design and development has been my focus for years the skills used to communicate ideas, define priorities and meet goals have naturally refined in the process.</p>
-				<p class="notable-projects"><i class="far fa-dot-circle"></i>Notable projects found at: <a href="http://www.evergreenwebdesign.com" target="_blank">Evergreen Web Design</a></p>
+
+				<div class="notable-projects">
+					<i class="far fa-star"></i>Notable projects found at: <a href="http://www.evergreenwebdesign.com" target="_blank">Evergreen Web Design</a> <!-- <button id="button-box-04" class="click-box-04"><i class="far fa-eye"></i></button> -->
+
+					<!-- <div id="box-04">
+						<p>additional links here</p>
+					</div> --><!-- #box-04 -->
+
+				</div><!-- .notable-projects -->
+
 			</div><!-- .right-balance -->
 		</div><!-- .left-third -->
 
@@ -123,7 +147,12 @@
 			<p>B.S.B.A. <i class="fas fa-circle"></i> Marketing Focus</p>
 			</div><!-- #glance -->
 			<div class="right-balance">
-				<p>Pastimes include video editing, personal Web development projects, skydiving, firewood harvesting, backpacking &amp; orienteering, bagging 14ers, reading and learning new skills. Avid XC mountain biker until gravity won; convinced it's psychosomatic and secretly plotting a comeback.</p>
+				<p>Pastimes include video editing, personal Web development projects, skydiving, firewood harvesting, backpacking &amp; orienteering, bagging 14ers, reading and learning new skills. Avid XC mountain biker until gravity won; convinced it's psychosomatic and secretly plotting a comeback.<!--  &nbsp;<button id="button-box-05" class="click-box-05"><i class="far fa-eye"></i></button> --></p>
+
+				<!-- <div id="box-05">
+					<p>additional links here</p>
+				</div> -->
+
 			</div><!-- .right-balance -->
 		</div><!-- .abstract-glance -->
 		<div id="ornate-footer">
@@ -132,7 +161,6 @@
 	</div><!-- #cv -->
 	<div class="cf">&nbsp;</div>
 
-<script src="js/scripts.js?<?php echo time(); ?>"></script>
-<script src="http://localhost:35729/livereload.js"></script>	
+<?php require('_includes/footer.php'); ?>	
 </body>
 </html>
