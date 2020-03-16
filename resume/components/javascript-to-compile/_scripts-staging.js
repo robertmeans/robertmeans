@@ -98,24 +98,34 @@ $(document).ready(function () {
  
 /* see about putting these in document.ready funcation after they work */
 function hideInitialBobsMessage() {
+  var open  = '<i class="fas fa-chevron-circle-down"></i>';
+  var close = '<i class="fas fa-chevron-circle-up"></i>';
 
   if($('#bobs-message-first-visit').css('margin-top') == '0px') {
     $('#bobs-message-first-visit').animate({'height':'360px', 'margin-top': '-300px'},500);
+    $("#open-close").html(close);
     // $('.inside-message-fist').animate({'height':'300px', 'margin-top': '0px'},500);
   } else {
+
     $('#bobs-message-first-visit').animate({'height':'360px', 'margin-top': '0px'},500);
+    $("#open-close").html(open);
     // $('.inside-message-fist').animate({'height':'300px', 'margin-top': '-300px'},500);   
   }
 }
 
 
 function hideBobsMessage() {
+  var open  = '<i class="fas fa-chevron-circle-down"></i>';
+  var close = '<i class="fas fa-chevron-circle-up"></i>';
 
-  if($('#bobs-message').css('height') == '45px') {
+  if($('#bobs-message').css('height') == '30px') {
     $('#bobs-message').animate({'height':'360px', 'margin-top': '0px'},500);
     $('.inside-message').animate({'height':'300px', 'margin-top': '0px'},500);
+    $("#open-close").html(close);
     } else {
-      $('#bobs-message').animate({'height':'45px', 'margin-top': '0px'},500);
-      $('.inside-message').animate({'height':'300px', 'margin-top': '-300px'},500);   
+
+      $('#bobs-message').animate({'height':'30px', 'margin-top': '0px'},500);
+      $('.inside-message').animate({'height':'300px', 'margin-top': '-300px'},500);
+      $("#open-close").html(open);   
   }
 }

@@ -1,4 +1,26 @@
 <!DOCTYPE html>
+<?php
+ 	session_start(); 
+	
+	$countVisit = 0;
+	// if cookie is set for the variable, it'll go to $countVisit and get added by 1; otherwise it'll show 0 for tha variable
+	if(isset($_COOKIE['countVisit'])){
+		$countVisit = $_COOKIE['countVisit'];
+		$countVisit ++;
+	}
+	setcookie('countVisit', $countVisit, strtotime( '10 days' ));
+
+	/* if this is the visitor's first visit set a variable called $first_visit based on the fact that a cookie named "bobs-message" does not exist but then set the cookie named "bobs-message". future visits will reveal that $first_visit does not exist because a cookie with the value "bobs-message" does. */
+    $first_visit = !isset( $_COOKIE["first-visit"] );
+    
+    // setcookie( "bobs-message", 1, strtotime( '+365 days' ) );
+    /* for testing */
+    setcookie( "first-visit", 1, strtotime( '10 days' ) );
+    // setcookie( "follow-visit", 1);
+
+    // session_unset();
+    // session_destroy();
+?>
 <html lang="en">
 <!--
   Author:       Robert Means
