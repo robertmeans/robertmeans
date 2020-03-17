@@ -10,7 +10,7 @@
 			<!-- <p class="covid">*Coronavirus free!*</p> -->
 			<p class="open">Hello,</p>
 			<p class="body-copy">In full discolsure, this snazzy presentation is deliberately intended as a decoy. It aims to spotlight the care and attention I invest in my work while gracefully masking a dearth of traditional résumé fodder.</p>
-			<p class="body-copy">Now that we're off to an honest start, I am wide open to entertaining virtually <i>any</i> business ideas. Please do not let a history of Web development typecast my skill set. <!-- The aptitude required for this field of work combined with personality, motivation and spirit translates into a broad range of potential. --> &nbsp;<button id="button-box-01" class="click-box-01"><i class="far fa-eye"></i></button></p>
+			<p class="body-copy">Now that we're off to an honest start, I am wide open to entertaining virtually <i>any</i> business ideas. Please do not let a history of Web development typecast my skill setz. <!-- The aptitude required for this field of work combined with personality, motivation and spirit translates into a broad range of potential. --> &nbsp;<button id="button-box-01" class="click-box-01"><i class="far fa-eye"></i></button></p>
 
 			<div id="box-01">
 				<p>A perfect fit would utilize 

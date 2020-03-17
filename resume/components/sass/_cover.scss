@@ -75,10 +75,12 @@ button#button-box-01,
 button#button-box-02,
 button#button-box-03,
 button#button-box-04,
-button#button-box-05,
-button#button-box-06 {
+button#button-box-05, {
   position: absolute;
   z-index: 99;
+}
+button#button-box-06 {
+  position: relative;
 }
 #box-01,
 #box-02,
@@ -98,6 +100,15 @@ button#button-box-06 {
   margin: 0.5em 1em;
   border-top: 1px solid #bcbcbc;
   border-bottom: 1px solid #bcbcbc;
+}
+#box-06 {
+  line-height: 1.5em;
+  padding: 1em;
+  border-top: 1px solid #1e3b57;
+  border-bottom: 1px solid #1e3b57;
+  margin-top: 0.5em;
+  color: #fff;
+  background-color: #3e79b3;
 }
 #cv .left-third .glance #box-03 {
   & > ul {
@@ -131,7 +142,9 @@ button#button-box-06 {
     position: absolute;
     z-index: 8;
   }
-
+  #bobs-message .inside-message i.fa-hand-point-left {
+    margin-left: 1.5em;
+  }
 }
 
 @media screen and (max-width: 390px) {

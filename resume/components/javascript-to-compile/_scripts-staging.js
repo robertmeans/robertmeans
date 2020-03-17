@@ -68,6 +68,16 @@ $(".click-box-05").click(function(){
    $("#button-box-05").html(open);
       }
   });
+
+$(".click-box-06").click(function(){
+  $("#box-06").slideToggle(300);
+
+  if ($.trim($("#button-box-06").html()) === open) {
+    $("#button-box-06").html(close);
+      } else {
+   $("#button-box-06").html(open);
+      }
+  });
 /* END: eye icons that drop down to hidden content */
 
 }); // document.ready close
@@ -88,15 +98,17 @@ $(window).scroll(function(e){
 
 
 /* this works'ish */
+/*
 $(document).ready(function () {
     setTimeout(function(){
         $('#bobs-message-first-visit').animate({'height':'360px', 'margin-top': '0px'},900);
     }, 1000);
 
 });
-
+*/
  
 /* see about putting these in document.ready funcation after they work */
+/*
 function hideInitialBobsMessage() {
   var open  = '<i class="fas fa-chevron-circle-down"></i>';
   var close = '<i class="fas fa-chevron-circle-up"></i>';
@@ -112,14 +124,14 @@ function hideInitialBobsMessage() {
     // $('.inside-message-fist').animate({'height':'300px', 'margin-top': '-300px'},500);   
   }
 }
-
+*/
 
 function hideBobsMessage() {
   var open  = '<i class="fas fa-chevron-circle-down"></i>';
   var close = '<i class="fas fa-chevron-circle-up"></i>';
 
   if($('#bobs-message').css('height') == '30px') {
-    $('#bobs-message').animate({'height':'360px', 'margin-top': '0px'},500);
+    $('#bobs-message').animate({'height':'330px', 'margin-top': '0px'},500);
     $('.inside-message').animate({'height':'300px', 'margin-top': '0px'},500);
     $("#open-close").html(close);
     } else {
