@@ -6,6 +6,6 @@
 		</div>
 	</div>
 	<div class="close-cc">
-		<a id="open-close" class="cc-x" onClick="hideBobsMessage(); return false;" href="#"><i class="fas fa-chevron-circle-down"></i></a>
+		<a id="open-close" class="cc-x" onClick="toggleBobsMessage(); return false;" href="#"><i class="fas fa-chevron-circle-down"></i></a>
 	</div><!-- #close-cc -->
 </div><!-- #bobs-message -->

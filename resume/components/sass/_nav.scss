@@ -27,6 +27,7 @@
     }
     a.nav-link.current-page {
       background-color: rgba(58,97,122,1);
+      cursor: default;
     }
   }
   .nav-fixed {
@@ -78,7 +79,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('_images/parchment-paper.jpg');
+    background: url('_images/nav-toggle.jpg');
     width: 45px;
     height: 45px;
     border-radius: 3px;
@@ -152,10 +153,6 @@ a.current-page > #toggle-menu > i {
   }
   .navigation:hover {
     margin: 0px 1px;
-
-
-
-
   }
   #toggle-menu {
     display: none;
@@ -173,8 +170,39 @@ a.current-page > #toggle-menu > i {
     align-items: center;
     height: 45px;
   }
-
-
-
 }
-
+@media screen and (max-width: 560px) {
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    a.nav-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+  }
+  #toggle-menu,
+  a.current-page > #toggle-menu,
+  a.current-page > #toggle-menu i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  #toggle-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    border-radius: 0px;
+    // width: auto;
+    // height: auto;
+  }
+  .menu-title {
+    display: none;
+  }
+}

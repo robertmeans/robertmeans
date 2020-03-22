@@ -276,7 +276,7 @@ sup {
   text-align: left;
   line-height: 1.5em;
   margin-top: 1em;
-  padding: 0.5em;
+  padding: 0em 1em 1em;
 }
 #cv .left-third .right-balance .fa-dot-circle,
 #cv .left-third .right-balance .fa-star {
@@ -495,6 +495,7 @@ sup {
 }
 .nav-absolute a.nav-link.current-page {
   background-color: #3a617a;
+  cursor: default;
 }
 
 .nav-fixed {
@@ -555,7 +556,7 @@ sup {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  background: url("_images/parchment-paper.jpg");
+  background: url("_images/nav-toggle.jpg");
   width: 45px;
   height: 45px;
   border-radius: 3px;
@@ -655,6 +656,54 @@ a.current-page > #toggle-menu > i {
     -ms-flex-align: center;
         align-items: center;
     height: 45px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .navigation {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    color: #fff;
+  }
+  .navigation a.nav-link {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    color: #fff;
+  }
+
+  #toggle-menu,
+  a.current-page > #toggle-menu,
+  a.current-page > #toggle-menu i {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    color: #fff;
+  }
+
+  #toggle-menu {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    background: none;
+    border: none;
+    border-radius: 0px;
+  }
+
+  .menu-title {
+    display: none;
   }
 }
 #cv #cover-body {
@@ -764,6 +813,14 @@ button#button-box-06 {
   border-top: 1px solid #bcbcbc;
   border-bottom: 1px solid #bcbcbc;
 }
+#box-01 > p,
+#box-02 > p {
+  margin-top: 1em;
+}
+#box-01 > p:first-of-type,
+#box-02 > p:first-of-type {
+  margin-top: 0;
+}
 
 #box-06 {
   line-height: 1.5em;
@@ -792,14 +849,23 @@ button#button-box-06 {
     margin-top: 2em;
   }
 
+  #box-01,
+  #box-02 {
+    padding: 1em 1.5em;
+    margin: 0.5em 0em;
+  }
+
   button#button-box-01,
   button#button-box-02,
   button#button-box-03,
-  button#button-box-04,
   button#button-box-05,
   button#button-box-06 {
     position: absolute;
     z-index: 8;
+  }
+
+  button#button-box-04 {
+    position: relative;
   }
 
   #bobs-message .inside-message i.fa-hand-point-left {
@@ -807,8 +873,16 @@ button#button-box-06 {
   }
 }
 @media screen and (max-width: 390px) {
+  #cv {
+    padding: 0px 10px 20px;
+  }
   #cv #cover-body #signature p.name {
     margin-top: 2em;
+  }
+
+  #box-01,
+  #box-02 {
+    padding: 1em 0.5em;
   }
 }
 #cv #contact-body {

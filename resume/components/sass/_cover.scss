@@ -100,6 +100,12 @@ button#button-box-06 {
   margin: 0.5em 1em;
   border-top: 1px solid #bcbcbc;
   border-bottom: 1px solid #bcbcbc;
+  > p {
+    margin-top: 1em;
+  }
+  > p:first-of-type {
+    margin-top: 0;
+  }
 }
 #box-06 {
   line-height: 1.5em;
@@ -132,15 +138,23 @@ button#button-box-06 {
       }
     }
   }
+  #box-01,
+  #box-02 {
+    padding: 1em 1.5em;
+    margin: 0.5em 0em;
+  }
 
   button#button-box-01,
   button#button-box-02,
   button#button-box-03,
-  button#button-box-04,
+  // button#button-box-04,
   button#button-box-05,
   button#button-box-06 {
     position: absolute;
     z-index: 8;
+  }
+  button#button-box-04 {
+    position: relative;
   }
   #bobs-message .inside-message i.fa-hand-point-left {
     margin-left: 1.5em;
@@ -149,6 +163,7 @@ button#button-box-06 {
 
 @media screen and (max-width: 390px) {
   #cv {
+    padding: 0px 10px 20px;
     #cover-body {
       #signature {
         p.name {
@@ -156,5 +171,9 @@ button#button-box-06 {
         }
       }
     }
+  }
+  #box-01,
+  #box-02 {
+    padding: 1em 0.5em;
   }
 }

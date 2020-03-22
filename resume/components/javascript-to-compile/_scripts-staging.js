@@ -126,7 +126,7 @@ function hideInitialBobsMessage() {
 }
 */
 
-function hideBobsMessage() {
+function toggleBobsMessage() {
   var open  = '<i class="fas fa-chevron-circle-down"></i>';
   var close = '<i class="fas fa-chevron-circle-up"></i>';
 
@@ -141,3 +141,24 @@ function hideBobsMessage() {
       $("#open-close").html(open);   
   }
 }
+
+
+/* start click anywhere to close #bobs-message */
+var dontCloseBobsMessage  = document.getElementById('button-box-06');
+
+// body.addEventListener("click", function (event)
+document.addEventListener('click', function(event) {
+var open    = '<i class="fas fa-chevron-circle-down"></i>';
+
+if ($('#bobs-message').css('height') == '330px') {
+    $('#bobs-message').animate({'height':'30px', 'margin-top': '0px'},500);
+    $('.inside-message').animate({'height':'300px', 'margin-top': '-300px'},500);
+    $("#open-close").html(open);
+  }
+    // alert("wrapper");
+}, false); 
+
+dontCloseBobsMessage.addEventListener("click", function (ev) {
+    ev.stopPropagation();
+}, false);
+/* end click anywhere to close #bobs-message */
