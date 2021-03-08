@@ -28,8 +28,6 @@
 	<meta property="og:image:alt" content="Robert Means" />
 	<meta property="og:description" content="Robert Means - Résumé" />
 
-
-
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
   	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/v4-shims.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato|Architects+Daughter|Crimson+Text&display=swap" rel="stylesheet">

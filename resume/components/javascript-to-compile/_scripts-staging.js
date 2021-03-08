@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-/* START: highlight cover leter icon on page load when it doesn't show in url */
+/* START: highlight cover letter icon on page load when it doesn't show in url */
   $('[href]').each(function() {
     if ((this.href == window.location.href) && !$('#cover-pg').hasClass('curent-page')) {
       $('#cover-pg').removeClass('current-page');

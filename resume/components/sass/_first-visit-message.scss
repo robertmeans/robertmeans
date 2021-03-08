@@ -1,7 +1,7 @@
 div#bobs-message-first-visit {
   // display: none;
   position: fixed;
-  top: 0px;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 1234567;
@@ -23,20 +23,20 @@ div#bobs-message-first-visit {
   } 
 }
 
-.inside-message-first,
-.inside-message {
-  color: #333;
-  i.fa-eye {
-    // color: rgba(147,6,6,1);
-  }
-  p.eyecon {
-    margin-top: -4em;
-    line-height: 1.5em;
-  }
-  i.fa-hand-point-left {
-    margin: 0 0.5em 0 1em;
-  }
-}
+// .inside-message-first,
+// .inside-message {
+//   color: #333;
+//   i.fa-eye {
+
+//   }
+//   p.eyecon {
+//     margin-top: -4em;
+//     line-height: 1.5em;
+//   }
+//   i.fa-hand-point-left {
+//     margin: 0 0.5em 0 1em;
+//   }
+// }
 
 div#bobs-message {
   position: fixed;
@@ -61,6 +61,19 @@ div#bobs-message {
     background: url('_images/cotton.png') no-repeat top fixed;
     background-size: auto;   
   } 
+}
+.inside-message {
+  color: #333;
+  i.fa-eye {
+
+  }
+  p.eyecon {
+    margin-top: -4em;
+    line-height: 1.5em;
+  }
+  i.fa-hand-point-left {
+    margin: 0 0.5em 0 1em;
+  }
 }
 
 .close-cc {

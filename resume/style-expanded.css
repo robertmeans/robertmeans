@@ -871,6 +871,10 @@ button#button-box-06 {
   #bobs-message .inside-message i.fa-hand-point-left {
     margin-left: 1.5em;
   }
+
+  .small-gone {
+    display: none;
+  }
 }
 @media screen and (max-width: 390px) {
   #cv {
@@ -1061,7 +1065,7 @@ span.success-msg {
 }
 div#bobs-message-first-visit {
   position: fixed;
-  top: 0px;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 1234567;
@@ -1084,20 +1088,6 @@ div#bobs-message-first-visit .inside-message-first {
       align-items: center;
   background: url("_images/cotton.png") no-repeat top fixed;
   background-size: auto;
-}
-
-.inside-message-first,
-.inside-message {
-  color: #333;
-}
-.inside-message-first p.eyecon,
-.inside-message p.eyecon {
-  margin-top: -4em;
-  line-height: 1.5em;
-}
-.inside-message-first i.fa-hand-point-left,
-.inside-message i.fa-hand-point-left {
-  margin: 0 0.5em 0 1em;
 }
 
 div#bobs-message {
@@ -1127,6 +1117,17 @@ div#bobs-message .inside-message {
       flex-direction: column;
   background: url("_images/cotton.png") no-repeat top fixed;
   background-size: auto;
+}
+
+.inside-message {
+  color: #333;
+}
+.inside-message p.eyecon {
+  margin-top: -4em;
+  line-height: 1.5em;
+}
+.inside-message i.fa-hand-point-left {
+  margin: 0 0.5em 0 1em;
 }
 
 .close-cc {

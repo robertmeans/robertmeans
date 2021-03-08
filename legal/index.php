@@ -27,7 +27,7 @@
 		<hr>
 
 		<a href="060318_Motion-to-Modify-Child-Support.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="060318_Motion-to-Modify-Child-Support.pdf" target="_blank">Motion to Modify Child Support</a> [11.46 MB] 
-		<p>Ms. Fox filed to end her support obligations that had been abandoned (CYA measure). I did not contest, presuming it would run a default course and grant her request. (See page 2, Item #7, paragraph 2)</p>
+		<p>Ms. Fox filed to end her support obligations that had been abandoned (CYA measure). I did not contest, presuming it would run a default course and grant her request. (See <a class="internal-link" href="modification-excerpt.php">page 2, Item #7, paragraph 2</a>)</p>
 		<hr>
 
 		<a href="071718_Order-Modification-of-Child-Support.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="071718_Order-Modification-of-Child-Support.pdf" target="_blank">Courts Reply</a> [7.28 MB]
@@ -35,7 +35,7 @@
 		<hr>
 
 		<a href="082418_Stipulation.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="082418_Stipulation.pdf" target="_blank">Stipulation</a> [243 KB]
-		<p>Sent this Stipulation to Ms. Fox to remedy situation. She told me to fornicate solo in a different direction.</p>
+		<p>Sent this Stipulation to Ms. Fox to remedy situation. It was suggested I fornicate in a different direction.</p>
 		<hr>
 
 		
@@ -43,13 +43,18 @@
 		<hr>
 
 		<a href="110619_Motion-to-Reconsider_Denied.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="110619_Motion-to-Reconsider_Denied.pdf" target="_blank">Motion Denied</a> [422 KB]
-		<p>Court said, "Wrong try." (paraphrasing)</p>
+		<p>Court said I filed the wrong document.</p>
 		<hr>
+
+		<a href="121720_Robert-Means_modification-package.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="121720_Robert-Means_modification-package.pdf" target="_blank">Motion to Modify Child Support filed via Child Support Services</a> [8.3 MB]
+		<p>Have not pursued recourse due to the prohibitively expensive filing fee required. Jefferson County Child Support Services has provided a relief channel for appeal.</p>
+		<hr>
+		<!--
 		<div id="latest">
 			<p>Currently both children have dropped out of school (Meredith, 15-years-old &amp; Stanton, 17-years-old). Meredith was picked up, drunk, on a Tuesday and had to appear in court. I am alienated from both children with zero communication as to anything regarding their lives. This is despite an extradordinary effort on my behalf to the contrary.</p>
 			<a href="Truancy_Meredith-012920.pdf" class="latest-anchor" target="_blank">Meredith Truancy Petition</a> [2.8 MB]
 		</div>
-
+		-->
 
 	</div>
 </div>

@@ -37,23 +37,20 @@ img.pdf {
       margin-top: 2em;
     }
     a {
-      // background-color: #f0981b;
       color: #e1e1e1;
-      // padding: 5px 10px;
       text-decoration: underline;
       margin-right: 12px;
       margin-bottom: 0.75em;
       text-align: center;
       display: inline-block;
-      // width: 230px;
-      // border-radius: 3px;
-      // border: 1px solid #fff;
       transition: all 0.3s ease;
       &:hover {
         text-decoration: none;
-        // background-color: #757575;
         color: #fff;
     }
+  }
+  a.internal-link {
+    margin-right: 1px;
   }
   #latest {
     background-color: #fff9e6;
@@ -71,4 +68,28 @@ img.pdf {
     }
     }
   }
+  #img-content {
+    width: 100%;
+    max-width: 1025px;
+    margin-top: 100px;
+    color: #fff;
+    text-align: left;
+    & > p {
+      margin-bottom: 0.5em;
+    }
+    a {
+      color: #e1e1e1;
+      text-decoration: underline;
+      margin-right: 12px;
+      margin-bottom: 0.75em;
+      text-align: center;
+      display: inline-block;
+      transition: all 0.3s ease;
+      &:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+  }
+  }
+
 }

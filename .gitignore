@@ -26,3 +26,6 @@ sftp-config.json
 /Wordpress
 /conspectus
 /my-new-site/backups
+*config*
+*vendor*
+website-email/pearle-vision
