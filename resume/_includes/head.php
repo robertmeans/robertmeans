@@ -33,24 +33,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato|Architects+Daughter|Crimson+Text&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css?<?php echo time(); ?>" type="text/css">
 
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-	<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>	
 
-	<script src='https://www.google.com/recaptcha/api.js'></script>
-	<script>
-	    function recaptchaCallback() {
-	        $('#confirm').addClass('display');
-	        $('#send').removeAttr('disabled');
-	        $('#send').removeClass('display');
-	    };
-    </script>	
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140046709-4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140046709-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-      gtag('config', 'UA-140046709-4');
-    </script>    
+    gtag('config', 'UA-140046709-4');
+  </script>    
 </head>

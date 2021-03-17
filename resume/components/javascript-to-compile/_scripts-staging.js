@@ -162,3 +162,37 @@ dontCloseBobsMessage.addEventListener("click", function (ev) {
     ev.stopPropagation();
 }, false);
 /* end click anywhere to close #bobs-message */
+
+// footer ajax contact
+$(document).ready(function() {
+  $('#emailBob').click(function() {
+    //event.preventDefault();
+    $.ajax({
+      dataType: "JSON",
+      url: "_includes/contact-ajax-process.php",
+      type: "POST",
+      data: $('#contactForm').serialize(),
+      beforeSend: function(xhr) {
+        $('#msg').html('<span>Sending - one moment...</span>');
+      },
+      success: function(response) {
+        // console.log(response);
+        if(response) {
+          console.log(response);
+          if(response['signal'] == 'ok') {
+            $('#contactForm').html('<span>Your message was sent successfully. I will see it soon and respond accordingly.</span>');
+          } else {
+            $('#msg').html('<div class="alert alert-warning">' + response['msg'] + '</div>');
+          }
+        } 
+      },
+      error: function() {
+        $('#msg').html('<div class="alert alert-warning">There was an error between your IP and the server. Please try again later.</div>');
+      }, 
+      complete: function() {
+        // $('#contact').html('<span>Your message was sent successfully.</span>');
+        // $('#send-success').html('<input name="clozer" id="clozer" class="clozer" value="Close">');
+      }
+    })
+  });
+});
