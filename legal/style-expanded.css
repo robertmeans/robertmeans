@@ -456,9 +456,6 @@ img.pdf:hover {
   padding: 20px;
   color: #313131;
 }
-#wrapper #content #latest > p {
-  margin-bottom: 1.5em;
-}
 #wrapper #content #latest a.latest-anchor {
   color: #313131;
   text-decoration: underline;
