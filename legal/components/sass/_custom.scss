@@ -33,8 +33,18 @@ img.pdf {
     margin-top: 100px;
     color: #fff;
     text-align: left;
+    .doc-group {
+      background-color: rgba(0,0,0,0.2);
+      margin-bottom: -1.5em;
+      padding: 1em;
+    }
     hr {
       margin-top: 2em;
+      border: none;
+      border-top: 1px solid #fff;
+    }
+    hr.group {
+      border-top: 1px solid rgba(255,255,255,0.1);
     }
     a {
       color: #e1e1e1;

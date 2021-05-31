@@ -29,24 +29,36 @@
 		<p>Originals, February 5, 2010</p>
 		<hr>
 
-		<a href="060318_Motion-to-Modify-Child-Support.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="060318_Motion-to-Modify-Child-Support.pdf" target="_blank">Motion to Modify Child Support</a> 06/13/18 [11.46 MB] 
-		<p>Ms. Fox filed to end her support obligations that had been abandoned (CYA measure). I did not contest, presuming it would run a default course and grant her request. (See <a class="internal-link" href="modification-excerpt.php">page 2, Item #7, paragraph 2</a>)</p>
-		<hr>
+		<div class="doc-group">
+			<a href="060318_Motion-to-Modify-Child-Support.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="060318_Motion-to-Modify-Child-Support.pdf" target="_blank">Motion to Modify Child Support</a> Filed: 06/13/18 [11.46 MB] 
+			<p>Ms. Fox filed to end her support obligations that had been abandoned (CYA measure). I did not contest, presuming it would run a default course and grant her request. (See <a class="internal-link" href="modification-excerpt.php">page 2, Item #7, paragraph 2</a>)</p>
+			<hr class="group">
 
-		<a href="071718_Order-Modification-of-Child-Support.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="071718_Order-Modification-of-Child-Support.pdf" target="_blank">Courts Reply</a> 07/17/18 [7.28 MB]
-		<p>Courts answer was to impose $437/month support obligation on R. Means.</p>
+			<a href="071718_Order-Modification-of-Child-Support.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="071718_Order-Modification-of-Child-Support.pdf" target="_blank">Courts Reply</a> 07/17/18 [7.28 MB]
+			<p>Courts answer was to impose $437/month support obligation on R. Means.</p>
+		</div>
 		<hr>
 
 		<a href="082418_Stipulation.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="082418_Stipulation.pdf" target="_blank">Stipulation</a> 08/25/18 [243 KB]
-		<p>Sent this Stipulation to Ms. Fox to remedy situation. It was suggested I fornicate in a different direction.</p>
+		<p>Sent this Stipulation to Ms. Fox to remedy situation per Judge's instruction as relayed through Heidi at court. Samantha's reply was that I fornicate in a different direction.</p>
 		<hr>
 
-		
-		<a href="101019_Motion-to-Reconsider.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="101019_Motion-to-Reconsider.pdf" target="_blank">Motion to Reconsider</a> [19.35 MB]
+		<div class="doc-group">
+			<a href="101019_Motion-to-Reconsider.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="101019_Motion-to-Reconsider.pdf" target="_blank">Motion to Reconsider</a> Filed: 10/10/19 [19.35 MB]
+			<hr class="group">
+
+			<a href="110619_Motion-to-Reconsider_Denied.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="110619_Motion-to-Reconsider_Denied.pdf" target="_blank">Motion to Reconsider - Denied</a> 11/01/19 [422 KB]
+			<p>Court said I filed the wrong document.</p>
+		</div>
 		<hr>
 
-		<a href="110619_Motion-to-Reconsider_Denied.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="110619_Motion-to-Reconsider_Denied.pdf" target="_blank">Motion Denied</a> 11/01/19 [422 KB]
-		<p>Court said I filed the wrong document.</p>
+		<div class="doc-group">
+			<a href="09DR42_Motion-To-Rectify_042021.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="09DR42_Motion-To-Rectify_042021.pdf" target="_blank">Motion to Rectify</a> Filed: 04/20/21 [8.23 MB]
+			<hr class="group">
+
+			<a href="051421_Motion-to-Rectify_Order-Denying.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="051421_Motion-to-Rectify_Order-Denying.pdf" target="_blank">Motion to Rectify - Denied</a> 05/14/21 [2.38 MB]
+			<p>Judge Catherine Jane Cheroutes cited the last Motion I filed and reitterated that I filed the wong document.</p>
+		</div>
 		<hr>
 
 <!-- 		<a href="121720_Robert-Means_modification-package.pdf" target="_blank"><img class="pdf" src="_images/arrow.png"></a> <a href="121720_Robert-Means_modification-package.pdf" target="_blank">Motion to Modify Child Support filed via Child Support Services</a> [8.3 MB]

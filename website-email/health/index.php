@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div id="wrap">
-		<a href="_images/medicaid-card_2021.pdf" target="_blank">Insurance Card 2021</a> <span>|</span> <a href="_images/01-07-21_vision-prescription.pdf" target="_blank">Glasses Prescription 01.07.21</a>
+		<a href="_images/medicaid-card_2021.pdf" target="_blank">Insurance Card 2021</a> <span>|</span> <a href="_images/01-07-21_vision-prescription.pdf" target="_blank">Glasses</a> <span> | </span><a href="back/">Lumbar</a>
 	</div>
 </body>
 </html>
