@@ -1,0 +1,47 @@
+body,
+html {
+  height: 100%;
+}
+body {
+  // background-color: #313131;
+  background-color: #313131;
+  font-family: 'Montserrat', 'Lato', Verdana, Tahoma, Arial, sans-serif;
+  font-size: 1em;
+  color: #fff;
+  display: table;
+  width: 100%;
+}
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  .quote-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    .quote {
+      background-color: #464646;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+      padding: 2em;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      &:hover {
+        background-color: #757575;
+      }
+    }
+    .quote.active {
+      background-color: #415699;
+    }
+  }
+}
+.quote-content {
+  width: 96%;
+  max-width: 900px;
+  padding: 1em;
+  margin: 0 auto;
+}
