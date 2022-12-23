@@ -6,7 +6,7 @@ module.exports = function(grunt) {
     uglify: {
       my_target: {
         files: {
-          'js/scripts.js': ['components/javascript-to-compile/_scripts-staging.js'],
+          // 'js/scripts.js': ['components/javascript-to-compile/_scripts-staging.js'],
           'quotable-quotes/js/scripts.js': ['quotable-quotes/components/javascript-to-compile/_scripts-staging.js']
         } //files
       } //my_target
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
           sourcemap: 'none'
         },
         files: {
-          'style-expanded.css': 'components/sass/style.scss',
+          // 'style-expanded.css': 'components/sass/style.scss',
           'quotable-quotes/style-expanded-quotable.css': 'quotable-quotes/components/sass/style.scss'
         }
       },
@@ -30,7 +30,7 @@ module.exports = function(grunt) {
           sourcemap: 'none'
         },
         files: {
-          'style.css': 'components/sass/style.scss',
+          // 'style.css': 'components/sass/style.scss',
           'quotable-quotes/style.css': 'quotable-quotes/components/sass/style.scss'
         }
       }
