@@ -12,6 +12,15 @@ body {
   display: table;
   width: 100%;
 }
+.preload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #313131;
+  color: #fff;
+}
 #wrapper {
   display: flex;
   flex-direction: column;

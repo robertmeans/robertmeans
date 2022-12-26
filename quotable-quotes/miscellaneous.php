@@ -10,6 +10,8 @@
 
     <li>All that is transitory is but an image. – Johann Wolfgang von Goethe</li>
 
+    <li>Not only the reason of millennia - their insanity, too, breaks out in us.</li>
+
     <li>What does thou love in others? My hopes. – FN, TGS 272</li>
 
     <li>Knowledge: For something strange to be traced back to something known.</li>

@@ -73,6 +73,7 @@ html {
 }
 
 body {
+  /* background-color: #313131; */
   background-color: #313131;
   font-family: 'Montserrat', 'Lato', Verdana, Tahoma, Arial, sans-serif;
   font-size: 1em;
@@ -80,6 +81,16 @@ body {
   color: #fff;
   display: table;
   width: 100%;
+}
+
+.preload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #313131;
+  color: #fff;
 }
 
 #wrapper {
