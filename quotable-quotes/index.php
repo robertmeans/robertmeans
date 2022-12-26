@@ -22,13 +22,13 @@
 <div id="wrapper">
   <div class="quote-wrap">
     <div class="quote">Religion | Faith</div>
-    <?php require 'religion-faith.php'; ?>
+    <?php require '_includes/religion-faith.php'; ?>
 
     <div class="quote">Exestentialism</div>
-    <?php require 'exestentialism.php'; ?>
+    <?php require '_includes/exestentialism.php'; ?>
 
     <div class="quote">Miscellaneous</div>
-    <?php require 'miscellaneous.php'; ?>
+    <?php require '_includes/miscellaneous.php'; ?>
            
   </div><!-- #quote-wrap -->
 </div>

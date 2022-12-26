@@ -2,6 +2,8 @@
   <ol class="quote-list">
     <li>Either we are not free and God the all-powerful, is responsible for evil. Or we are free and responsible, but God is not all-powerful.</li>
 
+    <li>Mystical explanations are regarded as profound: the truth is that they do not even go the length of being superficial. – FN, TGS 126</li>
+
     <li>When was the last time someone was criticized for not respecting another person’s unfounded beliefs about physics or history?</li>
 
     <li>“What can be asserted without evidence can also be dismissed without evidence.” – Christopher Hitchens</li>
@@ -53,8 +55,6 @@
     <li>Fanaticism is the volitional strength to which the weak and irresolute can be excited.</li>
 
     <li>Morality is the herd instinct in the individual. – FN, TGS 116</li>
-
-    <li>Mystical explanations are regarded as profound: the truth is that they do not even go the length of being superficial. – FN, TGS 126</li>
 
     <li>The Christian resolution to find the world ugly and bad has made the world ugly and bad. FN, TGS 130</li>
 

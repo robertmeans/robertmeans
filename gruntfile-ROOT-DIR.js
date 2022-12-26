@@ -6,7 +6,7 @@ module.exports = function(grunt) {
     uglify: {
       my_target: {
         files: {
-          'quotable-quotes/js/scripts.js': ['quotable-quotes/components/javascript-to-compile/_scripts-staging.js']
+          'js/scripts.js': ['components/javascript-to-compile/_scripts-staging.js']
         } //files
       } //my_target
     }, //uglify   
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
           sourcemap: 'none'
         },
         files: {
-          'quotable-quotes/style-expanded-quotable.css': 'quotable-quotes/components/sass/style.scss'
+          'style-expanded.css': 'components/sass/style.scss'
         }
       },
       dist: {
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
           sourcemap: 'none'
         },
         files: {
-          'quotable-quotes/style.css': 'quotable-quotes/components/sass/style.scss'
+          'style.css': 'components/sass/style.scss'
         }
       }
     },
@@ -50,7 +50,7 @@ module.exports = function(grunt) {
     watch: {
       options: { livereload: true },
       scripts: {
-        files:  ['quotable-quotes/components/javascript-to-compile/_scripts-staging.js'],
+        files:  ['components/javascript-to-compile/_scripts-staging.js'],
         tasks: ['uglify']
       }, //scripts      
       css: {
@@ -58,7 +58,7 @@ module.exports = function(grunt) {
         tasks: ['sass','autoprefixer']
       }, // css
       hypertext: {
-        files: ['quotable-quotes/*.php','quotable-quotes/*.htm','quotable-quotes/_includes/*.php']
+        files: ['*.php','*.htm','_includes/*.php']
       } //hypertext
     }, //watch
 
