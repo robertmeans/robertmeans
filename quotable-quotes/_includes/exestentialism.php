@@ -1,5 +1,7 @@
 <div class="quote-content">
   <ol class="quote-list">
+
+    <li>Our "truths" are not accurate descriptions of a trancendental reality but simply statements that "work" and thus fit us for survival. (The most expedient form of error.)</li>
     <li>Does life’s absurdity require one to escape it through hope or suicide?</li>
     
     <li>Everything begins with consciousness and nothing is worth anything except through it.</li>
@@ -17,8 +19,12 @@
     <li>Man allows himself the tormenting luxury of fishing in a bathtub knowing nothing will become of it.</li>
     
     <li>Life is our terrifying apprenticeship with death.</li>
+
+    <li>If the moment itself is eternity then eternity is the future returning as the past... while freedom of will implies separation from the whole... fate again places man in organic connection with the total development - free will as nothing but the highest potency of fate.</li>
     
     <li>A world that can be explained even with bad reasons is a familiar world.</li>
+
+    <li>The muteness of nature is beautiful adn frightful in its ghreat silence.</li>
     
     <li>Freedom exists only in a world where what is possible is defined at the same time as what is not possible. Without law there is no freedom.</li>
     

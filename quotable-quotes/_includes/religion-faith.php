@@ -8,7 +8,21 @@
 
     <li>“What can be asserted without evidence can also be dismissed without evidence.” – Christopher Hitchens</li>
 
+    <li>Something can be extraordinary and still be false.</li>
+
     <li>Our religions have seized upon ancient taboos and prescientific fancies as though the held ultimate metaphysical significance.</li>
+
+    <li>Hubris is our entire attitude to God, that is to say, to any alleged spider of puirpose and morality hiding behind the ensnaring net of causality.</li>
+
+    <li>Religion: "Helping" others through blessing and oppressing them with your own solutions.</li>
+
+    <li>He whose thoughts have even once crossed the bridge leading to mysticism does not escape without a stigma attached to all his thoughts.</li>
+
+    <li>When skepticism mates with longing, mysticism is born.</li>
+
+    <li>The Greeks, imbued wiht the Apollinian spirit, learned to organize the chaos.</li>
+
+    <li>Overcome everything Christian by what is more than Christian and not merely rid ourselves of it.</li>
 
     <li>To presume knowledge where there is only hope is a species of evil.</li>
 
