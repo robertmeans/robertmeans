@@ -3,7 +3,7 @@
     <li>Kant&acute;s Catigorical Imerative:<br>
     &quot;Act only according to that maxim whereby you can, at the same time, will that it should become a universal law&quot;</li>
 
-    <li>A few might even acquire a greater sense of dignity, responsibility and purpose when they realize to what extyent the source of their complaints lies in themselves.</li>
+    <li>A few might even acquire a greater sense of dignity, responsibility and purpose when they realize to what extent the source of their complaints lies in themselves.</li>
 
     <li>Being right matters less than making people think for themselves.</li>
 
