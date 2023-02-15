@@ -1,10 +1,19 @@
 <div class="quote-content">
   <ol class="quote-list">
 
+    <li>Our experiences are much more what we put into them than what they originally contain.</li>
+
+    <li>Whatever things and ideas symbolize within experience becomes their misleading actuality.</li>
+
+    <li>There are no moral phenomena but only moral interpretations of phenomena. Moral matters have nothing to do with things "in themselves"; they are simply matters of oppinion. They are part of the world of appearance.</li>
+
     <li>Our "truths" are not accurate descriptions of a trancendental reality but simply statements that "work" and thus fit us for survival. (The most expedient form of error.)</li>
+
     <li>Does life’s absurdity require one to escape it through hope or suicide?</li>
     
     <li>Everything begins with consciousness and nothing is worth anything except through it.</li>
+
+    <li>All knowledge is an interpretation of being provided by a living and cognizing being. There is no truth that is not entertained in thought and believed.</li>
     
     <li>Is one to die voluntarily or to hope in spite of everything?</li>
     
@@ -27,10 +36,14 @@
     <li>The muteness of nature is beautiful adn frightful in its ghreat silence.</li>
     
     <li>Freedom exists only in a world where what is possible is defined at the same time as what is not possible. Without law there is no freedom.</li>
+
+    <li>There is much I choose not to know. Wisdom places limits upon knowledge.</li>
     
     <li>To live is in itself a value judgement. To breathe is to judge.</li>
     
     <li>To live in a lawless world is impossible because to live explicitly implies a law. How can one live freely and without law?</li>
+
+    <li>Man can live onliy in the indifference of his ignorance, "clinging to the back of a tiger while enveloped in dreams."</li>
     
     <li>The innocence of the ceaseless change of things, as soon as one consents to it, represents maximum liberty.</li>
     

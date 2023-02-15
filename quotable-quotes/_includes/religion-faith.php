@@ -4,9 +4,15 @@
 
     <li>Mystical explanations are regarded as profound: the truth is that they do not even go the length of being superficial. – FN, TGS 126</li>
 
+    <li>Religions do not wish to understand in order to believe but believe in order to understand.</li>
+
+    <li>A miracle requires faith: to those who lack faith it is not a miracle. Appeals to miracles as evidence to prove belief is therefore circular.</li>
+
     <li>When was the last time someone was criticized for not respecting another person’s unfounded beliefs about physics or history?</li>
 
-    <li>“What can be asserted without evidence can also be dismissed without evidence.” – Christopher Hitchens</li>
+    <li>What can be asserted without evidence can also be dismissed without evidence. – Christopher Hitchens</li>
+
+    <li>The essence of religion is found in faith which independent of, nay in spite of, sense and reason, enables man to apprehend the infinte. - Max Miller</li>
 
     <li>Something can be extraordinary and still be false.</li>
 
@@ -20,6 +26,8 @@
 
     <li>When skepticism mates with longing, mysticism is born.</li>
 
+    <li>People are committed to what they believe and wish that it were right. It would hurt their pride to have believed something that was wrong. - It's not a function (necessarily) of the contents of his faith; rather a function of his commitment.</li>
+
     <li>The Greeks, imbued wiht the Apollinian spirit, learned to organize the chaos.</li>
 
     <li>Overcome everything Christian by what is more than Christian and not merely rid ourselves of it.</li>
@@ -28,11 +36,19 @@
 
     <li>What, apart from a fundamental willingness to be reasonable, can guarantee that we will keep talking to one another?</li>
 
+    <li>Religion was created for lack of anything better. It brought all suffering under the compass of guilt.</li>
+
+    <li>Weariness that wants to reach the ultimate with one leap, with one fatal leap, a poor weariness that does not want to want any more; this created all gods and other worlds.</li>
+
+    <li>Here the ways of men part: if you wish to strive for peace of soul and pleasure, then belive; if you wish to be a devotee of truth, then inquire. - FN</li>
+
     <li>Weariness that wants to reach the ultimate with one leap, with one fatal leap, a poor weariness that does not want to want any more; this created all gods and other worlds. – FN, TSZ</li>
 
     <li>Faith is the license people give themselves to keep believing when reason fails.</li>
 
     <li>Shatter the law tables of the never joyful.</li>
+
+    <li>Only nihilism stands out as the constantly present actuality to be overcome.</li>
 
     <li>The good – cannot create: they crucify him who writes new values, they sacrifice the future to themselves. The good have always been the beginning of the end.</li>
 
