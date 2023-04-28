@@ -2,19 +2,88 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,8 +93,18 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -33,16 +112,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
@@ -87,44 +170,74 @@ body {
   vertical-align: middle;
   text-align: center;
 }
+
 #wrapper img.bob-twirl {
   max-width: 140px;
   border-radius: 50%;
   border: 1px solid #f1f1f1;
   margin-bottom: 1em;
+  -webkit-box-shadow: -2px 2px 3px 2px rgba(0, 0, 0, 0.15);
   box-shadow: -2px 2px 3px 2px rgba(0, 0, 0, 0.15);
+  -webkit-animation: in .2s 5 linear;
+  -o-animation: in .2s 5 linear;
   animation: in .2s 5 linear;
 }
+
 #wrapper img.bob-twirl:hover {
+  -webkit-animation: out .75s infinite linear;
+  -o-animation: out .75s infinite linear;
   animation: out .75s infinite linear;
   cursor: pointer;
 }
+
 #wrapper p {
   letter-spacing: 1px;
   line-height: 1.5em;
 }
+
 #wrapper #wrapper-position {
   display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: center;
-      justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   -ms-flex-align: center;
-      align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
   height: auto;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   width: 100%;
 }
+
 #wrapper #contact-wrapper {
   display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: center;
-      justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   -ms-flex-align: center;
-      align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
   width: 100%;
   max-width: 550px;
   color: white;
@@ -132,10 +245,12 @@ body {
   padding-top: 1em;
   padding-bottom: 1em;
 }
+
 #wrapper #contact-wrapper div#button-wrap {
   width: 96%;
   margin: 0 auto;
 }
+
 #wrapper #contact-wrapper div#button-wrap button#button-box-01,
 #wrapper #contact-wrapper div#button-wrap button#button-box-02 {
   background: none;
@@ -147,8 +262,11 @@ body {
   border-radius: 5px;
   background-color: inherit;
   border: 1px solid transparent;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 #wrapper #contact-wrapper div#button-wrap button#button-box-01:hover,
 #wrapper #contact-wrapper div#button-wrap button#button-box-02:hover {
   text-decoration: none;
@@ -156,10 +274,12 @@ body {
   background-color: #1e1e1e;
   border: 1px solid #000;
 }
+
 #wrapper #contact-wrapper div#button-wrap button#button-box-01:focus,
 #wrapper #contact-wrapper div#button-wrap button#button-box-02:focus {
   outline: 0;
 }
+
 #wrapper #contact-wrapper div#button-wrap button#button-box-01.active,
 #wrapper #contact-wrapper div#button-wrap button#button-box-02.active {
   border-bottom: 1px dotted #808080;
@@ -167,16 +287,21 @@ body {
   max-width: 200px;
   text-align: center;
 }
+
 #wrapper #contact-wrapper div#box-01,
 #wrapper #contact-wrapper div#box-02 {
   padding-top: 20px;
 }
+
 #wrapper #contact-wrapper div#box-01 {
   width: 90%;
   max-width: 550px;
   margin: 0 auto 5em auto;
 }
+
 #wrapper #contact-wrapper div#box-02 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 90%;
   max-width: 550px;
@@ -184,34 +309,56 @@ body {
   margin: 0 auto 5em auto;
   padding-bottom: 2em;
 }
+
 #wrapper #contact-wrapper div#box-02 .fb-align {
   display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   -ms-flex-align: center;
-      align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
+
 #wrapper #contact-wrapper div#box-02 .fb-align img.fb-logo {
   width: 100%;
   max-width: 40px;
   margin-right: 1em;
+  -webkit-transform: perspective(1px) translateZ(0);
+  -ms-transform: perspective(1px) translateZ(0);
+  -o-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
 }
+
 #wrapper #contact-wrapper div#box-02 .fb-align img.fb-logo:hover {
+  -webkit-animation-name: pulse;
+  -o-animation-name: pulse;
   animation-name: pulse;
+  -webkit-animation-duration: .3s;
+  -o-animation-duration: .3s;
   animation-duration: .3s;
+  -webkit-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
   animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: 2;
+  -o-animation-iteration-count: 2;
   animation-iteration-count: 2;
 }
+
 #wrapper #contact-wrapper div#box-02 .fb-align a.fb-follow {
   color: #fff;
   text-decoration: none;
 }
+
 #wrapper #contact-wrapper div#box-02 .fb-align a.fb-follow:hover {
   text-decoration: underline;
 }
+
 #wrapper #contact-wrapper div#box-02 p {
   margin: 1em 0;
 }
+
 #wrapper #contact-wrapper div#box-02 div.blog-quote {
   background-color: rgba(255, 255, 255, 0.9);
   color: #333;
@@ -220,12 +367,17 @@ body {
   line-height: 1.5em;
   font-size: 1em;
   font-family: 'Lato';
+  -webkit-box-shadow: 0px 2px 0px 0px #475993, 0px -2px 0px 0px #475993, 0px 3px 0px 0px white, 0px -3px 0px 0px white;
   box-shadow: 0px 2px 0px 0px #475993, 0px -2px 0px 0px #475993, 0px 3px 0px 0px white, 0px -3px 0px 0px white;
+  -webkit-transition: background-color .3s ease-in, color .2s ease;
+  -o-transition: background-color .3s ease-in, color .2s ease;
   transition: background-color .3s ease-in, color .2s ease;
 }
+
 #wrapper #contact-wrapper div#box-02 div.blog-quote p.bq {
   margin: 0;
 }
+
 #wrapper #contact-wrapper div#box-02 div.blog-quote p.blog-vote {
   font-style: normal;
   font-size: 0.8em;
@@ -234,76 +386,98 @@ body {
   margin-bottom: 0;
   color: #f57900;
 }
+
 #wrapper #contact-wrapper div#box-02 div.blog-quote:hover {
   background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
   cursor: pointer;
 }
+
 #wrapper #contact-wrapper div#box-02 a.linko {
   color: white;
   color: #55e239;
   text-decoration: none;
 }
+
 #wrapper #contact-wrapper div#box-02 a.linko:hover {
   text-decoration: underline;
 }
+
 #wrapper #contact-wrapper div#box-02 ol {
   list-style-type: decimal;
   margin-left: 5em;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 #wrapper #contact-wrapper div#box-02 ol li {
   letter-spacing: 1px;
   margin: 0.8em 0em;
   padding-left: 1em;
   line-height: 1.2em;
 }
+
 #wrapper #contact-wrapper div#box-02 p.phone-ewd {
   text-align: right;
   margin: 2em;
 }
+
 #wrapper #contact-wrapper div#box-02 p.phone-ewd a {
   color: #fff;
   text-decoration: none;
 }
+
 #wrapper #contact-wrapper div#box-02 p.phone-ewd a:hover {
   color: #55e239;
 }
+
 #wrapper #contact-wrapper form#contactForm p {
   margin-bottom: 1em;
 }
+
 #wrapper #contact-wrapper form#contactForm ul {
   margin: 0px;
   padding: 0px;
 }
+
 #wrapper #contact-wrapper form#contactForm ul li {
   list-style: none;
 }
+
 #wrapper #contact-wrapper form#contactForm label {
   display: block;
   line-height: 1em;
 }
+
 #wrapper #contact-wrapper form#contactForm input {
   margin-bottom: 20px;
   margin-top: 5px;
 }
+
 #wrapper #contact-wrapper form#contactForm input#name,
 #wrapper #contact-wrapper form#contactForm input#email {
   height: 25px;
   width: 90%;
   font-size: 16px;
   text-align: center;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   -webkit-appearance: none;
 }
+
 #wrapper #contact-wrapper form#contactForm textarea#comments {
   height: 150px;
   width: 100%;
   margin-top: .2em;
   margin-bottom: .2em;
   font-size: 16px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 #wrapper #contact-wrapper form#contactForm input#name,
 #wrapper #contact-wrapper form#contactForm input#email,
 #wrapper #contact-wrapper form#contactForm textarea#comments {
@@ -311,6 +485,7 @@ body {
   font-size: 18px;
   line-height: 1.2em;
 }
+
 #wrapper #contact-wrapper form#contactForm input#send {
   display: inline-block;
   float: left;
@@ -324,23 +499,29 @@ body {
   color: #fff;
   cursor: pointer;
 }
+
 #wrapper #contact-wrapper form#contactForm input#send:hover {
   background-color: #0099cc;
   color: #fff;
 }
-#wrapper #contact-wrapper form#contactForm input#send:active, #wrapper #contact-wrapper form#contactForm input#send:focus {
+
+#wrapper #contact-wrapper form#contactForm input#send:active,
+#wrapper #contact-wrapper form#contactForm input#send:focus {
   outline: 0;
   outline-style: 0;
 }
+
 #wrapper #contact-wrapper form#contactForm input#send:visited {
   background: #ccc;
 }
+
 #wrapper #contact-wrapper form#contactForm #msg {
   margin-top: 0.75em;
   width: 100%;
   line-height: 1.5em;
   text-align: left;
 }
+
 #wrapper #contact-wrapper form#contactForm #msg .alert-warning {
   margin-bottom: 0.5em;
   border-radius: 5px;
@@ -350,6 +531,7 @@ body {
   background-color: #ffdddd;
   border: 1px solid #ff5a5a;
 }
+
 #wrapper #contact-wrapper form#contactForm #msg .alert-success {
   margin-bottom: 0.5em;
   border-radius: 5px;
@@ -359,6 +541,7 @@ body {
   background-color: #82c33a;
   border: 1px solid #45661f;
 }
+
 #wrapper #contact-wrapper form#contactForm .click-box-03 {
   width: 50%;
   font-size: 1em;
@@ -367,12 +550,16 @@ body {
   background-color: #000;
   cursor: pointer;
   color: #fff;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   border: 1px solid #fff;
 }
+
 #wrapper #contact-wrapper form#contactForm .click-box-03:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
+
 #wrapper #contact-wrapper button#confirm {
   font-size: 0.9em;
   letter-spacing: 1px;
@@ -385,21 +572,27 @@ body {
   color: #fff;
   cursor: pointer;
 }
+
 #wrapper #contact-wrapper button#confirm:hover {
   background: #ba2222;
   color: #fff;
   cursor: default;
 }
-#wrapper #contact-wrapper button#confirm:active, #wrapper #contact-wrapper button#confirm:focus {
+
+#wrapper #contact-wrapper button#confirm:active,
+#wrapper #contact-wrapper button#confirm:focus {
   outline: 0;
   outline-style: 0;
 }
+
 #wrapper #contact-wrapper button.enable-submit {
   display: none;
 }
+
 #wrapper #contact-wrapper .g-recaptcha {
   margin-top: 10px;
 }
+
 #wrapper #contact-wrapper button#send {
   float: left;
   font-size: 0.9em;
@@ -411,16 +604,22 @@ body {
   background: #2cb20c;
   color: #fff;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
+
 #wrapper #contact-wrapper button#send:hover {
   background: #278111;
   color: #fff;
 }
-#wrapper #contact-wrapper button#send:active, #wrapper #contact-wrapper button#send:focus {
+
+#wrapper #contact-wrapper button#send:active,
+#wrapper #contact-wrapper button#send:focus {
   outline: 0;
   outline-style: 0;
 }
+
 #wrapper #contact-wrapper .display {
   display: none;
 }
@@ -436,15 +635,25 @@ body {
   height: 100%;
   height: 100vh;
   display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: center;
-      justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   -ms-flex-align: center;
-      align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
   cursor: pointer;
 }
+
 #vote-notes #vote-plea {
   position: relative;
   width: 60%;
@@ -453,15 +662,18 @@ body {
   color: rgba(0, 0, 0, 0.8);
   padding: 30px;
 }
+
 #vote-notes #vote-plea i.fa-times-circle {
   position: absolute;
   top: 10px;
   right: 10px;
   font-size: 2em;
 }
+
 #vote-notes #vote-plea p {
   margin: 1em 0;
 }
+
 #vote-notes #vote-plea a.got-it {
   display: block;
   text-decoration: none;
@@ -469,8 +681,11 @@ body {
   text-align: center;
   color: #fff;
   background-color: #475993;
+  -webkit-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
+
 #vote-notes #vote-plea a.got-it:hover {
   background-color: rgba(71, 89, 147, 0.7);
 }
@@ -480,6 +695,7 @@ body {
     margin-left: 3em;
   }
 }
+
 @media screen and (max-width: 500px) {
   #wrapper #contact-wrapper div#button-wrap {
     width: 100%;
@@ -495,6 +711,7 @@ body {
   #wrapper #contact-wrapper div#button-wrap button#button-box-02 {
     padding: 8px 4px;
   }
+
   #wrapper #contact-wrapper div#button-wrap button#button-box-01:hover,
   #wrapper #contact-wrapper div#button-wrap button#button-box-02:hover {
     background-color: inherit;
@@ -505,7 +722,10 @@ body {
     margin-right: 5px;
   }
 }
+
 div#success-wrap {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -515,14 +735,23 @@ div#success-wrap {
   height: 100%;
   height: 100vh;
   display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   -ms-flex-align: center;
-      align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
   -ms-flex-pack: center;
-      justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.8);
 }
+
 div#success-wrap span.success-msg {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 50px;
   text-align: center;
@@ -534,30 +763,126 @@ div#success-wrap span.success-msg {
   max-width: 400px;
 }
 
+@-webkit-keyframes in {
+  0% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@-o-keyframes in {
+  0% {
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+  100% {
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
 @keyframes in {
   0% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+
   100% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 }
+
+@-webkit-keyframes out {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes out {
+  from {
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes out {
   from {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   to {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-@keyframes pulse {
+
+@-webkit-keyframes pulse {
   25% {
+    -webkit-transform: scale(1.8);
     transform: scale(1.8);
   }
+
   75% {
+    -webkit-transform: scale(0.9);
     transform: scale(0.9);
   }
 }
+
+@-o-keyframes pulse {
+  25% {
+    -o-transform: scale(1.8);
+    transform: scale(1.8);
+  }
+
+  75% {
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.8);
+    -ms-transform: scale(1.8);
+    -o-transform: scale(1.8);
+    transform: scale(1.8);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
 .no-js #loader {
   display: none;
 }
@@ -595,16 +920,19 @@ div#success-wrap span.success-msg {
     background-color: #313131;
     border: 1px solid transparent;
   }
+
   #wrapper #contact-wrapper button#button-box-01:hover.active,
   #wrapper #contact-wrapper button#button-box-02:hover.active {
     border-bottom: 1px dotted #808080;
     background-color: #1e1e1e;
   }
 }
+
 ul.tab-links li {
   list-style: none;
   display: inline-block;
 }
+
 ul.tab-links li a {
   color: #fff;
   text-decoration: none;
@@ -612,15 +940,20 @@ ul.tab-links li a {
   border-radius: 5px;
   background-color: inherit;
   border: 1px solid transparent;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 ul.tab-links li a:hover {
   background-color: #1e1e1e;
   border: 1px solid #000;
 }
+
 ul.tab-links li a:focus {
   outline: 0;
 }
+
 ul.tab-links li a:active {
   border-bottom: 1px dotted #808080;
   width: 96%;

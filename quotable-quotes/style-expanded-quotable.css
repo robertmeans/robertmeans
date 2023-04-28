@@ -106,6 +106,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 96%;
+  max-width: 980px;
 }
 #wrapper .quote-wrap .quote {
   background-color: #464646;
@@ -141,6 +142,10 @@ ol.quote-list li {
 }
 ol.quote-list li:last-of-type {
   border-bottom: none;
+}
+
+ol.quote-list.misc li:last-of-type {
+  margin-bottom: 60px;
 }
 
 .back-to-top {

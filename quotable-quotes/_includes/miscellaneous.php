@@ -1,7 +1,9 @@
 <div class="quote-content">
-  <ol class="quote-list">
+  <ol class="quote-list misc">
     <li>Kant&acute;s Catigorical Imerative:<br>
     &quot;Act only according to that maxim whereby you can, at the same time, will that it should become a universal law&quot;</li>
+
+    <li>If one deducts from the profound feeling the element of thought mixed in with it, what remains is the strong feeling, and this has nothing to do with knowledge as such, just as strong belief demonstrates only its strength, not the truth of that which is believed.</li>
 
     <li>A few might even acquire a greater sense of dignity, responsibility and purpose when they realize to what extent the source of their complaints lies in themselves.</li>
 
@@ -9,9 +11,19 @@
 
     <li>Human speech is like a cracked cauldron where we beat tunes to make bears dance when we would like to melt the stars. – Gustave Flaubert, Madame Bovary</li>
 
-    <li>The criterion of the truth of belief is the "evidence of strength" which it provides to those who rely on it. Methodical, objective truth can be "thorough oout painful, pernicious and fatal." ...Belief is fashioned by means diametrically opposed to and exclusive of methodical principles of scientific investigation. Experiencing pleasure in connection with a truth and finding happiness in it are never cogent proofs. Truth is always lost when the will to happiness assumes control.</li>
+    <li>The criterion of the truth of belief is the &quot;evidence of strength&quot; which it provides to those who rely on it. Methodical, objective truth can be &quot;thoroughout painful, pernicious and fatal.&quot; ...Belief is fashioned by means diametrically opposed to and exclusive of methodical principles of scientific investigation. Experiencing pleasure in connection with a truth and finding happiness in it are never cogent proofs. Truth is always lost when the will to happiness assumes control.</li>
 
     <li>Truth demands criticism, not adoration.</li>
+
+    <li>If one deducts from the profound feeling the element of thought mixed in with it, what remains is the strong feeling, and this has nothing to do with knowledge as such, just as strong belief demonstrates only its strength, not the truth of that which is believed.</li>
+
+    <li>Hunger is no proof that the food that would satisfy it exists.</li>
+
+    <li>Thought, feeling and belief are mistaken for knowledge and knowledge for truth.</li>
+
+    <li>Understanding does not draw its laws from nature, it prescribes them to nature.</li>
+
+    <li>The meaning of history cannot be formulated in terms of an aim.</li>
 
     <li>Guilt is not remorse but an excess of desire that must be controlled.</li>
 
@@ -23,11 +35,13 @@
 
     <li>Moral values are fundamentally evaluations by inferior people of behavior patterns that afford them protection and wherever these values prevail, the existence of their creators and bearers, namely the inferior people, attain increased value while the intrinsically powerful and radiant people is depricated.</li>
 
-    <li>The lave-insurrection of morality begins when resentment itself becomes creative and gives birth to values. nsofar as the strong and successful ones who are always in the minority accept the evaluation of the crowd the powerful are subjugated to the cogenitaly weak and infirm.</li>
+    <li>The slave-insurrection of morality begins when resentment itself becomes creative and gives birth to values. Insofar as the strong and successful ones who are always in the minority accept the evaluation of the crowd the powerful are subjugated to the cogenitaly of the weak and infirm.</li>
+
+    <li>Every virtue has its priviliges: for example, that of bringing  to a condemned man's stake its own little bundle of wood.</li>
 
     <li>Culture is only a thin apple peel over a firey chaos.</li>
 
-    <li>Morality is a sign language of the feeliings. - FN</li>
+    <li>Morality is a sign language of the feelings. - FN</li>
 
     <li>I am impassioned for independence; I sacrifice all for it ... and am tortured more by all the smallest strings than other's are by chains.</li>
 
@@ -45,6 +59,8 @@
 
     <li>The essence of language is fabricated illusion.</li>
 
+    <li>A philosophical mythology lies concealed in language. Through words and concepts we are misled into imagining things as being simpler than they are, separate from one another, individible, each existing in and for itself.</li>
+
     <li>All that is transitory is but an image. – Johann Wolfgang von Goethe</li>
 
     <li>Not only the reason of millennia - their insanity, too, breaks out in us.</li>
@@ -57,7 +73,7 @@
 
     <li>The hereafter is now. There is nothing but now. You can make heaven or hell out of it.</li>
 
-    <li>“’I have done that’, says my memory. ‘I could not have done that.’ Says my pride, and remains inexorable. Finally, my memory yields.” – FN, BG&E 4:68, pp.80</li>
+    <li>&quot;’I have done that’, says my memory. ‘I could not have done that.’ Says my pride, and remains inexorable. Finally, my memory yields.&quot; – FN, BG&E 4:68, pp.80</li>
 
     <li>The rightness of an act does not necessarily attest to its moral character but merely its legality.</li>
   </ol>

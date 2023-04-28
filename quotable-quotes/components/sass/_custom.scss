@@ -33,6 +33,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 96%;
+    max-width: 980px;
     .quote {
       background-color: #464646;
       border-bottom: 1px solid rgba(255,255,255,0.2);
@@ -69,6 +70,9 @@ ol.quote-list {
       border-bottom: none;
     }
   }
+}
+ol.quote-list.misc li:last-of-type {
+  margin-bottom: 60px;
 }
 
 .back-to-top {
