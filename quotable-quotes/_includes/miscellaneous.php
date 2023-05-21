@@ -7,9 +7,13 @@
 
     <li>A few might even acquire a greater sense of dignity, responsibility and purpose when they realize to what extent the source of their complaints lies in themselves.</li>
 
+    <li>Woe to the thinker who instead of being the gardener of his plants, is merely the soil from which they spring.</li>
+
     <li>Being right matters less than making people think for themselves.</li>
 
     <li>Human speech is like a cracked cauldron where we beat tunes to make bears dance when we would like to melt the stars. – Gustave Flaubert, Madame Bovary</li>
+
+    <li>At every moment we have only the particular thought for the words that are present in our minds.</li>
 
     <li>The criterion of the truth of belief is the &quot;evidence of strength&quot; which it provides to those who rely on it. Methodical, objective truth can be &quot;thoroughout painful, pernicious and fatal.&quot; ...Belief is fashioned by means diametrically opposed to and exclusive of methodical principles of scientific investigation. Experiencing pleasure in connection with a truth and finding happiness in it are never cogent proofs. Truth is always lost when the will to happiness assumes control.</li>
 
