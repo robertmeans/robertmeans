@@ -9,6 +9,8 @@
 
     <li>Woe to the thinker who instead of being the gardener of his plants, is merely the soil from which they spring.</li>
 
+    <li>The more we give up our minds to all that has been and will be, the paler will become that which actually is.</li>
+
     <li>Being right matters less than making people think for themselves.</li>
 
     <li>Human speech is like a cracked cauldron where we beat tunes to make bears dance when we would like to melt the stars. – Gustave Flaubert, Madame Bovary</li>
@@ -80,5 +82,8 @@
     <li>&quot;’I have done that’, says my memory. ‘I could not have done that.’ Says my pride, and remains inexorable. Finally, my memory yields.&quot; – FN, BG&E 4:68, pp.80</li>
 
     <li>The rightness of an act does not necessarily attest to its moral character but merely its legality.</li>
+
+    <li>Mistrust is the touchstone for the gold of certainity.</li>
+    
   </ol>
 </div>

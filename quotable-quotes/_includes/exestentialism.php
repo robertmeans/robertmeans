@@ -77,5 +77,6 @@
       Thy agitation, and the earth deserves not a sigh.<br>
       Our being is pain and boredom and the world<br>
       is dirt - nothing more. Be calm.</li>
+      
   </ol>
 </div>

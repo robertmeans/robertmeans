@@ -58,6 +58,8 @@
 
     <li>Only nihilism stands out as the constantly present actuality to be overcome.</li>
 
+    <li>One hint of gratitude and religious obligation torments the mind.</li>
+
     <li>The good – cannot create: they crucify him who writes new values, they sacrifice the future to themselves. The good have always been the beginning of the end.</li>
 
     <li>Individual atheists may do evil things, but they don’t do evil things in the name of atheism. No wars are fought in the name of atheism.</li>
@@ -96,6 +98,8 @@
 
     <li>The Christian resolution to find the world ugly and bad has made the world ugly and bad. FN, TGS 130</li>
 
+    <li>If our intellect cannot divine the intellect and aims of God, how did it divine this quality of its intellect and this quality of God's intellect?</li>
+
     <li>Although the most intelligent judges of the witches and even the witches themselves, were convinced of the guilt of witchcraft, the guilt, nevertheless, was not there so it is with all guilt. – FN, TGS 250</li>
 
     <li>Religion gives people bad reasons to be good when good reasons exist. – Sam Harris</li>
@@ -103,5 +107,12 @@
     <li>I’d rather have questions I can’t answer than answers I can’t question. – Sam Harris</li>
 
     <li>Every true faith is infallible inasmuch as it accomplishes what the person who has the faith hopes to find in it: but faith does not offer the least support for a proof of objective proof.</li>
+
+    <li>The passions become evil and malignant when regarded with evil and malignant eyes.</li>
+
+    <li>Conscientiousness is no argument for truth.</li>
+
+    <li>It's the conscientious and not the unscrupulous who suffer the fear of hell.</li>
+
   </ol>
 </div>
