@@ -114,5 +114,7 @@
 
     <li>It's the conscientious and not the unscrupulous who suffer the fear of hell.</li>
 
+    <li>It was subtle of God to learn Greek when he wished to become an author - and not to learn it better.</li>
+
   </ol>
 </div>

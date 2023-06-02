@@ -84,6 +84,8 @@
     <li>The rightness of an act does not necessarily attest to its moral character but merely its legality.</li>
 
     <li>Mistrust is the touchstone for the gold of certainity.</li>
+
+    <li>Terrible experiences pose the riddle whether the person who has them is not terrible.</li>
     
   </ol>
 </div>
