@@ -28,6 +28,8 @@
 
     <li>Our religions have seized upon ancient taboos and prescientific fancies as though they held ultimate metaphysical significance.</li>
 
+    <li>For nothing is of greater importance than that a powerful, long-established and irrational custom should be once again confirmed by the act of some one who is recognized as rational. In this way the proceeding is thought to be sanctioned by reason itself.</li>
+
     <li>Hubris is our entire attitude to God, that is to say, to any alleged spider of purpose and morality hiding behind the ensnaring net of causality.</li>
 
     <li>Religion: &quot;Helping&quot; others through blessing and oppressing them with your own solutions.</li>

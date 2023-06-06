@@ -86,6 +86,8 @@
     <li>Mistrust is the touchstone for the gold of certainity.</li>
 
     <li>Terrible experiences pose the riddle whether the person who has them is not terrible.</li>
+
+    <li>In the end one loves one's desires and not what is desired.</li>
     
   </ol>
 </div>
