@@ -1,5 +1,7 @@
 <div class="quote-content">
   <ol class="quote-list">
+    <li>&quot;By their fruits ye shall know them.&quot; - That is to say, &quot;By our truths.&quot;</li>
+    
     <li>Either we are not free and God the all-powerful, is responsible for evil - or we are free and responsible, but God is not all-powerful.</li>
 
     <li>We are all athiests about most of the gods humanity has believed in. Some of us just to one god further.</li>
