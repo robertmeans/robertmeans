@@ -18,7 +18,7 @@
 
     <li>When was the last time someone was criticized for not respecting another person’s unfounded beliefs about physics or history?</li>
 
-    <li>Truth, in matters of religion, is simply the opinion that has survived. - Oscal Wilde</li>
+    <li>Truth, in matters of religion, is simply the opinion that has survived. - Oscar Wilde</li>
 
     <li>What can be asserted without evidence can also be dismissed without evidence. – Christopher Hitchens</li>
 
@@ -42,7 +42,7 @@
 
     <li>People are committed to what they believe and wish that it were right. It would hurt their pride to have believed something that was wrong. - It's not a function (necessarily) of the contents of his faith; rather a function of his commitment.</li>
 
-    <li>The Greeks, imbued wiht the Apollinian spirit, learned to organize the chaos.</li>
+    <li>The Greeks, imbued with the Apollinian spirit, learned to organize the chaos.</li>
 
     <li>Overcome everything Christian by what is more than Christian and not merely rid ourselves of it.</li>
 
