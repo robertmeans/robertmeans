@@ -3,6 +3,8 @@
     <li>Kant&acute;s Catigorical Imerative:<br>
     &quot;Act only according to that maxim whereby you can, at the same time, will that it should become a universal law&quot;</li>
 
+    <li>Ignorance more frequently begets confidence than does knowledge. - Darwin</li>
+
     <li>If one deducts from the profound feeling the element of thought mixed in with it, what remains is the strong feeling, and this has nothing to do with knowledge as such, just as strong belief demonstrates only its strength, not the truth of that which is believed.</li>
 
     <li>A few might even acquire a greater sense of dignity, responsibility and purpose when they realize to what extent the source of their complaints lies in themselves.</li>
