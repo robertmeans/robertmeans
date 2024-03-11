@@ -1,0 +1,131 @@
+<html>
+<head>
+<link rel="stylesheet" href="family.css">
+<style>
+<!--
+
+a {
+	font-size: 10pt;
+	color: #0000ff;
+	Font-family : Tahoma, Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+a:hover {
+	font-size: 10pt;
+	color: #0000ff;
+	Font-family : Tahoma, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.txt {
+	font-size: 10pt;
+	color: #000000;
+	Font-family : Tahoma, Arial, Helvetica, sans-serif;
+	\\ text-decoration: underline;
+	\\ font-weight: bold;
+}
+
+-->
+</style>
+
+<script type="text/javascript">
+<!--
+
+var timer = null;
+var floatHeight  = 26 + 3; //added margin from top left of new layer
+var floatWidth   = 86 + 3; //added margin from top left of new layer
+
+var obj = null;
+var IE=0, NS=0;
+
+	// Initializing function, must be called on onLoad event in BODY tag
+
+function init()
+{
+    	 // get the object as per the browser
+    obj = document.layers ? document.layers["float"] :
+    document.getElementById ?  document.getElementById("float").style :
+    document.all["float"].style;
+
+         // Detect the browser
+    IE  = (-1 != navigator.appVersion.indexOf("MSIE")) ? 1 : 0;
+    NS  = ("Netscape" == navigator.appName) ? 1 : 0;
+
+    positionFloat(); 	 // position initially
+
+         // repositioning the layer
+    if(IE)
+       {
+	   onresize = function(){ positionFloat(); }
+           onscroll = function(){ positionFloat(); }
+       }
+    else //if(NS)
+       { timer = setInterval("positionFloat()",100);}
+}
+
+	// Function which actually positions the layer
+
+function positionFloat()
+{
+   if(IE)          // IE specific code
+   {
+     	obj.left = document.body.scrollLeft + document.body.clientWidth  - floatWidth;
+      	obj.top =  document.body.scrollTop + document.body.clientHeight  - floatHeight;
+   }
+   else //if(NS)     // Netscape specific code
+   {
+       	obj.left =  self.pageXOffset + self.innerWidth - floatWidth - 15;
+    	obj.top =  self.pageYOffset  + self.innerHeight - floatHeight;
+   }
+}
+// -->
+</script>
+
+<script language="JavaScript">
+<!--
+if (document.images)
+{
+back = new Image(27, 26);back.src = 'images/back_mo.gif';
+home = new Image(27, 26);home.src = 'images/home_mo.gif';
+next = new Image(27, 26);next.src = 'images/next_mo.gif';
+}
+//-->
+</script>
+
+<title>Evergreen, Colorado</title>
+</head>
+
+<body bgcolor="#ffffff" onLoad="init();" onUnload="if(null != timer)clearInterval(timer);">
+<div class="floating" ID="float">
+<table border="0" width="81" cellpadding="0" cellspacing="0">
+
+<tr>
+	<td width="40" valign="top" align="left">
+		<a href="safetyFair06.htm" name="back" onMouseOver="back.src='images/back_mo.gif'; window.status='Go to the page that came before this one'; return true" onMouseOut="back.src='images/back.gif'; window.status=''; return true"><img src="images/back.gif" name="back" alt="Go to the page that came before this one" border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+	<td width="40" valign="top" align="left">
+		<a href="index.htm" name="home" onMouseOver="home.src='images/home_mo.gif'; window.status='Go to the homepage.'; return true" onMouseOut="home.src='images/home.gif'; window.status=''; return true"><img src="images/home.gif" name="home" alt="Go to the homepage." border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+	<td width="40" valign="top" align="left">
+		<a href="oct032004_1.htm" name="next" onMouseOver="next.src='images/next_mo.gif'; window.status='Go to the page after this one.'; return true" onMouseOut="next.src='images/next.gif'; window.status=''; return true"><img src="images/next.gif" name="next" alt="Go to the page after this one." border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+</tr>
+</table>
+</div>
+<center>
+<table border="0" width="450" height="100%" valign="center" align="center">
+<tr>
+	<td width="450" valign="center" align="center">
+		<img src="images/night02.jpg" border="1" width="450" height="384"><br>
+		<img src="images/spacer.gif" border="0" width="1" height="5"><br>
+		<div align="right"><a href="safetyFair06.htm">previous</a> | <a href="safetyFair01.htm">first</a></div>
+
+	</td>
+</tr>
+</table>
+
+</center>
+</body>
+</html>
+

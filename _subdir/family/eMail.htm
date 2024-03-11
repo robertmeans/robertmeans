@@ -1,0 +1,255 @@
+<html>
+<head>
+<title>Let us hear from you.</title>
+<script language = "JavaScript">
+
+<!-- begin
+var expDays = 30;
+var exp = new Date();
+exp.setTime(exp.getTime() + (expDays*24*60*60*1000));
+
+
+function color(){
+var favColor = GetCookie('color');
+if (favColor == null) {
+
+
+favColor = "#ccccff";
+SetCookie('color', favColor, exp);
+}
+document.bgColor=favColor;
+return favColor;
+}
+
+
+function getCookieVal (offset) {
+var endstr = document.cookie.indexOf (";", offset);
+if (endstr == -1)
+endstr = document.cookie.length;
+return unescape(document.cookie.substring(offset, endstr));
+}
+function GetCookie (name) {
+var arg = name + "=";
+var alen = arg.length;
+var clen = document.cookie.length;
+var i = 0;
+while (i < clen) {
+var j = i + alen;
+if (document.cookie.substring(i, j) == arg)
+return getCookieVal (j);
+i = document.cookie.indexOf(" ", i) + 1;
+if (i == 0) break;
+}
+return null;
+}
+function SetCookie (name, value) {
+var argv = SetCookie.arguments;
+var argc = SetCookie.arguments.length;
+var expires = (argc > 2) ? argv[2] : null;
+var path = (argc > 3) ? argv[3] : null;
+var domain = (argc > 4) ? argv[4] : null;
+var secure = (argc > 5) ? argv[5] : false;
+document.cookie = name + "=" + escape (value) +
+((expires == null) ? "" : ("; expires=" + expires.toGMTString())) +
+((path == null) ? "" : ("; path=" + path)) +
+((domain == null) ? "" : ("; domain=" + domain)) +
+((secure == true) ? "; secure" : "");
+}
+function DeleteCookie (name) {
+var exp = new Date();
+exp.setTime (exp.getTime() - 1);
+var cval = GetCookie (name);
+document.cookie = name + "=" + cval + "; expires=" + exp.toGMTString();
+}
+// end -->
+</script>
+<script language="Javascript">
+<!--
+function validateEmail(emailStr) {
+var emailPat=/^(.+)@(.+)$/
+var specialChars="\\(\\)<>@,;:\\\\\\\"\\.\\[\\]"
+var validChars="\[^\\s" + specialChars + "\]"
+var quotedUser="(\"[^\"]*\")"
+var ipDomainPat=/^\[(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})\]$/
+var atom=validChars + '+'
+var word="(" + atom + "|" + quotedUser + ")"
+var userPat=new RegExp("^" + word + "(\\." + word + ")*$")
+var domainPat=new RegExp("^" + atom + "(\\." + atom +")*$")
+var matchArray=emailStr.match(emailPat)
+if (document.forms[0].email.value == "")
+      {
+      alert("\nThe e-mail field is blank.\n\nPlease enter your e-mail address.")
+      document.forms[0].email.focus()
+      return false
+}
+if (matchArray==null) {
+  /* Too many/few @'s or something; basically, this address doesn't
+     even fit the general mould of a valid e-mail address. */
+	alert("_____________________________\n\nYour e-mail address seems incorrect. Please check the following\n\n1. Did you include the \"@\" and the \" . \" (dot)?\n2. Did you include anything other than a \"@\" & \" . \"?\n\nPlease re-enter your e-mail address.\n_____________________________")
+	document.forms[0].email.select();
+    document.forms[0].email.focus();
+	return false
+}
+var user=matchArray[1]
+var domain=matchArray[2]
+if (user.match(userPat)==null) {
+    // user is not valid
+    alert("_____________________________\n\nThe username does not seem to be valid.\n\nPlease check the following:\n\n1. That you entered your e-mail address correctly.\n\nThank you.\n_____________________________")
+    document.forms[0].email.select();
+    document.forms[0].email.focus();
+    return false
+}
+var IPArray=domain.match(ipDomainPat)
+if (IPArray!=null) {
+    // this is an IP address
+	  for (var i=1;i<=4;i++) {
+	    if (IPArray[i]>255) {
+	        alert("_____________________________\n\nThe destination IP address you entered is invalid.\n\nPlease check your e-mail address and make the necessary corrections.\n\nThank you.\n_____________________________")
+	        document.forms[0].email.select();
+			document.forms[0].email.focus();
+		return false
+	    }
+    }
+    return true
+}
+var domainArray=domain.match(domainPat)
+if (domainArray==null) {
+	alert("_____________________________\n\nAre you making stuff up now?\n\nThe e-mail address portion of this form is not something to scoff at.\n\nI've been placed here in  your computer to make sure your information is valid. You\nneed to enter your real e-mail address or successfully fake me out to proceed.\n\nThank you.\n_____________________________")
+	document.forms[0].email.select();
+	document.forms[0].email.focus();
+    return false
+}
+var atomPat=new RegExp(atom,"g")
+var domArr=domain.match(atomPat)
+var len=domArr.length
+if (domArr[domArr.length-1].length<2 ||
+    domArr[domArr.length-1].length>3) {
+   // the address must end in a two letter or three letter word.
+   alert("_____________________________\n\nYour e-mail address must end in a three-letter domain, or two letter country.\n\n_____________________________")
+   document.forms[0].email.select();
+   document.forms[0].email.focus();
+   return false
+}
+if (len<2) {
+   var errStr="_____________________________\n\nYour e-mail address is missing either a username, a hostname or a domain.\nAn e-mail address should include these three basic components:\n\n1. A username - (e.g., YOURNAME@yahoo.com, YOURNAME@mho.net)\n2. A host - (e.g., yourname@YAHOO.com, yourname@MHO.net)\n3. A domain - (e.g., yourname@yahoo.COM, yourname@mho.NET)\n\nPlease make the necessary corrections and press \"Send\".\n-- Thank you, The unforgiving script validating this e-mail field.\n\n_____________________________"
+   alert(errStr)
+   document.forms[0].email.select();
+   document.forms[0].email.focus();
+   return false
+}
+return true;
+}
+
+function rUSure() {
+	if (confirm("Are you sure you want to delete all of the information you have entered?")) {
+		document.forms[0].reset()
+}	else	{
+
+			}
+}
+//-->
+</script>
+
+<script language="JavaScript">
+<!-- Begin
+function closeRemote() {
+	if(confirm("You are about to close this window.\nIf you've typed anything, it will be lost.")) {
+timer = setTimeout('window.close();', 10);
+} else {
+return true
+	}
+}
+// End -->
+</script>
+
+</head>
+<body onLoad="document.form1.name.focus();">
+<script>
+(color());
+</script>
+<center>
+<table border="0" width"575" valign="top" align="center" cellpadding="0" cellspacing="0">
+
+<form name="form1" action="../fatpantyMail.php" method="POST" onSubmit="return validateEmail(document.forms[0].email.value);">
+
+<input type=hidden name="redirect" value="http://www.robertmeans.com/family/thankYou.htm" />
+<tr>
+	<td colspan="3" width="575" valign="top" align="left">
+
+<table border="0" width="575" valign="top" align="left" cellpadding="0" cellspacing="0">
+
+<tr>
+	<td width="75">
+		<img src="images/spacer.gif" border="0" width="75" height="1" /><br />
+	</td>
+	<td width="425" valign="top" align="left">
+		<img src="images/spacer.gif" border="0" width="425" height="1" /><br />
+		<div style="font-family: Verdana, Times New Roman, Arial, Helvetica, sans-serif; font-size: 15px;">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please use the form below to send me a message.<br />
+		</div>
+	</td>
+	<td width="75">
+		<img src="images/spacer.gif" border="0" width="75" height="1" /><br />
+	</td>
+</tr>
+<tr>
+	<td colspan="3" width="575">
+		<img src="images/spacer.gif" border="0" width="1" height="10" /><br />
+	</td>
+</tr>
+</table>
+
+	</td>
+</tr>
+<tr>
+	<td width="155" valign="center" align="right"><font face="Arial, Helvetica, sans-serif" size="-1">
+		Your name:</font>
+	</td>
+	<td width="5">
+		<img src="images/spacer.gif" border="0" width="5" height="1" />
+	</td>
+	<td width="415">
+		<input type="text" name="name" size="30" tabindex="1" />
+	</td>
+</tr>
+<tr>
+	<td width="155" valign="center" align="right"><font face="Arial, Helvetica, sans-serif" size="-1">
+		Your e-mail Address:</font>
+	</td>
+	<td width="5">
+		<img src="images/spacer.gif" border="0" width="5" height="1" />
+	</td>
+	<td width="415">
+		<input type="text" name="email" size="30" tabindex="2" />
+	</td>
+</tr>
+<tr>
+	<td colspan="3" width="575">
+		<img src="images/spacer.gif" border="0" width="1" height="5" />
+	</td>
+</tr>
+<tr>
+	<td width="155" valign="top" align="right">
+		<img src="images/spacer.gif" border="0" width="1" height="3" /><br />
+		<font face="Arial, Helvetica, sans-serif" size="-1">Say something:</font><br /><br /><div style="font-family: Verdana, Times New Roman, Arial, Helvetica, sans-serif; font-size: 10px;">This is going to<br /><a href="mailto:robert@robertmeans.com">robert@robertmeans.com</a></div>
+	</td>
+	<td width="5">
+		<img src="images/spacer.gif" border="0" width="5" height="1" />
+	</td>
+	<td width="415" valign="center" align="left">
+		<textarea name="comments" cols="40" rows="5" wrap="hard" tabindex="3"></textarea>
+	</td>
+</tr>
+<tr>
+	<td colspan="3" width="575" valign="center" align="center">
+		<br />
+		<input type="submit" value="Send" tabindex="4" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=button value="Exit / Close Window." onClick="javascript:closeRemote();" tabindex="5" />
+ 	</td>
+</tr>
+</form>
+</table>
+
+</center>
+</body>
+
+</html>

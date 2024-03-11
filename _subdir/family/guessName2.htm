@@ -1,0 +1,236 @@
+<html>
+<!-- CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER, CHEATER!
+-->
+<head>
+<link rel="stylesheet" href="family.css">
+
+<script language="JavaScript">
+<!-- begin
+
+function GetCookie (name) {
+var arg = name + "=";
+var alen = arg.length;
+var clen = document.cookie.length;
+var i = 0;
+while (i < clen) {
+var j = i + alen;
+if (document.cookie.substring(i, j) == arg)
+return getCookieVal (j);
+i = document.cookie.indexOf(" ", i) + 1;
+if (i == 0) break;
+}
+return null;
+}
+function SetCookie (name, value) {
+var argv = SetCookie.arguments;
+var argc = SetCookie.arguments.length;
+var path = (argc > 3) ? argv[3] : null;
+var domain = (argc > 4) ? argv[4] : null;
+var secure = (argc > 5) ? argv[5] : false;
+document.cookie = name + "=" + escape (value) +
+((path == null) ? "" : ("; path=" + path)) +
+((domain == null) ? "" : ("; domain=" + domain)) +
+((secure == true) ? "; secure" : "");
+}
+function amt(){
+var backCount = GetCookie('backCount')
+if(backCount == null) {
+SetCookie('backCount','1')
+return 1
+}
+else {
+var newcount = parseInt(backCount) + 1;
+DeleteCookie('backCount')
+SetCookie('backCount',newcount)
+return backCount
+   }
+}
+function getCookieVal(offset) {
+var endstr = document.cookie.indexOf (";", offset);
+if (endstr == -1)
+endstr = document.cookie.length;
+return unescape(document.cookie.substring(offset, endstr));
+}
+
+function checkBackCount() {
+var backCount = GetCookie('backCount');
+if (backCount == null) {
+backCount=1;
+SetCookie('backCount', backCount);
+window.location = "guessName.htm";
+}
+
+else if (backCount == 305) {
+if (confirm("Hello\n\nIt looks like you\'re browsing backwards through this site. If so, please note that some of the pictures here are presented as a series.\n\nUsing this site\'s Back button will always skip you to the first picture within a series.\n\nDo you want to go to our first picture and browse forward?"))	{
+alert ("Good choice!");
+window.location = "1stSambob.htm";
+} else {
+window.location = "guessName.htm";
+	}
+}
+else if (backCount == 306) {
+if (confirm("I see you\'re back on that Back button again...\n\nIf you\'ve already jumped to the first picture then please excuse this interruption but if you haven\'t, would you please?\n\nIf you view this site in cronological order it makes more sense."))	{
+alert ("Good choice!");
+window.location = "1stSambob.htm";
+} else {
+window.location = "guessName.htm";
+	}
+}
+else if (backCount != 305,306) {
+window.location = "guessName.htm";
+}
+backCount++;
+SetCookie('backCount', backCount);
+}
+
+//  end -->
+</script>
+
+<script type="text/javascript">
+<!--
+
+var timer = null;
+var floatHeight  = 26 + 3; //added margin from top left of new layer
+var floatWidth   = 86 + 3; //added margin from top left of new layer
+
+var obj = null;
+var IE=0, NS=0;
+
+	// Initializing function, must be called on onLoad event in BODY tag
+
+function init()
+{
+    	 // get the object as per the browser
+    obj = document.layers ? document.layers["float"] :
+    document.getElementById ?  document.getElementById("float").style :
+    document.all["float"].style;
+
+         // Detect the browser
+    IE  = (-1 != navigator.appVersion.indexOf("MSIE")) ? 1 : 0;
+    NS  = ("Netscape" == navigator.appName) ? 1 : 0;
+
+    positionFloat(); 	 // position initially
+
+         // repositioning the layer
+    if(IE)
+       {
+	   onresize = function(){ positionFloat(); }
+           onscroll = function(){ positionFloat(); }
+       }
+    else //if(NS)
+       { timer = setInterval("positionFloat()",100);}
+}
+
+	// Function which actually positions the layer
+
+function positionFloat()
+{
+   if(IE)          // IE specific code
+   {
+     	obj.left = document.body.scrollLeft + document.body.clientWidth  - floatWidth;
+      	obj.top =  document.body.scrollTop + document.body.clientHeight  - floatHeight;
+   }
+   else //if(NS)     // Netscape specific code
+   {
+       	obj.left =  self.pageXOffset + self.innerWidth - floatWidth - 15;
+    	obj.top =  self.pageYOffset  + self.innerHeight - floatHeight;
+   }
+}
+// -->
+</script>
+
+<script language="JavaScript">
+<!--
+if (document.images)
+{
+back = new Image(27, 26);back.src = 'images/back_mo.gif';
+home = new Image(27, 26);home.src = 'images/home_mo.gif';
+next = new Image(27, 26);next.src = 'images/next_mo.gif';
+}
+//-->
+</script>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function testLetter(form){
+	nameGuess = form.entry.value //assign to shorter variable name
+	nameGuess = nameGuess.toLowerCase()
+	if (nameGuess != "") { // if entry is not empty then dive in...
+		if (nameGuess == "robert") { //is it "Robert"?
+			if (confirm("No, there will not be a junior. Do you want to try again?\n\n\"OK\" to continue - \"Cancel\" to quit.")) {
+				return true
+			} else {
+				if (confirm("Come on! Who knows, the next guess could be the right one and how good would you feel if you got this right?\n\n\"OK\" to continue - \"Cancel\" to quit.")) {
+					return true
+				} else {
+					alert("You'll never know. Short changed for life on a simple name-guessing game. It's too late now. Once you click \"OK\" you'll be sent directly to the name page and all this fun will be over. Your only way back now is to unplug your computer and come back here later")
+					window.location.href="http://www.robertmeans.com/family/secret.htm"
+					}
+				}
+
+		} else if (nameGuess == "stanton") { //the guess is correct!
+			alert("You are correct! Nice guess!\n\nAfter you click \"OK\", I'll take you to the\nnext page as fast as your browser will let me.")
+		window.location.href = "http://www.robertmeans.com/family/secret.htm"
+		} else {		//nope. none of the above
+			if(confirm("Do you really think we would name our first born \"" +nameGuess+"\"?!\n\n\"OK\" to try again - \"Cancel\" to quit")) {
+				return true
+			} else {
+				if (confirm("I'm not going to count the number of time you've tried but I know you still haven't gotten it right. Don't you want to try one more time?\n\n\"OK\" to continue - \"Cancel\" to quit")) {
+					return true
+				} else {
+					alert("Ok, sit tight. I'll take you to the name page.")
+					window.location.href="http://www.robertmeans.com/family/secret.htm"
+					}
+				}
+		}
+	} else {  //value was empty, so skipped all other stuff above
+		alert("You did not enter anything. At least give it a try!")
+	}
+}
+
+function pooper(){
+	if (confirm("Wow, you're serious about not playing aren't you?\n\n\"OK\" to give it a try - \"Cancel\" to quit")) {	return true
+	} else {
+		alert("All right then! Go on about your humdrum life and don't play! You'll probably grow up to be an old coot that chases little boys - like ours - out of your yard with a broom.")
+		window.location.href="http://www.robertmeans.com/family/secret.htm"
+			}
+}
+// -->
+</script>
+<title>Evergreen, Colorado</title>
+</head>
+<body bgcolor="#ffff00" onLoad="document.forms[0].entry.focus(); init();" onUnload="if(null != timer)clearInterval(timer);">
+<div class="floating" ID="float">
+<table border="0" width="81" cellpadding="0" cellspacing="0">
+
+<tr>
+	<td width="40" valign="top" align="left">
+		<a href="javascript:checkBackCount();" name="back" onMouseOver="back.src='images/back_mo.gif'; window.status='Go to the page that came before this one'; return true" onMouseOut="back.src='images/back.gif'; window.status=''; return true"><img src="images/back.gif" name="back" alt="Go to the page that came before this one" border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+	<td width="40" valign="top" align="left">
+		<a href="http://www.robertmeans.com/family" name="home" onMouseOver="home.src='images/home_mo.gif'; window.status='Go to the homepage.'; return true" onMouseOut="home.src='images/home.gif'; window.status=''; return true"><img src="images/home.gif" name="home" alt="Go to the homepage." border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+	<td width="40" valign="top" align="left">
+		<a href="secret.htm" name="next" onMouseOver="next.src='images/next_mo.gif'; window.status='Go to the page after this one.'; return true" onMouseOut="next.src='images/next.gif'; window.status=''; return true"><img src="images/next.gif" name="next" alt="Go to the page after this one." border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+</tr>
+</table>
+</div>
+<center>
+<table border="0" width="400" height="100%" valign="center" align="center">
+<tr>
+	<td width="100%" height="100%" valign="center" align="center">
+		<form>
+		<div class="standardTxt">Would you like <a href="shm.htm" style="color: #000000; text-decoration:none;">to</a> guess at the name first?<br><br>
+		First name only: <input type="text" name="entry"><br><br>
+		<input type="button" value="Submit" onClick="testLetter(this.form);document.forms[0].entry.select()"><br>
+		<br>
+		<a href="javascript:pooper();document.forms[0].entry.select()">I'm not kidding<br>I really don't want to<br>play this game. Just take<br>me to the name page.</a></div>
+		</form>
+	</td>
+</tr>
+</table>
+</center>
+</body>
+</html>
+

@@ -1,0 +1,60 @@
+/* CSS Document */
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	text-align: center;
+	font-family: Calibri, Tahoma, Geneva, sans-serif;
+	font-size: 0.9em;
+	color: #000;
+}
+#homeWrapper {
+	width: 1000px;
+	text-align: left;
+	margin-top: 25px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	margin-bottom: 30px;
+}
+#smallerPics {
+	width: 960px;
+	text-align: left;
+	margin-top: 25px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	margin-bottom: 30px;
+}
+#photoPageWrapper {
+	width: 1200px;
+	text-align: left;
+	margin-top: 25px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+#content {
+	width: 1000px;
+}
+#leftContent {
+	float: left;
+	width: 520px;
+	margin-right: 20px;
+}
+#rightContent {
+	float: left;
+	width: 460px;
+}
+#photoPageContent {
+	width: 1200px;
+	text-align: left;
+}
+.redTxt {
+	color: #F00;
+	font-weight: bold;
+}

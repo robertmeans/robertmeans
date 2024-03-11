@@ -1,0 +1,107 @@
+<html>
+<head>
+<link rel="stylesheet" href="family.css">
+
+<script type="text/javascript">
+<!--
+
+var timer = null;
+var floatHeight  = 26 + 3; //added margin from top left of new layer
+var floatWidth   = 86 + 3; //added margin from top left of new layer
+
+var obj = null;
+var IE=0, NS=0;
+
+	// Initializing function, must be called on onLoad event in BODY tag
+
+function init()
+{
+    	 // get the object as per the browser
+    obj = document.layers ? document.layers["float"] :
+    document.getElementById ?  document.getElementById("float").style :
+    document.all["float"].style;
+
+         // Detect the browser
+    IE  = (-1 != navigator.appVersion.indexOf("MSIE")) ? 1 : 0;
+    NS  = ("Netscape" == navigator.appName) ? 1 : 0;
+
+    positionFloat(); 	 // position initially
+
+         // repositioning the layer
+    if(IE)
+       {
+	   onresize = function(){ positionFloat(); }
+           onscroll = function(){ positionFloat(); }
+       }
+    else //if(NS)
+       { timer = setInterval("positionFloat()",100);}
+}
+
+	// Function which actually positions the layer
+
+function positionFloat()
+{
+   if(IE)          // IE specific code
+   {
+     	obj.left = document.body.scrollLeft + document.body.clientWidth  - floatWidth;
+      	obj.top =  document.body.scrollTop + document.body.clientHeight  - floatHeight;
+   }
+   else //if(NS)     // Netscape specific code
+   {
+       	obj.left =  self.pageXOffset + self.innerWidth - floatWidth - 15;
+    	obj.top =  self.pageYOffset  + self.innerHeight - floatHeight;
+   }
+}
+// -->
+</script>
+
+<script language="JavaScript">
+<!--
+if (document.images)
+{
+back = new Image(27, 26);back.src = 'images/back_mo.gif';
+home = new Image(27, 26);home.src = 'images/home_mo.gif';
+next = new Image(27, 26);next.src = 'images/next_mo.gif';
+}
+//-->
+</script>
+
+<title>Evergreen, Colorado</title>
+</head>
+<body bgcolor="#FFFFFF" onLoad="init();" onUnload="if(null != timer)clearInterval(timer);">
+
+<div class="floating" ID="float">
+<table border="0" width="81" cellpadding="0" cellspacing="0">
+
+<tr>
+	<td width="40" valign="top" align="left">
+		<a href="halloween01.htm" name="back" target="_top" onMouseOver="back.src='images/back_mo.gif'; window.status='Go to the page that came before this one'; return true" onMouseOut="back.src='images/back.gif'; window.status=''; return true"><img src="images/back.gif" name="back" alt="Go to the page that came before this one" border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+	<td width="40" valign="top" align="left">
+		<a href="http://www.robertmeans.com/family" name="home" target="_top" onMouseOver="home.src='images/home_mo.gif'; window.status='Go to the homepage.'; return true" onMouseOut="home.src='images/home.gif'; window.status=''; return true"><img src="images/home.gif" name="home" alt="Go to the homepage." border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+	<td width="40" valign="top" align="left">
+		<a href="birthday.htm" name="next" target="_top" onMouseOver="next.src='images/next_mo.gif'; window.status='Go to the page after this one.'; return true" onMouseOut="next.src='images/next.gif'; window.status=''; return true"><img src="images/next.gif" name="next" alt="Go to the page after this one." border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+</tr>
+</table>
+</div>
+
+<center>
+<table border="0" width="450" height="100%" valign="center" align="center">
+<tr>
+	<td width="100%" valign="center" align="center">
+
+			<div id="overDiv" style="position:absolute; visibility:hide;z-index:1;"></div>
+			<script language="JavaScript" src="overlib2.js"></script>
+
+		<img src="images/christmas122502.jpg" border="0" width="550" height="459"><br>
+		<font face="Arial, sans-serif"><a class="popupLink" href="javascript:void(0);" onClick="overlib2('<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The three pictures of Stanton were taken within the last week. These days he&acute;s perpetually sticky, moves lightning fast, grabs everything and makes a lot of noise. Buster &amp; Max are visibly concerned.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As I type this it is Christmas day, about noon. We hope this finds you in the spirit of the season, deliriously bloated with peace and joy.<br><br>(Samantha has appropriately labeled this picture - Diarrhea of the Christmas.)<br><br>', STICKY, CAPTION, 'Merry Christmas')" onMouseOver="overlib2('Click for our little message.')" onMouseOut="nd()">Christmas 2002</a></font>
+
+	</td>
+</tr>
+</table>
+
+</center>
+</body>
+</html>

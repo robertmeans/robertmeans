@@ -1,0 +1,285 @@
+<html>
+<head>
+<link rel="stylesheet" href="family.css">
+
+<title>Evergreen, Colorado</title>
+
+<script language="JavaScript">
+<!-- begin
+var expDays = 1;
+
+function GetCookie (name) {
+var arg = name + "=";
+var alen = arg.length;
+var clen = document.cookie.length;
+var i = 0;
+while (i < clen) {
+var j = i + alen;
+if (document.cookie.substring(i, j) == arg)
+return getCookieVal (j);
+i = document.cookie.indexOf(" ", i) + 1;
+if (i == 0) break;
+}
+return null;
+}
+function SetCookie (name, value) {
+var argv = SetCookie.arguments;
+var argc = SetCookie.arguments.length;
+var expires = (argc > 2) ? argv[2] : null;
+var path = (argc > 3) ? argv[3] : null;
+var domain = (argc > 4) ? argv[4] : null;
+var secure = (argc > 5) ? argv[5] : false;
+document.cookie = name + "=" + escape (value) +
+((expires == null) ? "" : ("; expires=" + expires.toGMTString())) +
+((path == null) ? "" : ("; path=" + path)) +
+((domain == null) ? "" : ("; domain=" + domain)) +
+((secure == true) ? "; secure" : "");
+}
+function DeleteCookie (name) {
+var exp = new Date();
+exp.setTime (exp.getTime() - 1);
+var cval = GetCookie (name);
+document.cookie = name + "=" + cval + "; expires=" + exp.toGMTString();
+}
+var exp = new Date();
+exp.setTime(exp.getTime() + (expDays*24*60*60*1000));
+function amt(){
+var backCount = GetCookie('backCount')
+if(backCount == null) {
+SetCookie('backCount','1')
+return 1
+}
+else {
+var newcount = parseInt(backCount) + 1;
+DeleteCookie('backCount')
+SetCookie('backCount',newcount,exp)
+return backCount
+   }
+}
+function getCookieVal(offset) {
+var endstr = document.cookie.indexOf (";", offset);
+if (endstr == -1)
+endstr = document.cookie.length;
+return unescape(document.cookie.substring(offset, endstr));
+}
+
+
+
+
+function checkBackCount() {
+var backCount = GetCookie('backCount');
+if (backCount == null) {
+backCount=1;
+SetCookie('backCount', backCount, exp);
+}
+
+else if (backCount == 2) {
+alert("this is number 2")
+}
+else if (backCount == 4) {
+alert("this is number 4")
+}
+backCount++;
+SetCookie('backCount', backCount, exp);
+   }
+
+//  end -->
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language = "JavaScript">
+
+<!-- begin
+var expDays = 11130;
+var exp = new Date();
+exp.setTime(exp.getTime() + (expDays*24*60*60*1000));
+
+function color(){
+var favColor = GetCookie('color');
+if (favColor == null) {
+
+favColor = "#ccccff";
+SetCookie('color', favColor, exp);
+}
+document.bgColor=favColor;
+return favColor;
+}
+
+function getCookieVal (offset) {
+var endstr = document.cookie.indexOf (";", offset);
+if (endstr == -1)
+endstr = document.cookie.length;
+return unescape(document.cookie.substring(offset, endstr));
+}
+function GetCookie (name) {
+var arg = name + "=";
+var alen = arg.length;
+var clen = document.cookie.length;
+var i = 0;
+while (i < clen) {
+var j = i + alen;
+if (document.cookie.substring(i, j) == arg)
+return getCookieVal (j);
+i = document.cookie.indexOf(" ", i) + 1;
+if (i == 0) break;
+}
+return null;
+}
+function SetCookie (name, value) {
+var argv = SetCookie.arguments;
+var argc = SetCookie.arguments.length;
+var expires = (argc > 2) ? argv[2] : null;
+var path = (argc > 3) ? argv[3] : null;
+var domain = (argc > 4) ? argv[4] : null;
+var secure = (argc > 5) ? argv[5] : false;
+document.cookie = name + "=" + escape (value) +
+((expires == null) ? "" : ("; expires=" + expires.toGMTString())) +
+((path == null) ? "" : ("; path=" + path)) +
+((domain == null) ? "" : ("; domain=" + domain)) +
+((secure == true) ? "; secure" : "");
+}
+function DeleteCookie (name) {
+var exp = new Date();
+exp.setTime (exp.getTime() - 1);
+var cval = GetCookie (name);
+document.cookie = name + "=" + cval + "; expires=" + exp.toGMTString();
+}
+// end -->
+</script>
+
+<script language="JavaScript">
+<!--
+
+var winopts = "toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=no,resizable=no,height=365,width=510,copyhistory=0,"
+var smallwindow = null;
+function setEvent() {
+return false;
+	}
+function historywin(filename) {
+fileURL=filename;
+if (parseInt(navigator.appVersion) < 4) {
+if (smallwindow != null) smallwindow.close();
+	}
+timerID= setTimeout('Opener(fileURL)',100);
+	}
+function Opener(winname){
+filename = winname;
+winname = "historywin"
+
+smallwindow = window.open(filename,winname,winopts)
+if( navigator.appVersion.indexOf("(X11") != -1 || navigator.appVersion.indexOf("(Mac") != -1)
+
+smallwindow = window.open(filename,winname,winopts)
+if( navigator.appVersion.indexOf("MSIE") == -1 )
+smallwindow.mainWin = this;
+WindowFocus();
+	}
+function WindowFocus(){
+if( navigator.appVersion.indexOf("2.") == -1 &&   navigator.appVersion.indexOf("MSIE") == -1 )
+smallwindow.focus();
+	}
+
+//-->
+</script>
+<script language="JavaScript">
+
+<!--
+function popUp() {
+window.open('http://www.fatpanty.com/eMail.htm','','toolbar=no,menubar=no,location=no,scrollbars=yes,height=300,width=625 left=100,top=100');
+}
+// -->
+</script>
+</head>
+
+<body OnLoad="checkBackCount()">
+<script>
+(color());
+</script>
+<center>
+<table border="0" width="100%" height="100%" valign="center" align="center" cellpadding="0" cellspacing="0">
+<tr>
+	<td colspan="3" width="100%" valign="center" align="center">
+		<form>
+		<select name="website" ONCHANGE="if (this.options[this.selectedIndex].value != 'null') { window.open(this.options[this.selectedIndex].value,'_top') }">
+		<option value="null" selected>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- Robert, Samantha and Stanton --</option>
+
+		<option value="stanton021504.htm">36. February Hike</option>
+		<option value="wakeUp.htm">35. Mom &amp; Dad&acute;s wake-up visitor</option>
+		<option value="haircut.htm">34. Stanton&acute;s first haircut</option>
+		<option value="beach01.htm">33. Stanton&acute;s first trip to the beach</option>
+		<option value="stantonSketch.htm">32. Computer Sketch</option>
+		<option value="blizzard2003.htm">31. Blizzard 2003</option>
+		<option value="tupperhead.htm">30. Tupperhead</option>
+		<option value="birthday.htm">29. Stanton&acute;s first birthday</option>
+		<option value="christmas.htm">28. Christmas 2002</option>
+		<option value="halloween01.htm">27. Halloween 2002</option>
+		<option value="JD_Stanton.htm">26. Great G-pop H-bury &amp; Stanton</option>
+		<option value="redrocks.htm">25. Stanton&acute;s first concert</option>
+		<option value="firstCamp.htm">24. Stanton&acute;s first camping trip</option>
+		<option value="fathersDay2002.htm">23. Robert&acute;s first Father&acute;s Day</option>
+		<option value="happyHappy.htm">22. Happy, Happy</option>
+		<option value="mothersDay2002.htm">21. Samantha&acute;s first Mother&acute;s Day</option>
+		<option value="counting.htm">20. Days Old</option>
+		<option value="lotsO_Stanton041002.htm">19. Lots-O-Stanton</option>
+		<option value="flashTest.htm">18. Flash Family (Macromedia Flash required)</option>
+		<option value="bath01.htm">17. Bathtime</option>
+		<option value="weNamedHim.htm">16. What&acute;s in a Name?</option>
+		<option value="sunglasses.htm">15. Sunglasses</option>
+		<option value="lotsObaby.htm">14. Lots-O-Baby</option>
+		<option value="time.htm">13. Polly Pregnant, No Name, It&acute;s a Boy!</option>
+		<option value="12daysOverdue.htm">12. 12 Days Overdue</option>
+		<option value="wk41_1day.htm">11. One Week and One Day Overdue</option>
+		<option value="021702pg1.htm">10. Buster, Max, Evergreen Lake, Five days overdue</option>
+		<option value="sunnyPorch.htm">9. Sunny Porch</option>
+		<option value="groovy.htm">8. Groovy</option>
+		<option value="wk34.htm">7. Lollipop, Glowing, Physics Homework</option>
+		<option value="pg1.htm">6. Baby&acute;s Room</option>
+		<option value="wk30.htm">5. Week 30 - Treadmill</option>
+		<option value="wk23.htm">4. Week 23 - On the porch</option>
+		<option value="wk20.htm">3. Week 20 - Fatpanty</option>
+		<option value="itsStarted.htm">2. Just starting the knocked-up business</option>
+		<option value="sonogram.htm">1. Sonogram - September 11, 2001</option>
+		<option value="null">---------------------------------------</option>
+		<option value="NewYears010101.htm">-1. New Years 01.01.01</option>
+		<option value="samanthasGrad.htm">-2. Samantha&acute;s Graduation</option>
+		<option value="NewYears010100.htm">-3. New Years 01.01.00</option>
+		<option value="goofy.htm">-4. Welcome to Our Web Site</option>
+		<option value="1stSambob.htm">-5. First Picture of Us - 1994</option>
+
+		</select><br><br>
+	</td>
+</tr>
+<tr>
+	<td colspan="3" width="100%" valign="bottom" align="center">
+		<center>
+		<div class="standardTxt"><a href="pageColor.htm" onMouseOver="window.status='Change the background color of this site.'; return true;" onMouseOut="window.status=''; return true;">page color</a> | <a href="javascript:popUp();" onMouseOver="window.status='Send us an e-mail.'; return true;" onMouseOut="window.status=''; return true;">e-mail us</a><br></div>
+		</center>
+	</td>
+</tr>
+
+</form>
+</table>
+
+</center>
+</body>
+</html>

@@ -1,0 +1,361 @@
+.floating 
+{
+	position:absolute; 
+	height:0px; width:0px; 
+	top:1; 
+	visibility:visible; 
+	z-index:999;
+}
+
+a:hover
+{
+	font-size: 10 pt;
+	color: #0000FF;
+	font-family: Tahoma, Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a:visited
+{
+	font-size: 10pt;
+	color: #0000FF;
+	font-family: Tahoma, Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.txt {
+	font-size: 10pt;
+	color: #4F4F4F;
+	Font-family : Tahoma, Arial, Helvetica, sans-serif;
+	\\ text-decoration: underline;
+	\\ font-weight: bold;
+}
+
+.standardTxt
+{
+	font-size: 10pt;
+	color: #000000;
+	font-family: Tahoma, Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.nameTxt
+{
+	font-size: 12pt;
+	color: #000000;
+	font-family: Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.standardTxtGray
+{
+	font-size: 10pt;
+	color: #393939;
+	font-family: Tahoma, Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.standardTxtLg
+{
+	font-size: 11pt;
+	color: #000000;
+	font-family: Tahoma, Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.standardTxtSm
+{
+	font-size: 8pt;
+	color: #000000;
+	font-family: Tahoma, Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.standardWhiteTxt
+{
+	font-size: 10pt;
+	color: #ffffff;
+	font-family: Tahoma, Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.standardWhiteTxtLg
+{
+	font-size: 12pt;
+	color: #ffffff;
+	font-family: Tahoma, Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.standardWhiteTxtSm
+{
+	font-size: 9pt;
+	color: #ffffff;
+	font-family: Tahoma, Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.WhiteTxtTimePg
+{
+	font-size: 12pt;
+	color: #ffffff;
+	font-family: Arial, Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.blizTxt {
+	font-size: 10pt;
+	color: #6633CC;
+	font-family : Arial, Helvetica, sans-serif;
+	\\ text-decoration: underline;
+	\\ font-weight: bold;
+}
+
+H1 {font-family: Tahoma, Vernanda, arial, helvetica; font-size: 11pt; color: black}
+
+
+
+.blizLink
+{
+	font-size: 10pt;
+	color: #0000ff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+.blizLink:hover
+{
+	font-size: 10pt;
+	color: #0000ff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.blizLink:visited
+{
+	font-size: 10pt;
+	color: #0000ff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+
+
+}
+
+.timePgLink
+{
+	font-size: 12pt;
+	color: #ffff00;
+	font-family: Arial, Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.timePgLink:hover
+{
+	font-size: 12pt;
+	color: #ffff00;
+	font-family: Arial, Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.timePgLink:visited
+{
+	font-size: 12pt;
+	color: #ffff00;
+	font-family: Arial, Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+
+}
+
+.lgLink
+{
+	font-size: 12pt;
+	color: #0000ff;
+	font-family: Arial, Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+
+}
+
+.lgLink:hover
+{
+	font-size: 12pt;
+	color: #0000ff;
+	font-family: Arial, Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.lgLink:visited
+{
+	font-size: 12pt;
+	color: #0000ff;
+	font-family: Arial, Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+
+
+}
+
+.whiteLink
+{
+	font-size: 10pt;
+	color: #ffffff;
+	font-family: Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+.whiteLink:hover
+{
+	font-size: 10pt;
+	color: #ffffff;
+	font-family: Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.whiteLink:visited
+{
+	font-size: 10pt;
+	color: #ffffff;
+	font-family: Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+
+
+}
+
+.blackLink
+{
+	font-size: 10pt;
+	color: #000000;
+	font-family: Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+.blackLink:hover
+{
+	font-size: 10pt;
+	color: #000000;
+	font-family: Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.blackLink:visited
+{
+	font-size: 10pt;
+	color: #000000;
+	font-family: Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+
+
+}
+
+.yellowLink
+{
+	font-size: 12pt;
+	color: #ffff00;
+	font-family: Arial, Tahoma, Vernanda, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.yellowLink:hover
+{
+	font-size: 12pt;
+	color: #ffff00;
+	font-family: Arial, Tahoma, Vernanda, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.yellowLink:visited
+{
+	font-size: 12pt;
+	color: #ffff00;
+	font-family: Arial, Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+
+}
+
+.TxtGray
+{
+	font-size: 10pt;
+	color: #393939;
+	font-family: Arial, Tahoma, Vernanda, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+.TxtGray:hover
+{
+	font-size: 10pt;
+	color: #393939;
+	font-family: Arial, Tahoma, Vernanda, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.TxtGray:visited
+{
+	font-size: 10pt;
+	color: #393939;
+	font-family: Arial, Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+
+
+}
+
+.popupLink
+{
+	font-size: 10pt;
+	color: #0000ff;
+	font-family: Tahoma, Vernanda, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+.popupLink:hover
+{
+	font-size: 10pt;
+	color: #0000ff;
+	font-family: Tahoma, Vernanda, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.popupLink:visited
+{
+	font-size: 10pt;
+	color: #0000ff;
+	font-family: Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+
+}
+
+.nameLink
+{
+	font-size: 12pt;
+	color: #0000ff;
+	font-family: Vernanda, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+.nameLink:hover
+{
+	font-size: 12pt;
+	color: #0000ff;
+	font-family: Vernanda, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.nameLink:visited
+{
+	font-size: 12pt;
+	color: #0000ff;
+	font-family: Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+
+}
+
+
+

@@ -1,0 +1,184 @@
+<html>
+<head>
+<title></title>
+
+<script language="JavaScript" SRC="moveobj.js"></script>
+
+<script>
+<!--
+var chip1;
+//var chip2;
+//var chip3;
+//add or delete more variables, depending on how many images you're using
+
+function pagestart()
+{checkbrOK();
+chip1=new Chip("chip1",60,80);
+//chip2=new Chip("chip2",60,80);
+//chip3=new Chip("chip3",60,80);
+//add or delete more of the above, depending on how many images you're using
+if(brOK)
+   { movechip("chip1");
+   //movechip("chip2");
+   //movechip("chip3");
+   //add or delete more of the above, depending on how many images you're using
+   }
+}
+-->
+</script>
+
+<style type="text/css">
+<!--
+     .floating {position:absolute; height:0px; width:0px; top:1; visibility:visible; z-index:999;}
+-->
+</style>
+
+<script type="text/javascript">
+<!--
+
+var timer = null;
+var floatHeight  = 26 + 3; //added margin from top left of new layer
+var floatWidth   = 86 + 3; //added margin from top left of new layer
+
+var obj = null;
+var IE=0, NS=0;
+
+	// Initializing function, must be called on onLoad event in BODY tag
+
+function init()
+{
+    	 // get the object as per the browser
+    obj = document.layers ? document.layers["float"] :
+    document.getElementById ?  document.getElementById("float").style :
+    document.all["float"].style;
+
+         // Detect the browser
+    IE  = (-1 != navigator.appVersion.indexOf("MSIE")) ? 1 : 0;
+    NS  = ("Netscape" == navigator.appName) ? 1 : 0;
+
+    positionFloat(); 	 // position initially
+
+         // repositioning the layer
+    if(IE)
+       {
+	   onresize = function(){ positionFloat(); }
+           onscroll = function(){ positionFloat(); }
+       }
+    else //if(NS)
+       { timer = setInterval("positionFloat()",100);}
+}
+
+	// Function which actually positions the layer
+
+function positionFloat()
+{
+   if(IE)          // IE specific code
+   {
+     	obj.left = document.body.scrollLeft + document.body.clientWidth  - floatWidth;
+      	obj.top =  document.body.scrollTop + document.body.clientHeight  - floatHeight;
+   }
+   else //if(NS)     // Netscape specific code
+   {
+       	obj.left =  self.pageXOffset + self.innerWidth - floatWidth - 15;
+    	obj.top =  self.pageYOffset  + self.innerHeight - floatHeight;
+   }
+}
+// -->
+</script>
+
+<script language="JavaScript">
+<!--
+if (document.images)
+{
+back = new Image(27, 26);back.src = 'images/back_mo.gif';
+home = new Image(27, 26);home.src = 'images/home_mo.gif';
+next = new Image(27, 26);next.src = 'images/next_mo.gif';
+}
+//-->
+</script>
+
+</head>
+
+<body bgcolor="#99CCFF" onload="init(); pagestart();" onunload="if(null != timer)clearInterval(timer); if(brOK) {stopme('chip1');} ">
+
+<!-- body tag was modified from the following (removed "chip2" & "chip3" from end of code.):
+<body bgcolor="#99CCFF" onload="init(); pagestart();" onunload="if(null != timer)clearInterval(timer); if(brOK) {stopme('chip1'); stopme('chip2'); stopme('chip3');} ">
+-->
+<p>
+<div id="chip1" style="position:absolute; width:47; height:68;">
+<img src="images/ballon3.gif" width=47 height=68 border=0 align=bottom>
+</div>
+<!-- add or remove below depending on how many images you are using
+<div id="chip2" style="position:absolute; width:47; height:68;">
+<img src="images/ballon4.gif" width=47 height=68 border=0 align=bottom>
+</div>
+<div id="chip3" style="position:absolute; width:47; height:68;">
+<img src="images/ballon2.gif" width=47 height=68 border=0 align=bottom>
+-->
+</div>
+</p>
+
+<div class="floating" ID="float">
+<table border="0" width="81" cellpadding="0" cellspacing="0">
+
+<tr>
+	<td width="40" valign="top" align="left">
+		<a href="christmas.htm" name="back" target="_top" onMouseOver="back.src='images/back_mo.gif'; window.status='Go to the page that came before this one'; return true" onMouseOut="back.src='images/back.gif'; window.status=''; return true"><img src="images/back.gif" name="back" alt="Go to the page that came before this one" border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+	<td width="40" valign="top" align="left">
+		<a href="http://www.robertmeans.com/family" name="home" onMouseOver="home.src='images/home_mo.gif'; window.status='Go to the homepage.'; return true" onMouseOut="home.src='images/home.gif'; window.status=''; return true"><img src="images/home.gif" name="home" alt="Go to the homepage." border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+	<td width="40" valign="top" align="left">
+		<a href="tupperhead.htm" name="next" target="_top" onMouseOver="next.src='images/next_mo.gif'; window.status='Go to the page after this one.'; return true" onMouseOut="next.src='images/next.gif'; window.status=''; return true"><img src="images/next.gif" name="next" alt="Go to the page after this one." border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+</tr>
+</table>
+</div>
+
+<center>
+<table border="0" width="458" height="100%" valign="center" align="center" cellpadding="0" cellspacing="0">
+
+<tr>
+	<td width="458" height="395" valign="center" align="center">
+<table border="0" width="458" height="395" valign="top" align="center" cellpadding="0" cellspacing="0">
+
+<tr>
+	<td colspan="3" width="458" valign="center" align="center">
+		<img src="images/topMgn.gif" border="0" width="458" height="100"><br>
+	</td>
+</tr>
+<tr>
+	<td width="113" valign="top" align="left">
+		<img src="images/leftMgn.gif" border="0" width="113" height="194"><br>
+	</td>
+	<td width="230" height="188" valign="center" align="center">
+
+
+		<div style="height:189; width:215; z-index:1; overflow:auto; background-color:#99CCFF">
+		<img src="images/filmStrip.jpg" border="0" usemap="#links">
+		<map name="links">
+		<area shape="rect" coords="14, 14, 206, 154" href="firstBirthday01.htm" alt="Click to enlarge">
+		<area shape="rect" coords="220, 14, 409, 154" href="firstBirthday02.htm" alt="Click to enlarge">
+		<area shape="rect" coords="422, 14, 594, 154" href="firstBirthday03.htm" alt="Click to enlarge">
+		<area shape="rect" coords="608, 14, 782, 154" href="firstBirthday04.htm" alt="Click to enlarge">
+		</map>
+		</div>
+
+	<td width="115" valign="top" align="left">
+		<img src="images/rightMgn.gif" border="0" width="115" height="194"><br>
+	</td>
+</tr>
+<tr>
+	<td colspan="3" width="458" valign="top" align="left">
+		<img src="images/btmMgn.gif" border="0" width="458" height="101"><br>
+	</td>
+</tr>
+</table>
+
+	</td>
+</tr>
+</table>
+
+</center>
+</body>
+</html>

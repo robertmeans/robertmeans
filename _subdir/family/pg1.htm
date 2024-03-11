@@ -1,0 +1,184 @@
+<html>
+<head>
+<link rel="stylesheet" href="family.css">
+
+<script language="JavaScript">
+<!-- begin
+
+function GetCookie (name) {
+var arg = name + "=";
+var alen = arg.length;
+var clen = document.cookie.length;
+var i = 0;
+while (i < clen) {
+var j = i + alen;
+if (document.cookie.substring(i, j) == arg)
+return getCookieVal (j);
+i = document.cookie.indexOf(" ", i) + 1;
+if (i == 0) break;
+}
+return null;
+}
+function SetCookie (name, value) {
+var argv = SetCookie.arguments;
+var argc = SetCookie.arguments.length;
+var path = (argc > 3) ? argv[3] : null;
+var domain = (argc > 4) ? argv[4] : null;
+var secure = (argc > 5) ? argv[5] : false;
+document.cookie = name + "=" + escape (value) +
+((path == null) ? "" : ("; path=" + path)) +
+((domain == null) ? "" : ("; domain=" + domain)) +
+((secure == true) ? "; secure" : "");
+}
+function amt(){
+var backCount = GetCookie('backCount')
+if(backCount == null) {
+SetCookie('backCount','1')
+return 1
+}
+else {
+var newcount = parseInt(backCount) + 1;
+DeleteCookie('backCount')
+SetCookie('backCount',newcount)
+return backCount
+   }
+}
+function getCookieVal(offset) {
+var endstr = document.cookie.indexOf (";", offset);
+if (endstr == -1)
+endstr = document.cookie.length;
+return unescape(document.cookie.substring(offset, endstr));
+}
+
+function checkBackCount() {
+var backCount = GetCookie('backCount');
+if (backCount == null) {
+backCount=1;
+SetCookie('backCount', backCount);
+window.location = "gestation.htm";
+}
+
+else if (backCount == 5) {
+alert("Hello,\n\nIt looks like you\'re browsing backwards through this site. If so, please note that some of the pictures here are presented as a series.\n\nUsing this site\'s Back button will always skip you to the first picture within a series.\n\nNow, I don\'t mean to get all up in your business, I\'m just saying that you\'re missing a lot if you only use this back button. You do what you feel you need to do.")
+}
+else if (backCount == 306) {
+if (confirm("I see you\'re back on that Back button again...\n\nIf you\'ve already jumped to the first picture then please excuse this interruption but if you haven\'t, would you please?\n\nIf you view this site in cronological order it makes more sense."))	{
+alert ("Good choice!");
+window.location = "1stSambob.htm";
+} else {
+window.location = "gestation.htm";
+	}
+}
+else if (backCount != 5,306) {
+window.location = "gestation.htm";
+}
+backCount++;
+SetCookie('backCount', backCount);
+}
+
+//  end -->
+</script>
+
+<script type="text/javascript">
+<!--
+
+var timer = null;
+var floatHeight  = 26 + 3; //added margin from top left of new layer
+var floatWidth   = 86 + 3; //added margin from top left of new layer
+
+var obj = null;
+var IE=0, NS=0;
+
+	// Initializing function, must be called on onLoad event in BODY tag
+
+function init()
+{
+    	 // get the object as per the browser
+    obj = document.layers ? document.layers["float"] :
+    document.getElementById ?  document.getElementById("float").style :
+    document.all["float"].style;
+
+         // Detect the browser
+    IE  = (-1 != navigator.appVersion.indexOf("MSIE")) ? 1 : 0;
+    NS  = ("Netscape" == navigator.appName) ? 1 : 0;
+
+    positionFloat(); 	 // position initially
+
+         // repositioning the layer
+    if(IE)
+       {
+	   onresize = function(){ positionFloat(); }
+           onscroll = function(){ positionFloat(); }
+       }
+    else //if(NS)
+       { timer = setInterval("positionFloat()",100);}
+}
+
+	// Function which actually positions the layer
+
+function positionFloat()
+{
+   if(IE)          // IE specific code
+   {
+     	obj.left = document.body.scrollLeft + document.body.clientWidth  - floatWidth;
+      	obj.top =  document.body.scrollTop + document.body.clientHeight  - floatHeight;
+   }
+   else //if(NS)     // Netscape specific code
+   {
+       	obj.left =  self.pageXOffset + self.innerWidth - floatWidth - 15;
+    	obj.top =  self.pageYOffset  + self.innerHeight - floatHeight;
+   }
+}
+// -->
+</script>
+
+<script language="JavaScript">
+<!--
+if (document.images)
+{
+back = new Image(27, 26);back.src = 'images/back_mo.gif';
+home = new Image(27, 26);home.src = 'images/home_mo.gif';
+next = new Image(27, 26);next.src = 'images/next_mo.gif';
+}
+//-->
+</script>
+
+<title>Evergreen, Colorado</title>
+</head>
+<body onLoad="init();" onUnload="if(null != timer)clearInterval(timer);">
+<div class="floating" ID="float">
+<table border="0" width="81" cellpadding="0" cellspacing="0">
+
+<tr>
+	<td width="40" valign="top" align="left">
+		<a href="javascript:checkBackCount();" name="back" onMouseOver="back.src='images/back_mo.gif'; window.status='Go to the page that came before this one'; return true" onMouseOut="back.src='images/back.gif'; window.status=''; return true"><img src="images/back.gif" name="back" alt="Go to the page that came before this one" border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+	<td width="40" valign="top" align="left">
+		<a href="http://www.robertmeans.com/family" name="home" onMouseOver="home.src='images/home_mo.gif'; window.status='Go to the homepage.'; return true" onMouseOut="home.src='images/home.gif'; window.status=''; return true"><img src="images/home.gif" name="home" alt="Go to the homepage." border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+	<td width="40" valign="top" align="left">
+		<a href="pg2.htm" name="next" onMouseOver="next.src='images/next_mo.gif'; window.status='Go to the page after this one.'; return true" onMouseOut="next.src='images/next.gif'; window.status=''; return true"><img src="images/next.gif" name="next" alt="Go to the page after this one." border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+</tr>
+</table>
+</div>
+<center>
+<table border="0" width="370" height="100%" valign="center" align="center">
+<tr>
+	<td width="370" valign="center" align="center">
+
+		<div class="standardTxt">Baby&acute;s room</div>
+		<img src="images/spacer.gif" border="0" height="5" width="1"><br>
+		<img src="images/room01.jpg" border="1" width="350" height="467"><br>
+		<img src="images/spacer.gif" border="0" height="5" width="1"><br>
+		<div class="standardTxt"><div align="left">There&acute;s no real way to get a good picture of this without the dithering (the splotchyness in color). - you get the gist though.</div><br>
+		<img src="images/spacer.gif" border="0" height="5" width="1"><br>
+		<div align="right"><< <a href="pg5.htm">last page</a> | <a href="pg2.htm">next</a> >></div></div>
+
+	</td>
+</tr>
+</table>
+</center>
+</body>
+
+</html>

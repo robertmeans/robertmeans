@@ -1,0 +1,252 @@
+<html>
+<head>
+<link rel="stylesheet" href="family.css">
+
+<script language="JavaScript">
+<!-- begin
+
+function GetCookie (name) {
+var arg = name + "=";
+var alen = arg.length;
+var clen = document.cookie.length;
+var i = 0;
+while (i < clen) {
+var j = i + alen;
+if (document.cookie.substring(i, j) == arg)
+return getCookieVal (j);
+i = document.cookie.indexOf(" ", i) + 1;
+if (i == 0) break;
+}
+return null;
+}
+function SetCookie (name, value) {
+var argv = SetCookie.arguments;
+var argc = SetCookie.arguments.length;
+var path = (argc > 3) ? argv[3] : null;
+var domain = (argc > 4) ? argv[4] : null;
+var secure = (argc > 5) ? argv[5] : false;
+document.cookie = name + "=" + escape (value) +
+((path == null) ? "" : ("; path=" + path)) +
+((domain == null) ? "" : ("; domain=" + domain)) +
+((secure == true) ? "; secure" : "");
+}
+function amt(){
+var backCount = GetCookie('backCount')
+if(backCount == null) {
+SetCookie('backCount','1')
+return 1
+}
+else {
+var newcount = parseInt(backCount) + 1;
+DeleteCookie('backCount')
+SetCookie('backCount',newcount)
+return backCount
+   }
+}
+function getCookieVal(offset) {
+var endstr = document.cookie.indexOf (";", offset);
+if (endstr == -1)
+endstr = document.cookie.length;
+return unescape(document.cookie.substring(offset, endstr));
+}
+
+function checkBackCount() {
+var backCount = GetCookie('backCount');
+if (backCount == null) {
+backCount=1;
+SetCookie('backCount', backCount);
+window.location = "blizzard2003.htm";
+}
+
+else if (backCount == 305) {
+if (confirm("Hello\n\nIt looks like you\'re browsing backwards through this site. If so, please note that some of the pictures here are presented as a series.\n\nUsing this site\'s Back button will always skip you to the first picture within a series.\n\nDo you want to go to our first picture and browse forward?"))	{
+alert ("Good choice!");
+window.location = "1stSambob.htm";
+} else {
+window.location = "blizzard2003.htm";
+	}
+}
+else if (backCount == 306) {
+if (confirm("I see you\'re back on that Back button again...\n\nIf you\'ve already jumped to the first picture then please excuse this interruption but if you haven\'t, would you please?\n\nIf you view this site in cronological order it makes more sense."))	{
+alert ("Good choice!");
+window.location = "1stSambob.htm";
+} else {
+window.location = "blizzard2003.htm";
+	}
+}
+else if (backCount != 305,306) {
+window.location = "blizzard2003.htm";
+}
+backCount++;
+SetCookie('backCount', backCount);
+}
+
+//  end -->
+</script>
+
+<script type="text/javascript">
+<!--
+
+var timer = null;
+var floatHeight  = 26 + 3; //added margin from top left of new layer
+var floatWidth   = 86 + 3; //added margin from top left of new layer
+
+var obj = null;
+var IE=0, NS=0;
+
+	// Initializing function, must be called on onLoad event in BODY tag
+
+function init()
+{
+    	 // get the object as per the browser
+    obj = document.layers ? document.layers["float"] :
+    document.getElementById ?  document.getElementById("float").style :
+    document.all["float"].style;
+
+         // Detect the browser
+    IE  = (-1 != navigator.appVersion.indexOf("MSIE")) ? 1 : 0;
+    NS  = ("Netscape" == navigator.appName) ? 1 : 0;
+
+    positionFloat(); 	 // position initially
+
+         // repositioning the layer
+    if(IE)
+       {
+	   onresize = function(){ positionFloat(); }
+           onscroll = function(){ positionFloat(); }
+       }
+    else //if(NS)
+       { timer = setInterval("positionFloat()",100);}
+}
+
+	// Function which actually positions the layer
+
+function positionFloat()
+{
+   if(IE)          // IE specific code
+   {
+     	obj.left = document.body.scrollLeft + document.body.clientWidth  - floatWidth;
+      	obj.top =  document.body.scrollTop + document.body.clientHeight  - floatHeight;
+   }
+   else //if(NS)     // Netscape specific code
+   {
+       	obj.left =  self.pageXOffset + self.innerWidth - floatWidth - 15;
+    	obj.top =  self.pageYOffset  + self.innerHeight - floatHeight;
+   }
+}
+// -->
+</script>
+
+<script language="JavaScript">
+<!--
+if (document.images)
+{
+back = new Image(27, 26);back.src = 'images/back_mo.gif';
+home = new Image(27, 26);home.src = 'images/home_mo.gif';
+next = new Image(27, 26);next.src = 'images/next_mo.gif';
+}
+//-->
+</script>
+
+<title>Evergreen, Colorado</title>
+</head>
+<body onLoad="init();" onUnload="if(null != timer)clearInterval(timer);">
+
+<div class="floating" ID="float">
+<table border="0" width="81" cellpadding="0" cellspacing="0">
+
+<tr>
+	<td width="40" valign="top" align="left">
+		<a href="javascript:checkBackCount();" name="back" onMouseOver="back.src='images/back_mo.gif'; window.status='Go to the page that came before this one'; return true" onMouseOut="back.src='images/back.gif'; window.status=''; return true"><img src="images/back.gif" name="back" alt="Go to the page that came before this one" border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+	<td width="40" valign="top" align="left">
+		<a href="http://www.robertmeans.com/family" name="home" onMouseOver="home.src='images/home_mo.gif'; window.status='Go to the homepage.'; return true" onMouseOut="home.src='images/home.gif'; window.status=''; return true"><img src="images/home.gif" name="home" alt="Go to the homepage." border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+	<td width="40" valign="top" align="left">
+		<a href="stantonSketch.htm" name="next" onMouseOver="next.src='images/next_mo.gif'; window.status='Go to the page after this one.'; return true" onMouseOut="next.src='images/next.gif'; window.status=''; return true"><img src="images/next.gif" name="next" alt="Go to the page after this one." border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+</tr>
+</table>
+</div>
+
+<center>
+<table border="0" width="650" height="100%" valign="center" align="center">
+
+<tr>
+	<td width="100%" valign="center" align="center">
+		<font face="Arial, Helvetica, sans-serif" color="#999999" size="2">-------------- Click an image to enlarge --------------</font><br><br>
+	</td>
+</tr>
+<tr>
+	<td width="100%" valign="center" align="left">
+		<a href="blizHouseLg.htm"><img src="images/blizHouseSmall.jpg" border="0" width="160" height="100" align="left" hspace="8" vspace="0" alt=""></a><div class="blizTxt">This is our house on the second day of the storm. The electricity went out the night before this picture (Tuesday) and didn&acute;t come back on until Sunday morning.<br>
+		<br>
+		When taking this picture the snow was about chest deep on me. (I&acute;m Robert. Hi. I&acute;m about 6&acute;2&quot;)</div>
+	</td>
+</tr>
+<tr>
+	<td width="100%" valign="center" align="center">
+		<img src="images/blizHbar.gif" border="0" width="500" height="3"><br>
+	</td>
+</tr>
+<tr>
+	<td width="100%" valign="center" align="left">
+
+		<a href="blizJeepsLg.htm"><img src="images/blizJeepsSmall.jpg" border="0" width="160" height="94" align="left" hspace="8" vspace="0" alt=""></a><div class="blizTxt">These two &quot;bumps&quot; are our Jeeps in the driveway. It was funny at the time. Now, a week later, there&acute;s still a serious amount of snow melt that needs to occur for us to get them back to the road. We have been catching rides into town for essentials &amp; otherwise doing without.<br>
+		<br>
+		There are a lot of people that are paying for front-end loaders to come & dig them out. The current rate for this service is $200.00 to show + $200.00 an hour. Others are renting cars & parking them on the road.</div>
+	</td>
+</tr>
+<tr>
+	<td width="100%" valign="center" align="center">
+		<img src="images/blizHbar.gif" border="0" width="500" height="3"><br>
+	</td>
+</tr>
+<tr>
+	<td width="100%" valign="center" align="left">
+
+		<a href="blizPathNightShovelLg.htm"><img src="images/blizPathNightShovelSmall.jpg" border="0" width="100" height="128" align="left" hspace="8" vspace="0" alt=""></a><div class="blizTxt">Because our electricity went out our only hope for heat was a fire in the woodstove. We went through the wood stacked against the house pretty quickly &amp; then I was left shoveling a path to the woodpile (about 75 feet from the house) in the middle of the night.
+		<br>
+		<br>
+		I am really proud of this path. If you ever talk to me, buy me a beer and ask me about it.<br>
+		You can even download a QuickTime video of it <a class="blizLink" href="images/woodPath.zip">here</a> (4.5MB)<br>or a Windows Media version <a class="blizLink" href="images/snowPath.zip">here</a> (2.1MB)</div>
+	</td>
+</tr>
+<tr>
+	<td width="100%" valign="center" align="center">
+		<img src="images/blizHbar.gif" border="0" width="500" height="3"><br>
+	</td>
+</tr>
+<tr>
+	<td width="100%" valign="center" align="left">
+
+		<a href="h20HarnessLg.htm"><img src="images/h20HarnessSmall.jpg" border="0" width="92" height="128" align="left" hspace="8" vspace="0" alt=""></a><div class="blizTxt">Without electricity we also did not have running water. I took apart the gutter & re-routed it into a six gallon container. We were able to continue flushing the toilet by filling the back of it up each time it was used. We also used this water to heat on the stove (gas stove - horray!) and take makeshift baths at the sink.
+		<br>
+		<br>
+		After this experience, anything under three feet is considered flurries.</div>
+	</td>
+</tr>
+<tr>
+	<td width="100%" valign="center" align="center">
+
+
+<center>
+<a href="blizStantonPorchLg.htm"><img src="images/blizStantonPorchSmall.jpg" border="0" width="100" height="141" alt="Stanton wowed"></a>
+
+<a href="blizStantonTunnelLg.htm"><img src="images/blizStantonTunnelSmall.jpg" border="0" width="153" height="141" alt="Tunnel on the porch"></a><br>
+<br>
+
+</center>
+	</td>
+</tr>
+<tr>
+	<td width="100%" valign="center" align="center">
+		<a class="blizLink" href="blizzard2003.htm">blizzard homepage</a>
+	</td>
+</tr>
+</table>
+
+</center>
+</body>
+
+</html>

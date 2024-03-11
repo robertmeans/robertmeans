@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>_newNavigationWorking</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- ImageReady Preload Script (_newNavigationWorking.psd) -->
+<script type="text/javascript">
+<!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+
+function changeImages() {
+	if (document.images && (preloadFlag == true)) {
+		for (var i=0; i<changeImages.arguments.length; i+=2) {
+			document[changeImages.arguments[i]].src = changeImages.arguments[i+1];
+		}
+	}
+}
+
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		back_over = newImage("images/back_over.gif");
+		home_over = newImage("images/home_over.gif");
+		next_over = newImage("images/next_over.gif");
+		preloadFlag = true;
+	}
+}
+
+// -->
+</script>
+<!-- End Preload Script -->
+</head>
+<body bgcolor="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onload="preloadImages();">
+<!-- ImageReady Slices (_newNavigationWorking.psd) -->
+<table id="Table_01" width="81" height="26" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<a href="#"
+				onmouseover="changeImages('back', 'images/back_over.gif'); return true;"
+				onmouseout="changeImages('back', 'images/back.gif'); return true;"
+				onmousedown="changeImages('back', 'images/back_over.gif'); return true;"
+				onmouseup="changeImages('back', 'images/back_over.gif'); return true;">
+				<img name="back" src="images/back.gif" width="27" height="26" border="0" alt=""></a></td>
+		<td>
+			<a href="#"
+				onmouseover="changeImages('home', 'images/home_over.gif'); return true;"
+				onmouseout="changeImages('home', 'images/home.gif'); return true;"
+				onmousedown="changeImages('home', 'images/home_over.gif'); return true;"
+				onmouseup="changeImages('home', 'images/home_over.gif'); return true;">
+				<img name="home" src="images/home.gif" width="27" height="26" border="0" alt=""></a></td>
+		<td>
+			<a href="#"
+				onmouseover="changeImages('next', 'images/next_over.gif'); return true;"
+				onmouseout="changeImages('next', 'images/next.gif'); return true;"
+				onmousedown="changeImages('next', 'images/next_over.gif'); return true;"
+				onmouseup="changeImages('next', 'images/next_over.gif'); return true;">
+				<img name="next" src="images/next.gif" width="27" height="26" border="0" alt=""></a></td>
+	</tr>
+</table>
+<!-- End ImageReady Slices -->
+</body>
+</html>

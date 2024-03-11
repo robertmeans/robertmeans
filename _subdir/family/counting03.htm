@@ -1,0 +1,435 @@
+<html>
+<head>
+
+<style type="text/css">
+<!--
+     .floating {position:absolute; height:0px; width:0px; top:1; visibility:visible; z-index:999;}
+-->
+</style>
+
+<script type="text/javascript">
+<!--
+
+var timer = null;
+var floatHeight  = 26 + 3; //added margin from top left of new layer
+var floatWidth   = 86 + 3; //added margin from top left of new layer
+
+var obj = null;
+var IE=0, NS=0;
+
+	// Initializing function, must be called on onLoad event in BODY tag
+
+function init()
+{
+    	 // get the object as per the browser
+    obj = document.layers ? document.layers["float"] :
+    document.getElementById ?  document.getElementById("float").style :
+    document.all["float"].style;
+
+         // Detect the browser
+    IE  = (-1 != navigator.appVersion.indexOf("MSIE")) ? 1 : 0;
+    NS  = ("Netscape" == navigator.appName) ? 1 : 0;
+
+    positionFloat(); 	 // position initially
+
+         // repositioning the layer
+    if(IE)
+       {
+	   onresize = function(){ positionFloat(); }
+           onscroll = function(){ positionFloat(); }
+       }
+    else //if(NS)
+       { timer = setInterval("positionFloat()",100);}
+}
+
+	// Function which actually positions the layer
+
+function positionFloat()
+{
+   if(IE)          // IE specific code
+   {
+     	obj.left = document.body.scrollLeft + document.body.clientWidth  - floatWidth;
+      	obj.top =  document.body.scrollTop + document.body.clientHeight  - floatHeight;
+   }
+   else //if(NS)     // Netscape specific code
+   {
+       	obj.left =  self.pageXOffset + self.innerWidth - floatWidth - 15;
+    	obj.top =  self.pageYOffset  + self.innerHeight - floatHeight;
+   }
+}
+// -->
+</script>
+
+<script language="JavaScript">
+<!--
+if (document.images)
+{
+back = new Image(27, 26);back.src = 'images/back_mo.gif';
+home = new Image(27, 26);home.src = 'images/home_mo.gif';
+next = new Image(27, 26);next.src = 'images/next_mo.gif';
+}
+//-->
+</script>
+
+<script language="JavaScript">
+<!-- begin
+function Comma(number) {
+number = '' + number;
+if (number.length > 3) {
+var mod = number.length % 3;
+var output = (mod > 0 ? (number.substring(0,mod)) : '');
+for (i=0 ; i < Math.floor(number.length / 3); i++) {
+if ((mod == 0) && (i == 0))
+output += number.substring(mod+ 3 * i, mod + 3 * i + 3);
+else
+output+= ',' + number.substring(mod + 3 * i, mod + 3 * i + 3);
+}
+return (output);
+}
+else return number;
+}
+//  end -->
+</script>
+
+<script language="JavaScript">
+<!-- begin  // Thanks Dave Kline at Life Quotes for beautifying this confounded script!
+function calculate()
+{
+	if (document.AgeForm.month.selectedIndex == 0) {
+		alert("There\'s no such month as \"Month\". Select a month.")
+		document.AgeForm.month.focus();
+			} else if (document.AgeForm.day.selectedIndex == 0) {
+			alert("You can\'t just leave the Day field saying \"Day\"!\n\nPick a day.")
+			document.AgeForm.day.focus();
+				} else {
+
+	var weekday = new Array(7);
+	weekday[0]="Sunday";
+	weekday[1]="Monday";
+	weekday[2]="Tuesday";
+	weekday[3]="Wednesday";
+	weekday[4]="Thursday";
+	weekday[5]="Friday";
+	weekday[6]="Saturday";
+
+	var Month = document.AgeForm.month.selectedIndex - 1;
+	var Day = document.AgeForm.day.selectedIndex;
+	var Year = document.AgeForm.year.value;
+
+	var today = new Date();
+	var bDay = new Date(Year, Month, Day);
+
+	var difference=(Math.round((Date.parse(today)-Date.parse(bDay))/(24*60*60*1000)-.5)*1);
+
+		suffix = "";
+		end = "th";
+		if (Day==1 || Day==21 || Day==31) end="st";
+		if (Day==2 || Day==22) end="nd";
+		if (Day==3 || Day==23) end="rd";
+		suffix = end;
+
+		if (difference == 1) {
+			var outString = "You were born on "
+
+				outString += weekday[bDay.getDay()] + ", ";
+				outString += document.AgeForm.month[bDay.getMonth()+1].value + " ";
+				outString += bDay.getDate() + suffix + ", ";
+				outString += bDay.getFullYear() + ".\n";
+				outString += "You are ";
+				outString += (Comma(difference));
+				outString += " day old.";
+				window.alert(outString);
+			} else if (difference == -1) {
+				var outString = "You were born on "
+
+				outString += weekday[bDay.getDay()] + ", ";
+				outString += document.AgeForm.month[bDay.getMonth()+1].value + " ";
+				outString += bDay.getDate() + suffix + ", ";
+				outString += bDay.getFullYear() + ".\n";
+				outString += "You are ";
+				outString += (Comma(difference));
+				outString += " day old.";
+				window.alert(outString);
+			} else {
+
+	var outString = "You were born on "
+
+	outString += weekday[bDay.getDay()] + ", ";
+	outString += document.AgeForm.month[bDay.getMonth()+1].value + " ";
+	outString += bDay.getDate() + suffix + ", ";
+	outString += bDay.getFullYear() + ".\n";
+	outString += "You are ";
+	outString += (Comma(difference));
+	outString += " days old.";
+	window.alert(outString);
+	}
+}
+}
+// end -->
+</script>
+
+</head>
+<body bgcolor="#ccffcc" onLoad="init();" onUnload="if(null != timer)clearInterval(timer);"><br>
+<div class="floating" ID="float">
+<table border="0" width="81" cellpadding="0" cellspacing="0">
+
+<tr>
+	<td width="40" valign="top" align="left">
+		<a href="lotsO_Stanton041002.htm" name="back" target="_top" onMouseOver="back.src='images/back_mo.gif'; window.status='Go to the page that came before this one'; return true" onMouseOut="back.src='images/back.gif'; window.status=''; return true"><img src="images/back.gif" name="back" alt="Go to the page that came before this one" border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+	<td width="40" valign="top" align="left">
+		<a href="http://www.fatpanty.com" name="home" target="_top" onMouseOver="home.src='images/home_mo.gif'; window.status='Go to the homepage.'; return true" onMouseOut="home.src='images/home.gif'; window.status=''; return true"><img src="images/home.gif" name="home" alt="Go to the homepage." border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+	<td width="40" valign="top" align="left">
+		<a href="mothersDay2002.htm" name="next" target="_top" onMouseOver="next.src='images/next_mo.gif'; window.status='Go to the page after this one.'; return true" onMouseOut="next.src='images/next.gif'; window.status=''; return true"><img src="images/next.gif" name="next" alt="Go to the page after this one." border="0" width="27" height="26" valign="top" align="left" hspace="0"></a>
+	</td>
+</tr>
+</table>
+</div>
+<center>
+<div style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;">
+<table border="0" height="370" width="580" valign="center" align="center" cellpadding="0" cellspacing="0">
+
+<tr>
+	<td colspan="4" width="475" valign="top" align="left">
+		<img src="images/top.jpg" border="0" width="475" height="105"><br>
+	</td>
+	<td width="105" valign="top" align="left">
+		<img src="images/stantonPaint.gif" border="0" width="105" height="105"><br>
+	</td>
+</tr>
+<tr>
+	<td rowspan="9" bgcolor="#ccffcc" width="105" height="170" valign="top" align="left">
+		<img src="images/left.jpg" border="0" width="105" height="170"><br>
+	</td>
+	<td rowspan="9" bgcolor="#ccccff" width="5" height="170" valign="top" align="left">
+		<img src="images/spacer.gif" border="0" width="5" height="170"><br>
+	</td>
+	<td bgcolor="#ccccff" width="360" height="5" valign="center" align="center">
+		<img src="images/spacer.gif" border="0" width="360" height="5"><br>
+	</td>
+	<td rowspan="9" bgcolor="#ccccff" width="5" height="170" valign="top" align="left">
+		<img src="images/spacer.gif" border="0" width="5" height="170"><br>
+	</td>
+	<td rowspan="9" height="170" width="105" valign="top" align="left">
+		<img src="images/right.jpg" border="0" width="105" height="170"><br>
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#ccccff" width="360" valign="top" align="left">
+		<script language="JavaScript">
+
+		<!-- begin
+		d = new Array(
+		"Sunday",
+		"Monday",
+		"Tuesday",
+		"Wednesday",
+		"Thursday",
+		"Friday",
+		"Saturday"
+		);
+		m = new Array(
+		"January",
+		"February",
+		"March",
+		"April",
+		"May",
+		"June",
+		"July",
+		"August",
+		"September",
+		"October",
+		"November",
+		"December"
+		);
+
+		today = new Date();
+		day = today.getDate();
+		year = today.getYear();
+
+		if (year < 2000)
+		year = year + 1900;
+
+		end = "th";
+		if (day==1 || day==21 || day==31) end="st";
+		if (day==2 || day==22) end="nd";
+		if (day==3 || day==23) end="rd";
+		day+=end;
+
+		document.write("<div style=\"font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;\">Today is  ");
+		document.write(d[today.getDay()]+", "+m[today.getMonth()]+" ");
+		document.write(day+", " + year);
+		document.write("</div>");
+		// end -->
+		</script>
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#ccccff" width="360" height="5" valign="center" align="center">
+		<img src="images/spacer.gif" border="0" width="360" height="5"><br>
+	</td>
+</tr>
+</tr>
+	<td bgcolor="#ccccff" width="360" valign="top" align="left">
+		<div style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;">Stanton Hanbury Means - Born: Friday, March 1<sup>st</sup>, 2002.</div>
+		<script language="JavaScript">
+		<!-- begin
+		var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
+		function countup(yr,m,d) {
+		var today=new Date();
+		var todayy=today.getYear();
+
+		if ((navigator.appName == "Microsoft Internet Explorer") && (todayy < 2000))
+		todayy="19" + todayy;
+		if (navigator.appName == "Netscape")
+		todayy=1900 + todayy;
+
+		var todaym=today.getMonth();
+		var todayd=today.getDate();
+		var todaystring=montharray[todaym]+" "+todayd+", "+todayy;
+		var paststring=montharray[m-1]+" "+d+", "+yr;
+		var difference=(Math.round((Date.parse(todaystring)-Date.parse(paststring))/(24*60*60*1000)-.5)*1);
+
+		document.write("<div style=\"font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;\">He is " + difference + " days old.</div>");
+
+		}
+		countup(2002,03,01);  // Date in format:  (year,month,day)
+		//  end -->
+		</script>
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#ccccff" width="360" height="5" valign="center" align="center">
+		<img src="images/spacer.gif" border="0" width="360" height="5"><br>
+	</td>
+</tr>
+</tr>
+	<td bgcolor="#ccccff" valign="center" align="center">
+		<form name="AgeForm">
+		<center>
+<table border="0" valign="top" align="center" cellspacing="0" cellpadding="0">
+
+<tr>
+	<td bgcolor="#ccccff" colspan="3" align="left">
+		<div style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;">What about you? Enter your date of birth:</div>
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#ccccff" valign="top" align="center">
+		<select name="month">
+		<option value="" selected>Month
+		<option value="January">Jan
+		<option value="February">Feb
+		<option value="March">Mar
+		<option value="April">Apr
+		<option value="May">May
+		<option value="June">Jun
+		<option value="July">Jul
+		<option value="August">Aug
+		<option value="September">Sep
+		<option value="October">Oct
+		<option value="November">Nov
+		<option value="December">Dec
+		</select>
+	</td>
+	<td valign="top" align="center">
+		<select name="day">
+		<option value="" selected>Day
+		<option value="1">01
+		<option value="2">02
+		<option value="3">03
+		<option value="4">04
+		<option value="5">05
+		<option value="6">06
+		<option value="7">07
+		<option value="8">08
+		<option value="9">09
+		<option value="10">10
+		<option value="11">11
+		<option value="12">12
+		<option value="13">13
+		<option value="14">14
+		<option value="15">15
+		<option value="16">16
+		<option value="17">17
+		<option value="18">18
+		<option value="19">19
+		<option value="20">20
+		<option value="21">21
+		<option value="22">22
+		<option value="23">23
+		<option value="24">24
+		<option value="25">25
+		<option value="26">26
+		<option value="27">27
+		<option value="28">28
+		<option value="29">29
+		<option value="30">30
+		<option value="31">31
+		</select>
+	</td>
+	<td align="center">
+		<input type="text" name="year" value="19" size="4" maxlength="4">&nbsp;&nbsp;<input type="button" value="Calculate" onClick="calculate()">
+	</td></form>
+</tr>
+</table>
+
+</center>
+
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#ccccff" width="360" height="10" valign="center" align="center">
+		<img src="images/spacer.gif" border="0" width="1" height="10"><br>
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#ccccff" width="360" valign="top" align="right">
+		<script language="JavaScript">
+		<!-- begin
+		var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
+		function countup(yr,m,d) {
+		var today=new Date();
+		var todayy=today.getYear();
+
+		if ((navigator.appName == "Microsoft Internet Explorer") && (todayy < 2000))
+		todayy="19" + todayy;
+		if (navigator.appName == "Netscape")
+		todayy=1900 + todayy;
+
+		var todaym=today.getMonth();
+		var todayd=today.getDate();
+		var todaystring=montharray[todaym]+" "+todayd+", "+todayy;
+		var paststring=montharray[m-1]+" "+d+", "+yr;
+		var difference=(Math.round((Date.parse(todaystring)-Date.parse(paststring))/(24*60*60*1000)-.5)*1);
+
+			if (difference == 1) {
+				document.write("<div style=\"font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;\">This page has been here since Thursday, April 18<sup>th</sup>, 2002.<br>It\'s " + difference + " day old.</div>");
+			} else {
+
+		document.write("<div style=\"font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px;\">This page has been here since Sunday, April 21<sup>st</sup>, 2002.<br>It\'s " + difference + " days old.</div>");
+
+		}
+		}
+		countup(2002,04,21);  // Date in format:  (year,month,day)
+		//  end -->
+		</script>
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#ccccff" width="360" height="5" valign="bottom" align="left">
+		<img src="images/spacer.gif" border="0" width="360" height="5"><br>
+	</td>
+</tr>
+<tr>
+	<td colspan="5" width="580" valign="top" align="left">
+		<img src="images/bottom.jpg" border="0" width="580" height="105"><br>
+	</td>
+</tr>
+</table>
+
+</div>
+</center>
+</body>
+</html>

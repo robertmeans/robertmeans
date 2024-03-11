@@ -1,0 +1,456 @@
+<html>
+<head>
+<title>Change the page color of this site.</title>
+<link rel="stylesheet" href="family.css" />
+<script language = "JavaScript">
+
+<!-- begin
+var expDays = 11130;
+var exp = new Date();
+exp.setTime(exp.getTime() + (expDays*24*60*60*1000));
+
+function color(){
+var favColor = GetCookie('color');
+if (favColor == null) {
+
+favColor = "#ccccff";
+SetCookie('color', favColor, exp);
+}
+document.bgColor=favColor;
+return favColor;
+}
+
+function setColor2(){
+favColor="#FFFFFF";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor3(){
+favColor="#CCCCFF";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor4(){
+favColor="#CCFFCC";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor5(){
+favColor="#CCCCCC";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor6(){
+favColor="#CCDEF0";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor7(){
+favColor="#D6CCF0";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor8(){
+favColor="#FFDCDC";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor9(){
+favColor="#F3BFEC";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor10(){
+favColor="#F661E3";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor11(){
+favColor="#3B92FB";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor12(){
+favColor="#B99CFB";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor13(){
+favColor="#9DACF9";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor14(){
+favColor="#9DE0F9";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor15(){
+favColor="#B9CDD5";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor16(){
+favColor="#1DB5EE";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor17(){
+favColor="#55A3C0";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor18(){
+favColor="#55C0B5";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor19(){
+favColor="#95DCD5";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor20(){
+favColor="#99CCFF";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor21(){
+favColor="#FFFFCC";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor22(){
+favColor="#9EF997";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor23(){
+favColor="#CBE845";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor24(){
+favColor="#FFE19F";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+function setColor25(){
+favColor="#FFE1CF";
+SetCookie ('color', favColor, exp);
+url=("http://www.robertmeans.com/family")
+window.location=url;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function getCookieVal (offset) {
+var endstr = document.cookie.indexOf (";", offset);
+if (endstr == -1)
+endstr = document.cookie.length;
+return unescape(document.cookie.substring(offset, endstr));
+}
+function GetCookie (name) {
+var arg = name + "=";
+var alen = arg.length;
+var clen = document.cookie.length;
+var i = 0;
+while (i < clen) {
+var j = i + alen;
+if (document.cookie.substring(i, j) == arg)
+return getCookieVal (j);
+i = document.cookie.indexOf(" ", i) + 1;
+if (i == 0) break;
+}
+return null;
+}
+function SetCookie (name, value) {
+var argv = SetCookie.arguments;
+var argc = SetCookie.arguments.length;
+var expires = (argc > 2) ? argv[2] : null;
+var path = (argc > 3) ? argv[3] : null;
+var domain = (argc > 4) ? argv[4] : null;
+var secure = (argc > 5) ? argv[5] : false;
+document.cookie = name + "=" + escape (value) +
+((expires == null) ? "" : ("; expires=" + expires.toGMTString())) +
+((path == null) ? "" : ("; path=" + path)) +
+((domain == null) ? "" : ("; domain=" + domain)) +
+((secure == true) ? "; secure" : "");
+}
+function DeleteCookie (name) {
+var exp = new Date();
+exp.setTime (exp.getTime() - 1);
+var cval = GetCookie (name);
+document.cookie = name + "=" + cval + "; expires=" + exp.toGMTString();
+}
+// end -->
+</script>
+
+</head>
+<body>
+
+<script>
+(color());
+</script>
+
+<center>
+<table border="0" width="390" valign="center" align="center">
+<tr>
+	<td colspan="14">
+		<img src="images/spacer.gif" border="0" width="1" height="10" /><br />
+		<div class="standardTxt">I&acute;ll keep these settings for the next time you visit from this computer.</div>
+		<br />
+		<div class="standardTxt">Choose a background color:</div><br />
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#FFFFFF" width="50">
+		<a href="javascript:setColor2();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+
+	<td bgcolor="#CCCCFF" width="50">
+		<a href="javascript:setColor3();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+
+	<td bgcolor="#CCFFCC" width="50">
+		<a href="javascript:setColor4();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+
+	<td bgcolor="#CCCCCC" width="50">
+		<a href="javascript:setColor5();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+
+	<td bgcolor="#CCDEF0" width="50">
+		<a href="javascript:setColor6();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+
+	<td bgcolor="#D6CCF0" width="50">
+		<a href="javascript:setColor7();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+</tr>
+<tr>
+	<td colspan="14">
+		<img src="images/spacer.gif" border="0" width="1" height="15" /><br />
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#FFDCDC" width="50">
+		<a href="javascript:setColor8();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+
+	<td bgcolor="#F3BFEC" width="50">
+		<a href="javascript:setColor9();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+
+	<td bgcolor="#F661E3" width="50">
+		<a href="javascript:setColor10();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+
+	<td bgcolor="#3B92FB" width="50">
+		<a href="javascript:setColor11();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+
+	<td bgcolor="#B99CFB" width="50">
+		<a href="javascript:setColor12();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+
+	<td bgcolor="#9DACF9" width="50">
+		<a href="javascript:setColor13();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+</tr>
+<tr>
+	<td colspan="14">
+		<img src="images/spacer.gif" border="0" width="1" height="15" /><br />
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#9DE0F9" width="50">
+		<a href="javascript:setColor14();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+
+	<td bgcolor="#B9CDD5" width="50">
+		<a href="javascript:setColor15();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+
+	<td bgcolor="#1DB5EE" width="50">
+		<a href="javascript:setColor16();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+
+	<td bgcolor="#55A3C0" width="50">
+		<a href="javascript:setColor17();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+
+	<td bgcolor="#55C0B5" width="50">
+		<a href="javascript:setColor18();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+
+	<td bgcolor="#95DCD5" width="50">
+		<a href="javascript:setColor19();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+</tr>
+<tr>
+	<td colspan="14">
+		<img src="images/spacer.gif" border="0" width="1" height="15" /><br />
+	</td>
+</tr>
+<tr>
+	<td bgcolor="#99CCFF" width="50">
+		<a href="javascript:setColor20();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+
+	<td bgcolor="#FFFFCC" width="50">
+		<a href="javascript:setColor21();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+
+	<td bgcolor="#9EF997" width="50">
+		<a href="javascript:setColor22();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+
+	<td bgcolor="#CBE845" width="50">
+		<a href="javascript:setColor23();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+
+	<td bgcolor="#FFE19F" width="50">
+		<a href="javascript:setColor24();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+
+	<td bgcolor="#FFE1CF" width="50">
+		<a href="javascript:setColor25();"><img src="images/spacer.gif" border="1" width="50" height="50" /></a><br />
+	</td>
+	<td width="15">
+		<img src="images/spacer.gif" border="0" width="15" height="1" /><br />
+	</td>
+</tr>
+</table>
+
+</center>
+</body>
+</html>

@@ -1,0 +1,141 @@
+.floating 
+{
+	position:absolute; 
+	height:0px; width:0px; 
+	top:1; 
+	visibility:visible; 
+	z-index:999;
+}
+
+a:hover
+{
+	font-size: 10 pt;
+	color: #0000FF;
+	font-family: Tahoma, Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a:visited
+{
+	font-size: 10pt;
+	color: #0000FF;
+	font-family: Tahoma, Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+
+.standardTxt
+{
+	font-size: 10pt;
+	color: #000000;
+	font-family: Tahoma, Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal
+}
+
+.standardTxtLg
+{
+	font-size: 11pt;
+	color: #000000;
+	font-family: Tahoma, Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal
+}
+
+.standardWhiteTxt
+{
+	font-size: 10pt;
+	color: #ffffff;
+	font-family: Tahoma, Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal
+}
+
+.standardWhiteTxtLg
+{
+	font-size: 12pt;
+	color: #ffffff;
+	font-family: Tahoma, Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal
+}
+
+.standardWhiteTxtSm
+{
+	font-size: 9pt;
+	color: #ffffff;
+	font-family: Tahoma, Vernanda, Arial, Helvetica, sans-serif;
+	font-weight: normal
+}
+
+.WhiteTxtTimePg
+{
+	font-size: 12pt;
+	color: #ffffff;
+	font-family: Arial, Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal
+}
+
+.timePgLink
+{
+	font-size: 12pt;
+	color: #ffff00;
+	font-family: Arial, Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.timePgLink:hover
+{
+	font-size: 12pt;
+	color: #ffff00;
+	font-family: Arial, Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.timePgLink:visited
+{
+	font-size: 12pt;
+	color: #ffff00;
+	font-family: Arial, Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+
+}
+
+.lgLink
+{
+	font-size: 12pt;
+	color: #0000ff;
+	font-family: Arial, Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+
+}
+
+.lgLink:hover
+{
+	font-size: 12pt;
+	color: #0000ff;
+	font-family: Arial, Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.lgLink:visited
+{
+	font-size: 12pt;
+	color: #0000ff;
+	font-family: Arial, Tahoma, Vernanda, Helvetica, sans-serif;
+	font-weight: normal;
+
+
+}
+
+.txt {
+	font-size: 10pt;
+	color: #000000;
+	Font-family : Tahoma, Arial, Helvetica, sans-serif;
+	\\ text-decoration: underline;
+	\\ font-weight: bold;
+}
+
+
+
+
