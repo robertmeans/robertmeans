@@ -1,6 +1,8 @@
 <div class="quote-content">
   <ol class="quote-list">
 
+    <li>The literal meaning of life is whatever you're doing that prevents you from killing yourself. - Albert Camus</li>
+
     <li>Our experiences are much more what we put into them than what they originally contain.</li>
 
     <li>Whatever things and ideas symbolize within experience becomes their misleading actuality.</li>

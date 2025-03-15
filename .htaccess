@@ -38,6 +38,7 @@ RewriteEngine on
 
 
 Redirect 301 /health http://robertmeans.com/_subdir/health
+Redirect 301 /lakehouse http://robertmeans.com/_subdir/lakehouse
 Redirect 301 /fatpanty http://robertmeans.com/_subdir/family
 Redirect 301 /family http://robertmeans.com/_subdir/family
 Redirect 301 /brad http://robertmeans.com/_subdir/bradley

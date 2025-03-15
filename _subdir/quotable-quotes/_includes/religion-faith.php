@@ -42,7 +42,7 @@
 
     <li>People are committed to what they believe and wish that it were right. It would hurt their pride to have believed something that was wrong. - It's not a function (necessarily) of the contents of his faith; rather a function of his commitment.</li>
 
-    <li>The Greeks, imbued wiht the Apollinian spirit, learned to organize the chaos.</li>
+    <li>The Greeks, imbued with the Apollinian spirit, learned to organize the chaos.</li>
 
     <li>Overcome everything Christian by what is more than Christian and not merely rid ourselves of it.</li>
 
