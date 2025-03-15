@@ -18,7 +18,7 @@
 
     <li>When was the last time someone was criticized for not respecting another person’s unfounded beliefs about physics or history?</li>
 
-    <li>Truth, in matters of religion, is simply the opinion that has survived. - Oscal Wilde</li>
+    <li>Truth, in matters of religion, is simply the opinion that has survived. - Oscar Wilde</li>
 
     <li>What can be asserted without evidence can also be dismissed without evidence. – Christopher Hitchens</li>
 

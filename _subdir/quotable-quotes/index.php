@@ -41,6 +41,9 @@
     <div class="quote">Exestentialism</div>
     <?php require '_includes/exestentialism.php'; ?>
 
+    <div class="quote">Evil</div>
+    <?php require '_includes/evil.php'; ?>
+
     <div class="quote">Miscellaneous</div>
     <?php require '_includes/miscellaneous.php'; ?>
            

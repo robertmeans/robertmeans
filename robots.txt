@@ -1,3 +1,8 @@
 User-agent: *
+<<<<<<< HEAD
 Disallow: /_subdir/
 
+=======
+Disallow: /bradley/
+Disallow: /health/
+>>>>>>> 758e208a3cf45dba2eb312d0b73e7e546b85de82
