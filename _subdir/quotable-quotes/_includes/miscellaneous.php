@@ -3,6 +3,8 @@
     <li>Kant&acute;s Catigorical Imerative:<br>
     &quot;Act only according to that maxim whereby you can, at the same time, will that it should become a universal law&quot;</li>
 
+    <li>The real problem of humanity is the following: We have Paleolithic emotions, medieval institutions and godlike technology. - Edward O. Wilson</li>
+
     <li>So convenient it is to be a reasonable creature, since it enables one to find or make a reason for everything one has a mind to do. - Benjamin Franklin</li>
 
     <li>Ignorance more frequently begets confidence than does knowledge. - Darwin</li>
