@@ -78,7 +78,7 @@
 
     <li>Pope Benedict XVI abolished limbo. – Where does everyone formerly in limbo go now? Were all the previous Popes wrong despite their infallibility? This is the kind of thing we’re supposed to &quot;respect.&quot;</li>
 
-    <li>The Bible is not a sufficient justification of beliefs, given the standards off evidence that prevailed at the time of its composition.</li>
+    <li>The Bible is not a sufficient justification of beliefs, given the standards of evidence that prevailed at the time of its composition.</li>
 
     <li>The fact that faith has motivated many people to do good things does not suggest that faith itself is a necessary (or even good) motivation for goodness. It’s possible, even reasonable, to do good without believing incredible ideas about the nature of the universe. By contrast, the most monstrous crimes against humanity have been inspired by unjustified belief.</li>
 

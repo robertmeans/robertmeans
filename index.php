@@ -73,7 +73,7 @@
           <textarea required name="comments" id="comments" tabindex="30"></textarea>
         </li>
         <li id="msg"></li>
-        <li>
+        <li id="sendhide">
           <input id="send" type="submit" class="display" value="Send">
         </li>
       </ul> 

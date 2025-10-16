@@ -24,10 +24,19 @@ if (is_post_request()) {
 
       try { 
 
-          $mail->Host = 'localhost';
-          $mail->Username   = EMAIL;
-          $mail->Password   = PASSWORD; 
-          $mail->Port = 587;
+          // $mail->Host = 'localhost';
+          // $mail->Username   = EMAIL;
+          // $mail->Password   = PASSWORD; 
+          // $mail->Port = 587;
+
+          // 05.21.25 at 13:25 - changed to...
+          $mail->isSMTP(); 
+          $mail->Host         = "localhost"; 
+          $mail->Port         = 25; 
+          $mail->SMTPAuth     = false; 
+          $mail->SMTPAutoTLS  = false;
+
+
           // email routing set to automatically detect
 
           //Recipients
@@ -48,7 +57,7 @@ if (is_post_request()) {
           $msg =  'Message sent successfully';
         } catch (Exception $e) {
             $signal = 'bad';
-            $msg = 'Mail Error: ' {$mail->ErrorInfo};
+            $msg = 'Mail Error: {$mail->ErrorInfo}';
         }
 
       } else {

@@ -66,7 +66,8 @@ $(document).ready(function() {
   // $('#cloze').click(function() {
   //   event.preventDefault();
   // });
-  $('#send').click(function() {
+  // $('#send').click(function() {
+  $(document).on('click', '#send', function() {
     event.preventDefault();
     $.ajax({
       dataType: "JSON",
@@ -74,7 +75,8 @@ $(document).ready(function() {
       type: "POST",
       data: $('#contactForm').serialize(),
       beforeSend: function(xhr) {
-        $('#msg').html('<span>Sending - one moment...</span>');
+        $('#msg').html('<span style="padding:15px 20px;margin:10px 0px;background-color:#000;"><img src="_images/sending.gif"></span>');
+        $('#sendhide').hide();
       },
       success: function(response) {
         // console.log(response);
@@ -86,6 +88,7 @@ $(document).ready(function() {
             // $('#send-success').html('<input name="clozer" id="clozer" class="clozer" value="Close">');
           } else {
             $('#msg').html('<div class="alert alert-warning">' + response['msg'] + '</div>');
+            $('#sendhide').show();
           }
         } 
       },
