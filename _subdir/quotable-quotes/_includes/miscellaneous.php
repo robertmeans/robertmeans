@@ -1,7 +1,9 @@
 <div class="quote-content">
   <ol class="quote-list misc">
-    <li>Kant&acute;s Catigorical Imerative:<br>
+    <li>Kant&acute;s Catigorical Imperative:<br>
     &quot;Act only according to that maxim whereby you can, at the same time, will that it should become a universal law&quot;</li>
+
+    <li>&quot;Projections change the world into the replica of one&acute;s own unknown face.&quot; - C.G. Jung</li>
 
     <li>The real problem of humanity is the following: We have Paleolithic emotions, medieval institutions and godlike technology. - Edward O. Wilson</li>
 

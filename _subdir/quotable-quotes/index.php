@@ -30,7 +30,7 @@
   <script src="js/preload.js?<?php echo time(); ?>"></script>
 </head>
 <body>
-<div class="preload">Loadin' - one sec...</div>
+<div class="preload"><?php /* Loadin' - one sec... */ ?></div>
 <div id="top-of-page"></div>
 <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 <div id="wrapper">
