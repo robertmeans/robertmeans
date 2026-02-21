@@ -6,7 +6,7 @@ body {
 }
 #wrap {
 	display: flex;
-	/*flex-direction: column;*/
+	flex-direction: column;
 	align-content: center;
 	align-items: center;
 	justify-content: center;
@@ -39,6 +39,9 @@ a:hover {
 	color: #fff;
 	text-decoration: underline;
 	padding: 0px 12px;
+}
+a.vision {
+  margin-bottom: 0.5em;
 }
 
 .wrap {

@@ -51,6 +51,8 @@
 </div>
 
 <script src="js/scripts.js?<?php echo time(); ?>"></script>
+<?php if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false) { ?>
 <script src="http://localhost:35729/livereload.js"></script>
+<?php } ?>
 </body>
 </html>
